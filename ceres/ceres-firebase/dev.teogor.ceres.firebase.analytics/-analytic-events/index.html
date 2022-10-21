@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AnalyticEvents</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>Ceres</span>            </a>    </div>
+    <div>1.0.0-alpha01
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="firebase::dev.teogor.ceres.firebase.analytics/AnalyticEvents///PointingToDeclaration//1411733213">
+  <div class="breadcrumbs"><a href="../../index.html">firebase</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.ceres.firebase.analytics</a><span class="delimiter">/</span><span class="current">AnalyticEvents</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Analytic</span><wbr><span><span>Events</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Singleton///PointingToDeclaration/"><span class="token annotation builtin">Singleton</span></span></div></div><span class="token keyword">class </span><a href="index.html">AnalyticEvents</a>&nbsp;<span><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span>&nbsp;</span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">analytics<span class="token operator">: </span><a href="../-analytics/index.html">Analytics</a></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1258032205%2FConstructors%2F1411733213" anchor-label="AnalyticEvents" id="1258032205%2FConstructors%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-analytic-events.html"><span>Analytic</span><wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1258032205%2FConstructors%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-analytic-events.html"><span class="token function">AnalyticEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">analytics<span class="token operator">: </span><a href="../-analytics/index.html">Analytics</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1900718806%2FFunctions%2F1411733213" anchor-label="sendApplyWlp" id="1900718806%2FFunctions%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-apply-wlp.html"><span>send</span><wbr><span>Apply</span><wbr><span><span>Wlp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1900718806%2FFunctions%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-apply-wlp.html"><span class="token function">sendApplyWlp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1419494333%2FFunctions%2F1411733213" anchor-label="sendColorPreview" id="1419494333%2FFunctions%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-color-preview.html"><span>send</span><wbr><span>Color</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1419494333%2FFunctions%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-color-preview.html"><span class="token function">sendColorPreview</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="834037848%2FFunctions%2F1411733213" anchor-label="sendColorSelected" id="834037848%2FFunctions%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-color-selected.html"><span>send</span><wbr><span>Color</span><wbr><span><span>Selected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="834037848%2FFunctions%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-color-selected.html"><span class="token function">sendColorSelected</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1615240298%2FFunctions%2F1411733213" anchor-label="sendPrivacyPolicyAccepted" id="-1615240298%2FFunctions%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-privacy-policy-accepted.html"><span>send</span><wbr><span>Privacy</span><wbr><span>Policy</span><wbr><span><span>Accepted</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1615240298%2FFunctions%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-privacy-policy-accepted.html"><span class="token function">sendPrivacyPolicyAccepted</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-625916970%2FFunctions%2F1411733213" anchor-label="sendPrivacyPolicyClicked" id="-625916970%2FFunctions%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-privacy-policy-clicked.html"><span>send</span><wbr><span>Privacy</span><wbr><span>Policy</span><wbr><span><span>Clicked</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-625916970%2FFunctions%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-privacy-policy-clicked.html"><span class="token function">sendPrivacyPolicyClicked</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1836653464%2FFunctions%2F1411733213" anchor-label="sendTermsAndConditionsClicked" id="1836653464%2FFunctions%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="send-terms-and-conditions-clicked.html"><span>send</span><wbr><span>Terms</span><wbr><span>And</span><wbr><span>Conditions</span><wbr><span><span>Clicked</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1836653464%2FFunctions%2F1411733213"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-terms-and-conditions-clicked.html"><span class="token function">sendTermsAndConditionsClicked</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
