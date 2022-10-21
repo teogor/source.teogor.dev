@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AnimationUtils</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>Ceres</span>            </a>    </div>
+    <div>1.0.0-alpha01
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="core::dev.teogor.ceres.core.animation/AnimationUtils///PointingToDeclaration//-1949215163">
+  <div class="breadcrumbs"><a href="../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.ceres.core.animation</a><span class="delimiter">/</span><span class="current">AnimationUtils</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Animation</span><wbr><span><span>Utils</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">AnimationUtils</a></div><p class="paragraph">Utility class for animations containing Material interpolators.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1450836906%2FFunctions%2F-1949215163" anchor-label="lerp" id="1450836906%2FFunctions%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-core:dokkaHtmlPartial/release" data-filterable-set=":ceres-core:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="lerp.html"><span><span>lerp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1450836906%2FFunctions%2F-1949215163"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="lerp.html"><span class="token function">lerp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">endValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">fraction<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="lerp.html"><span class="token function">lerp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">endValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">fraction<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Linear interpolation between <code class="lang-kotlin">startValue</code> and <code class="lang-kotlin">endValue</code> by <code class="lang-kotlin">fraction</code>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="lerp.html"><span class="token function">lerp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">outputMin<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">outputMax<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">inputMin<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">inputMax<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Linear interpolation between <code class="lang-kotlin">outputMin</code> and <code class="lang-kotlin">outputMax</code> when <code class="lang-kotlin">value</code> is between <code class="lang-kotlin">inputMin</code> and <code class="lang-kotlin">inputMax</code>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1306980532%2FProperties%2F-1949215163" anchor-label="DECELERATE_INTERPOLATOR" id="1306980532%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-core:dokkaHtmlPartial/release" data-filterable-set=":ceres-core:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-d-e-c-e-l-e-r-a-t-e_-i-n-t-e-r-p-o-l-a-t-o-r.html"><span><span>DECELERATE_INTERPOLATOR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1306980532%2FProperties%2F-1949215163"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><a data-name="1306980532%2FProperties%2F-1949215163" anchor-label="DECELERATE_INTERPOLATOR" id="1306980532%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-d-e-c-e-l-e-r-a-t-e_-i-n-t-e-r-p-o-l-a-t-o-r.html">DECELERATE_INTERPOLATOR</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html">TimeInterpolator</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-547844541%2FProperties%2F-1949215163" anchor-label="FAST_OUT_LINEAR_IN_INTERPOLATOR" id="-547844541%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-core:dokkaHtmlPartial/release" data-filterable-set=":ceres-core:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-f-a-s-t_-o-u-t_-l-i-n-e-a-r_-i-n_-i-n-t-e-r-p-o-l-a-t-o-r.html"><span><span>FAST_OUT_LINEAR_IN_INTERPOLATOR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-547844541%2FProperties%2F-1949215163"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><a data-name="-547844541%2FProperties%2F-1949215163" anchor-label="FAST_OUT_LINEAR_IN_INTERPOLATOR" id="-547844541%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-f-a-s-t_-o-u-t_-l-i-n-e-a-r_-i-n_-i-n-t-e-r-p-o-l-a-t-o-r.html">FAST_OUT_LINEAR_IN_INTERPOLATOR</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html">TimeInterpolator</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="888471079%2FProperties%2F-1949215163" anchor-label="FAST_OUT_SLOW_IN_INTERPOLATOR" id="888471079%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-core:dokkaHtmlPartial/release" data-filterable-set=":ceres-core:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-f-a-s-t_-o-u-t_-s-l-o-w_-i-n_-i-n-t-e-r-p-o-l-a-t-o-r.html"><span><span>FAST_OUT_SLOW_IN_INTERPOLATOR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="888471079%2FProperties%2F-1949215163"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><a data-name="888471079%2FProperties%2F-1949215163" anchor-label="FAST_OUT_SLOW_IN_INTERPOLATOR" id="888471079%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-f-a-s-t_-o-u-t_-s-l-o-w_-i-n_-i-n-t-e-r-p-o-l-a-t-o-r.html">FAST_OUT_SLOW_IN_INTERPOLATOR</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html">TimeInterpolator</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="784620893%2FProperties%2F-1949215163" anchor-label="LINEAR_INTERPOLATOR" id="784620893%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-core:dokkaHtmlPartial/release" data-filterable-set=":ceres-core:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-l-i-n-e-a-r_-i-n-t-e-r-p-o-l-a-t-o-r.html"><span><span>LINEAR_INTERPOLATOR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="784620893%2FProperties%2F-1949215163"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><a data-name="784620893%2FProperties%2F-1949215163" anchor-label="LINEAR_INTERPOLATOR" id="784620893%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-l-i-n-e-a-r_-i-n-t-e-r-p-o-l-a-t-o-r.html">LINEAR_INTERPOLATOR</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html">TimeInterpolator</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1462970256%2FProperties%2F-1949215163" anchor-label="LINEAR_OUT_SLOW_IN_INTERPOLATOR" id="-1462970256%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":ceres-core:dokkaHtmlPartial/release" data-filterable-set=":ceres-core:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-l-i-n-e-a-r_-o-u-t_-s-l-o-w_-i-n_-i-n-t-e-r-p-o-l-a-t-o-r.html"><span><span>LINEAR_OUT_SLOW_IN_INTERPOLATOR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1462970256%2FProperties%2F-1949215163"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-core:dokkaHtmlPartial/release"><a data-name="-1462970256%2FProperties%2F-1949215163" anchor-label="LINEAR_OUT_SLOW_IN_INTERPOLATOR" id="-1462970256%2FProperties%2F-1949215163" data-filterable-set=":ceres-core:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-l-i-n-e-a-r_-o-u-t_-s-l-o-w_-i-n_-i-n-t-e-r-p-o-l-a-t-o-r.html">LINEAR_OUT_SLOW_IN_INTERPOLATOR</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator.html">TimeInterpolator</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
