@@ -1,6 +1,6 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-$dokka.location:dev.teogor.ceres.components////PointingToDeclaration/components/dev.teogor.ceres.components.html
+
 module:ads
 dev.teogor.ceres.ads
 dev.teogor.ceres.ads.annotation
@@ -11,7 +11,7 @@ dev.teogor.ceres.ads.startup
 dev.teogor.ceres.ads.utils
 dev.teogor.ceres.ads.view
 module:bindings
-dev.teogor.ceres.binding
+dev.teogor.ceres.bindings
 module:components
 dev.teogor.ceres.components
 dev.teogor.ceres.components.annotation
@@ -50,7 +50,9 @@ module:m3
 dev.teogor.ceres.m3
 dev.teogor.ceres.m3.annotation
 dev.teogor.ceres.m3.app
+dev.teogor.ceres.m3.beta
 dev.teogor.ceres.m3.binding
+dev.teogor.ceres.m3.drawable
 dev.teogor.ceres.m3.elevation
 dev.teogor.ceres.m3.events
 dev.teogor.ceres.m3.extension
@@ -64,7 +66,6 @@ dev.teogor.ceres.m3.resources
 dev.teogor.ceres.m3.snackbar
 dev.teogor.ceres.m3.theme
 dev.teogor.ceres.m3.util
-dev.teogor.ceres.m3.utils
 dev.teogor.ceres.m3.widgets.bar
 dev.teogor.ceres.m3.widgets.colorpicker.alpha
 dev.teogor.ceres.m3.widgets.colorpicker.cmyk
@@ -80,7 +81,6 @@ dev.teogor.ceres.m3.widgets.colorpicker.util
 dev.teogor.ceres.m3.widgets.colorpicker.view.picker
 dev.teogor.ceres.m3.widgets.colorpicker.view.set
 dev.teogor.ceres.m3.widgets.colorpicker.view.swatch
-dev.teogor.ceres.m3.widgets.container
 dev.teogor.ceres.m3.widgets.dialog
 dev.teogor.ceres.m3.widgets.extension
 dev.teogor.ceres.m3.widgets.menusheet
