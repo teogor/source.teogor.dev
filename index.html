@@ -6,29 +6,33 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Open Source | Teogor</title>
-    <meta content="An Android Engineer, based in Romania building astonishing android applications and video games."
+    <title>Teogor's Codebase</title>
+    <meta content="Explore Teogor's open source projects and their documentation, including installation guides, API references, and more."
           name="description">
-    <meta content="Teodor Grigor, teogor, Android Engineer, Video Game Developer" name="keywords">
-    <meta content="Open Source | Teogor" name="title">
-    <meta content="Open Source | Teogor" property="og:title">
-    <meta content="An Android Engineer, based in Romania building astonishing android applications and video games."
+    <meta content="Teogor, Teodor Grigor, Open Source Projects, Software Development, Programming, Coding, Github, Git, Development Tools" name="keywords">
+    <meta content="Teogor's Codebase" name="title">
+    <meta content="Teogor's Codebase" property="og:title">
+    <meta content="Explore Teogor's open source projects and their documentation, including installation guides, API references, and more."
           property="og:description">
     <meta content="https://teogor.dev" property="og:url">
-    <meta content="teogor.dev" property="og:site_name">
+    <meta content="source.teogor.dev" property="og:site_name">
     <meta content="https://teogor.dev/res/cover/website.png"
           property="og:image">
 
     <meta content="HXitkbb9LRYXchFF3kDC67m4X53AV0vMhvRoCOsyURc" name="google-site-verification"/>
 
-    <meta content="teogor.dev" property="twitter:domain">
-    <meta content="https://teogor.dev/" property="twitter:url">
+    <meta content="source.teogor.dev" property="twitter:domain">
+    <meta content="https://source.teogor.dev/" property="twitter:url">
     <meta content="summary_large_image" name="twitter:card">
-    <meta content="Open Source | Teogor" name="twitter:title">
-    <meta content="An Android Engineer, based in Romania building astonishing android applications and video games."
+    <meta content="Teogor's Codebase" name="twitter:title">
+    <meta content="Explore Teogor's open source projects and their documentation, including installation guides, API references, and more."
           name="twitter:description">
     <meta content="https://teogor.dev/res/cover/website.png"
           property="twitter:image">
+
+    <!-- stylesheets -->
+    <link href="https://assets.teogor.dev/styles/tailwindoutput.css" rel="stylesheet">
+    <link href="/ux.css" rel="stylesheet">
 
     <!-- favicons -->
     <link href="favicons/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png">
@@ -70,7 +74,7 @@
     <!-- End Global site tag (gtag.js) - Google Analytics -->
 </head>
 
-<body>
+<body data-barba="wrapper" x-data>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -79,6 +83,57 @@
             width="0"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<div class="load-container">
+    <div class="loading-screen"></div>
+</div>
+
+<div class="h-min">
+    <div id="navbar">
+        <script src="https://assets.teogor.dev/components/navbar/navbar.js"></script>
+    </div>
+
+    <!-- content goes here -->
+    <div class="py-top-128 text-center animate-this cursor-none" data-barba="container" data-barba-namespace="home">
+        <h2 class="font-extrabold text-6xl py-5 xl:mx-40 2xl:mx-80 lg:text-8xl text-white md:text-6xl cursorHover">
+            <span class="text-purple-500">Open Source</span><br>Directory!
+        </h2>
+
+        <div class="flex justify-center">
+            <div id="projects-container"
+                 class="grid gap-2 grid-flow-row sm:mt-12 sm:grid-flow-row sm:grid-cols-2 sm:gap-6 lg:grid-col-2 lg:grid-flow-row lg:gap-8">
+                <template id="projects-template">
+                    <a target="_blank"
+                       class="py-8 px-6 sm:px-10 md:px-8 bg-purple-600 text-center hover:bg-purple-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 w-11/12 sm:ml-0 sm:w-80 sm:mt-0 lg:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl"
+                       x-intersect="$el.classList.add('fadeInUp')">
+                        <h2 class="text-2xl py-5 text-white font-semibold leading-6"></h2>
+                        <p class="text-lg text-slate-200">{{ description }}</p>
+                        <div id="tags" class="flex flex-wrap justify-center items-center">
+                            <p id="tag-clone" class="tag not-selectable">#empty</p>
+                        </div>
+                    </a>
+                </template>
+                <script src="features/open-source/projects.js" type="module"></script>
+            </div>
+        </div>
+
+        <a href="https://github.com/teogor?tab=repositories" target="_blank">
+            <button
+                    class="py-6 my-20 px-7 text-xl md:py-5 md:px-7 md:my-24 xl:my-20 xl:px-10 xl:py-7 rounded-full bg-white button transition duration-200 ease-in-out text-purple-600 hover:text-white hover:bg-purple-700"
+                    x-intersect="$el.classList.add('fadeInUp')">Other
+                Contributions
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+<script src="https://assets.teogor.dev/scripts/bundle.js"></script>
+
 </body>
 
+<footer id="footer">
+    <script src="https://assets.teogor.dev/components/footer/footer.js"></script>
+</footer>
 </html>

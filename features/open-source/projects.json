@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Ceres",
+    "description": "\uD83E\uDE90 Modern Android development with Hilt, Coroutines, Flow, JetPack(ViewModel) based on MVVM architecture.",
+    "tools": ["Kotlin", "Java"],
+    "link": "./ceres/"
+  }
+]
