@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- ceres-ads -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-ads-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-bindings -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-bindings-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-components -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-components-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-core -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-core-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-extensions -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-extensions-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-firebase -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-firebase-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-m3 -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-m3-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-wear-os -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-wear-os-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- ceres-widget -->
+  <url>
+    <loc>https://source.teogor.dev/ceres/ceres-widget-sitemap.xml</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
