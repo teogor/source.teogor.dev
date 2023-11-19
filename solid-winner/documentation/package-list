@@ -1,7 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-
-module:android
-dev.teogor.xenoglot.android
-module:core
-dev.teogor.xenoglot
