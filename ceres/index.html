@@ -1,160 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>All modules</title>
-    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
-    <script>var pathToRoot = "";</script>
-    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "";
     </script>
-<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
-<link href="styles/style.css" rel="Stylesheet">
-<link href="styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="styles/main.css" rel="Stylesheet">
-<link href="styles/prism.css" rel="Stylesheet">
-<link href="styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
-<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
-<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
-<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
-<script type="text/javascript" src="scripts/prism.js" async="async"></script>
-<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
-</head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="index.html">
-                    <span>Ceres</span>
-            </a>
-    </div>
-    <div>
-1.0.0-beta01    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="scripts/sourceset_dependencies.js"
+      async="async"
+    ></script>
+    <link href="styles/style.css" rel="Stylesheet" />
+    <link href="styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="styles/main.css" rel="Stylesheet" />
+    <link href="styles/prism.css" rel="Stylesheet" />
+    <link href="styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="scripts/clipboard.js"
+      async="async"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/navigation-loader.js"
+      async="async"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/platform-content-handler.js"
+      async="async"
+    ></script>
+    <script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+    <script
+      type="text/javascript"
+      src="scripts/prism.js"
+      async="async"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/symbol-parameters-wrapper_deferred.js"
+      defer="defer"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="index.html">
+          <span>Ceres</span>
+        </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageIds="Ceres::.ext/allModules///PointingToDeclaration//0"
+        >
+          <div class="breadcrumbs"></div>
+          <div class="cover">
+            <h2 class="">All modules:</h2>
+            <div class="table">
+              <a
+                data-name="-1304652579%2FMain%2F0"
+                anchor-label="ads"
+                id="-1304652579%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div><a href="ceres-ads/index.html">ads</a></div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="-1304652579%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">Contains ads related classes</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                data-name="1481930631%2FMain%2F0"
+                anchor-label="bindings"
+                id="1481930631%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div>
+                        <a href="ceres-bindings/index.html">bindings</a>
+                      </div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="1481930631%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">
+                        Contains adapters for binding for views
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                data-name="1685047039%2FMain%2F0"
+                anchor-label="components"
+                id="1685047039%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div>
+                        <a href="ceres-components/index.html">components</a>
+                      </div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="1685047039%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">Contains core components</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                data-name="-387464810%2FMain%2F0"
+                anchor-label="core"
+                id="-387464810%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div><a href="ceres-core/index.html">core</a></div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="-387464810%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">Contains core elements</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                data-name="464738241%2FMain%2F0"
+                anchor-label="extensions"
+                id="464738241%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div>
+                        <a href="ceres-extensions/index.html">extensions</a>
+                      </div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="464738241%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">
+                        Contains extensions for android.* views
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                data-name="-568274386%2FMain%2F0"
+                anchor-label="firebase"
+                id="-568274386%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div>
+                        <a href="ceres-firebase/index.html">firebase</a>
+                      </div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="-568274386%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">Contains firebase utils classes</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                data-name="-272573777%2FMain%2F0"
+                anchor-label="m3"
+                id="-272573777%2FMain%2F0"
+                data-filterable-set=""
+              ></a>
+              <div class="table-row">
+                <div class="main-subrow">
+                  <div class="w-100">
+                    <span class="inline-flex">
+                      <div><a href="ceres-m3/index.html">m3</a></div>
+                      <span class="anchor-wrapper"
+                        ><span
+                          class="anchor-icon"
+                          pointing-to="-272573777%2FMain%2F0"
+                        ></span>
+                        <div class="copy-popup-wrapper">
+                          <span class="copy-popup-icon"></span
+                          ><span>Link copied to clipboard</span>
+                        </div>
+                      </span></span
+                    >
+                  </div>
+                  <div>
+                    <span class="brief-comment">
+                      <p class="paragraph">
+                        Contains themed components and dynamic color manager
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
+        </div>
+      </div>
     </div>
-    <div id="main">
-<div class="main-content" id="content" pageIds="Ceres::.ext/allModules///PointingToDeclaration//0">
-  <div class="breadcrumbs"></div>
-  <div class="cover ">
-    <h2 class="">All modules:</h2>
-    <div class="table"><a data-name="-1304652579%2FMain%2F0" anchor-label="ads" id="-1304652579%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-ads/index.html">ads</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1304652579%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains ads related classes</p>
-            </span></div>
-        </div>
-      </div>
-<a data-name="1481930631%2FMain%2F0" anchor-label="bindings" id="1481930631%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-bindings/index.html">bindings</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1481930631%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains adapters for binding for views</p>
-            </span></div>
-        </div>
-      </div>
-<a data-name="1685047039%2FMain%2F0" anchor-label="components" id="1685047039%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-components/index.html">components</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1685047039%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains core components</p>
-            </span></div>
-        </div>
-      </div>
-<a data-name="-387464810%2FMain%2F0" anchor-label="core" id="-387464810%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-core/index.html">core</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-387464810%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains core elements</p>
-            </span></div>
-        </div>
-      </div>
-<a data-name="464738241%2FMain%2F0" anchor-label="extensions" id="464738241%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-extensions/index.html">extensions</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464738241%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains extensions for android.* views</p>
-            </span></div>
-        </div>
-      </div>
-<a data-name="-568274386%2FMain%2F0" anchor-label="firebase" id="-568274386%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-firebase/index.html">firebase</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-568274386%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains firebase utils classes</p>
-            </span></div>
-        </div>
-      </div>
-<a data-name="-272573777%2FMain%2F0" anchor-label="m3" id="-272573777%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="ceres-m3/index.html">m3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-272573777%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment">
-              <p class="paragraph">Contains themed components and dynamic color manager</p>
-            </span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
-                class="pull-right"><span>Generated by </span><a
-                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-</body>
+  </body>
 </html>

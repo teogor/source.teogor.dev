@@ -1,194 +1,908 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>ThemeMemo</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../../";
     </script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../styles/main.css" rel="Stylesheet">
-<link href="../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="m3::dev.teogor.ceres.m3.theme/ThemeMemo///PointingToDeclaration//-409846242"
+        >
+          <div class="breadcrumbs">
+            <a href="../../index.html">m3</a><span class="delimiter">/</span
+            ><a href="../index.html">dev.teogor.ceres.m3.theme</a
+            ><span class="delimiter">/</span
+            ><span class="current">ThemeMemo</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span>Theme</span><wbr /><span><span>Memo</span></span>
+            </h1>
+            <div
+              class="platform-hinted"
+              data-platform-hinted="data-platform-hinted"
+            >
+              <div
+                class="content sourceset-dependent-content"
+                data-active=""
+                data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+              >
+                <div class="symbol monospace">
+                  <span class="token keyword">class </span
+                  ><a href="index.html">ThemeMemo</a>&nbsp;<span
+                    ><span class="token annotation builtin">@</span
+                    ><span
+                      data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"
+                      ><span class="token annotation builtin"
+                        >Inject</span
+                      ></span
+                    >&nbsp;</span
+                  ><span class="token keyword">constructor</span>
+                </div>
+                <p class="paragraph">
+                  Code generated by Memo's Compiler.
+                  <a href="https://github.com/zeoflow/memo">link</a>
+                </p>
+                <p class="paragraph">
+                  Code generated based on the
+                  <a href="../-theme-store/index.html">ThemeStore</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section">
+              <button
+                class="section-tab"
+                data-active=""
+                data-togglable="Constructors"
+              >
+                Constructors</button
+              ><button class="section-tab" data-togglable="Properties">
+                Properties</button
+              ><button class="section-tab" data-togglable="Extensions">
+                Extensions
+              </button>
+            </div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors">
+                <a
+                  data-name="2113054203%2FConstructors%2F-409846242"
+                  anchor-label="ThemeMemo"
+                  id="2113054203%2FConstructors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-theme-memo.html"
+                            ><span>Theme</span><wbr /><span
+                              ><span>Memo</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="2113054203%2FConstructors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Inject</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="-theme-memo.html"
+                                ><span class="token function"
+                                  >ThemeMemo</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties">
+                <a
+                  data-name="-1438405356%2FProperties%2F-409846242"
+                  anchor-label="appTheme"
+                  id="-1438405356%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="app-theme.html"
+                            ><span>app</span><wbr /><span
+                              ><span>Theme</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1438405356%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1438405356%2FProperties%2F-409846242"
+                              anchor-label="appTheme"
+                              id="-1438405356%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="app-theme.html">appTheme</a
+                              ><span class="token operator">: </span
+                              ><a href="../-app-theme-type/index.html"
+                                >AppThemeType</a
+                              >
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="-1438405356%2FProperties%2F-409846242"
+                                anchor-label="appTheme"
+                                id="-1438405356%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a>
+                              <p class="paragraph">
+                                based on
+                                <a href="../-theme-store/app-theme.html"
+                                  >ThemeStore.appTheme</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1774554134%2FProperties%2F-409846242"
+                  anchor-label="colouredBackgroundEnabled"
+                  id="1774554134%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="coloured-background-enabled.html"
+                            ><span>coloured</span><wbr /><span>Background</span
+                            ><wbr /><span><span>Enabled</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1774554134%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1774554134%2FProperties%2F-409846242"
+                              anchor-label="colouredBackgroundEnabled"
+                              id="1774554134%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="coloured-background-enabled.html"
+                                >colouredBackgroundEnabled</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="1774554134%2FProperties%2F-409846242"
+                                anchor-label="colouredBackgroundEnabled"
+                                id="1774554134%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a>
+                              <p class="paragraph">
+                                based on
+                                <a
+                                  href="../-theme-store/coloured-background-enabled.html"
+                                  >ThemeStore.colouredBackgroundEnabled</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1352182384%2FProperties%2F-409846242"
+                  anchor-label="desaturatedColoursEnabled"
+                  id="1352182384%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="desaturated-colours-enabled.html"
+                            ><span>desaturated</span><wbr /><span>Colours</span
+                            ><wbr /><span><span>Enabled</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1352182384%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1352182384%2FProperties%2F-409846242"
+                              anchor-label="desaturatedColoursEnabled"
+                              id="1352182384%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="desaturated-colours-enabled.html"
+                                >desaturatedColoursEnabled</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="1352182384%2FProperties%2F-409846242"
+                                anchor-label="desaturatedColoursEnabled"
+                                id="1352182384%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a>
+                              <p class="paragraph">
+                                based on
+                                <a
+                                  href="../-theme-store/desaturated-colours-enabled.html"
+                                  >ThemeStore.desaturatedColoursEnabled</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-898458970%2FProperties%2F-409846242"
+                  anchor-label="justBlackTheme"
+                  id="-898458970%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="just-black-theme.html"
+                            ><span>just</span><wbr /><span>Black</span
+                            ><wbr /><span><span>Theme</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-898458970%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-898458970%2FProperties%2F-409846242"
+                              anchor-label="justBlackTheme"
+                              id="-898458970%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="just-black-theme.html">justBlackTheme</a
+                              ><span class="token operator">: </span
+                              ><a href="../-just-black-theme-type/index.html"
+                                >JustBlackThemeType</a
+                              >
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="-898458970%2FProperties%2F-409846242"
+                                anchor-label="justBlackTheme"
+                                id="-898458970%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a>
+                              <p class="paragraph">
+                                based on
+                                <a href="../-theme-store/just-black-theme.html"
+                                  >ThemeStore.justBlackTheme</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="451492595%2FProperties%2F-409846242"
+                  anchor-label="materialYouEnabled"
+                  id="451492595%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="material-you-enabled.html"
+                            ><span>material</span><wbr /><span>You</span
+                            ><wbr /><span><span>Enabled</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="451492595%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="451492595%2FProperties%2F-409846242"
+                              anchor-label="materialYouEnabled"
+                              id="451492595%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="material-you-enabled.html"
+                                >materialYouEnabled</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="451492595%2FProperties%2F-409846242"
+                                anchor-label="materialYouEnabled"
+                                id="451492595%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a>
+                              <p class="paragraph">
+                                based on
+                                <a
+                                  href="../-theme-store/material-you-enabled.html"
+                                  >ThemeStore.materialYouEnabled</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="152216171%2FProperties%2F-409846242"
+                  anchor-label="seed"
+                  id="152216171%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="seed.html"
+                            ><span><span>seed</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="152216171%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="152216171%2FProperties%2F-409846242"
+                              anchor-label="seed"
+                              id="152216171%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="seed.html">seed</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                >String</a
+                              >
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="152216171%2FProperties%2F-409846242"
+                                anchor-label="seed"
+                                id="152216171%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a>
+                              <p class="paragraph">
+                                based on
+                                <a href="../-theme-store/seed.html"
+                                  >ThemeStore.seed</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="tabbedcontent">Extensions</h2>
+              <div class="table" data-togglable="Extensions">
+                <a
+                  data-name="2024857620%2FExtensions%2F-409846242"
+                  anchor-label="applyNewColor"
+                  id="2024857620%2FExtensions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3.extension/apply-new-color.html"
+                            ><span>apply</span><wbr /><span>New</span
+                            ><wbr /><span><span>Color</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="2024857620%2FExtensions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ThemeMemo</a
+                              ><span class="token punctuation">.</span
+                              ><a
+                                href="../../dev.teogor.ceres.m3.extension/apply-new-color.html"
+                                ><span class="token function"
+                                  >applyNewColor</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><span
+                                      data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"
+                                      ><span class="token annotation builtin"
+                                        >ColorInt</span
+                                      ></span
+                                    >&nbsp;</span
+                                  >color<span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                    >Int</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ThemeMemo</a
+                              ><span class="token punctuation">.</span
+                              ><a
+                                href="../../dev.teogor.ceres.m3.extension/apply-new-color.html"
+                                ><span class="token function"
+                                  >applyNewColor</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><a
+                                      href="../../../ceres-components/dev.teogor.ceres.components.annotation/-color-string/index.html"
+                                      ><span class="token annotation builtin"
+                                        >ColorString</span
+                                      ></a
+                                    >&nbsp;</span
+                                  >color<span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                    >String</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
+        </div>
+      </div>
     </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="m3::dev.teogor.ceres.m3.theme/ThemeMemo///PointingToDeclaration//-409846242">
-  <div class="breadcrumbs"><a href="../../index.html">m3</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.ceres.m3.theme</a><span class="delimiter">/</span><span class="current">ThemeMemo</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span>Theme</span><wbr><span><span>Memo</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ThemeMemo</a>&nbsp;<span><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span>&nbsp;</span><span class="token keyword">constructor</span></div><p class="paragraph">Code generated by Memo's Compiler. <a href="https://github.com/zeoflow/memo">link</a></p><p class="paragraph">Code generated based on the <a href="../-theme-store/index.html">ThemeStore</a></p></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
-    <div class="tabs-section-body">
-      <h2 class="tabbedcontent">Constructors</h2>
-      <div class="table" data-togglable="Constructors"><a data-name="2113054203%2FConstructors%2F-409846242" anchor-label="ThemeMemo" id="2113054203%2FConstructors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue TabbedContent">
-            <div class=""><span class="inline-flex">
-                <div><a href="-theme-memo.html"><span>Theme</span><wbr><span><span>Memo</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2113054203%2FConstructors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="javax.inject/Inject///PointingToDeclaration/"><span class="token annotation builtin">Inject</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="-theme-memo.html"><span class="token function">ThemeMemo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-1438405356%2FProperties%2F-409846242" anchor-label="appTheme" id="-1438405356%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="app-theme.html"><span>app</span><wbr><span><span>Theme</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1438405356%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-1438405356%2FProperties%2F-409846242" anchor-label="appTheme" id="-1438405356%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="app-theme.html">appTheme</a><span class="token operator">: </span><a href="../-app-theme-type/index.html">AppThemeType</a></div><div class="brief "><a data-name="-1438405356%2FProperties%2F-409846242" anchor-label="appTheme" id="-1438405356%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><p class="paragraph">based on <a href="../-theme-store/app-theme.html">ThemeStore.appTheme</a></p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1774554134%2FProperties%2F-409846242" anchor-label="colouredBackgroundEnabled" id="1774554134%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="coloured-background-enabled.html"><span>coloured</span><wbr><span>Background</span><wbr><span><span>Enabled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1774554134%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="1774554134%2FProperties%2F-409846242" anchor-label="colouredBackgroundEnabled" id="1774554134%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="coloured-background-enabled.html">colouredBackgroundEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1774554134%2FProperties%2F-409846242" anchor-label="colouredBackgroundEnabled" id="1774554134%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><p class="paragraph">based on <a href="../-theme-store/coloured-background-enabled.html">ThemeStore.colouredBackgroundEnabled</a></p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1352182384%2FProperties%2F-409846242" anchor-label="desaturatedColoursEnabled" id="1352182384%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="desaturated-colours-enabled.html"><span>desaturated</span><wbr><span>Colours</span><wbr><span><span>Enabled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1352182384%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="1352182384%2FProperties%2F-409846242" anchor-label="desaturatedColoursEnabled" id="1352182384%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="desaturated-colours-enabled.html">desaturatedColoursEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="1352182384%2FProperties%2F-409846242" anchor-label="desaturatedColoursEnabled" id="1352182384%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><p class="paragraph">based on <a href="../-theme-store/desaturated-colours-enabled.html">ThemeStore.desaturatedColoursEnabled</a></p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-898458970%2FProperties%2F-409846242" anchor-label="justBlackTheme" id="-898458970%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="just-black-theme.html"><span>just</span><wbr><span>Black</span><wbr><span><span>Theme</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-898458970%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-898458970%2FProperties%2F-409846242" anchor-label="justBlackTheme" id="-898458970%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="just-black-theme.html">justBlackTheme</a><span class="token operator">: </span><a href="../-just-black-theme-type/index.html">JustBlackThemeType</a></div><div class="brief "><a data-name="-898458970%2FProperties%2F-409846242" anchor-label="justBlackTheme" id="-898458970%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><p class="paragraph">based on <a href="../-theme-store/just-black-theme.html">ThemeStore.justBlackTheme</a></p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="451492595%2FProperties%2F-409846242" anchor-label="materialYouEnabled" id="451492595%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="material-you-enabled.html"><span>material</span><wbr><span>You</span><wbr><span><span>Enabled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="451492595%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="451492595%2FProperties%2F-409846242" anchor-label="materialYouEnabled" id="451492595%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="material-you-enabled.html">materialYouEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><a data-name="451492595%2FProperties%2F-409846242" anchor-label="materialYouEnabled" id="451492595%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><p class="paragraph">based on <a href="../-theme-store/material-you-enabled.html">ThemeStore.materialYouEnabled</a></p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="152216171%2FProperties%2F-409846242" anchor-label="seed" id="152216171%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="seed.html"><span><span>seed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="152216171%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="152216171%2FProperties%2F-409846242" anchor-label="seed" id="152216171%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="seed.html">seed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="152216171%2FProperties%2F-409846242" anchor-label="seed" id="152216171%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><p class="paragraph">based on <a href="../-theme-store/seed.html">ThemeStore.seed</a></p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="tabbedcontent">Extensions</h2>
-      <div class="table" data-togglable="Extensions"><a data-name="2024857620%2FExtensions%2F-409846242" anchor-label="applyNewColor" id="2024857620%2FExtensions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3.extension/apply-new-color.html"><span>apply</span><wbr><span>New</span><wbr><span><span>Color</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2024857620%2FExtensions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ThemeMemo</a><span class="token punctuation">.</span><a href="../../dev.teogor.ceres.m3.extension/apply-new-color.html"><span class="token function">applyNewColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"><span class="token annotation builtin">ColorInt</span></span>&nbsp;</span>color<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ThemeMemo</a><span class="token punctuation">.</span><a href="../../dev.teogor.ceres.m3.extension/apply-new-color.html"><span class="token function">applyNewColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="../../../ceres-components/dev.teogor.ceres.components.annotation/-color-string/index.html"><span class="token annotation builtin">ColorString</span></a>&nbsp;</span>color<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-
-</body></html>
-
+  </body>
+</html>

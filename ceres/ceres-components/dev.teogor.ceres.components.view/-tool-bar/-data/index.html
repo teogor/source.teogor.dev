@@ -1,374 +1,1650 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>Data</title>
-<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../../../";
     </script>
-<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../../styles/style.css" rel="Stylesheet">
-<link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../../styles/main.css" rel="Stylesheet">
-<link href="../../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="components::dev.teogor.ceres.components.view/ToolBar.Data///PointingToDeclaration//201081454"
+        >
+          <div class="breadcrumbs">
+            <a href="../../../index.html">components</a
+            ><span class="delimiter">/</span
+            ><a href="../../index.html">dev.teogor.ceres.components.view</a
+            ><span class="delimiter">/</span><a href="../index.html">ToolBar</a
+            ><span class="delimiter">/</span><span class="current">Data</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span><span>Data</span></span>
+            </h1>
+            <div
+              class="platform-hinted"
+              data-platform-hinted="data-platform-hinted"
+            >
+              <div
+                class="content sourceset-dependent-content"
+                data-active=""
+                data-togglable=":ceres-components:dokkaHtmlPartial/release"
+              >
+                <div class="symbol monospace">
+                  <span class="token keyword">data </span
+                  ><span class="token keyword">class </span
+                  ><a href="index.html">Data</a
+                  ><span class="token punctuation">(</span
+                  ><span class="parameters"
+                    ><span class="parameter"
+                      ><span class="token keyword">val </span>type<span
+                        class="token operator"
+                        >: </span
+                      ><a
+                        href="../../../dev.teogor.ceres.components.toolbar/-toolbar-type/index.html"
+                        >ToolbarType</a
+                      ><span class="token punctuation">, </span></span
+                    ><span class="parameter"
+                      ><span class="token keyword">val </span>isTransparent<span
+                        class="token operator"
+                        >: </span
+                      ><a
+                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                        >Boolean</a
+                      ><span class="token punctuation">, </span></span
+                    ><span class="parameter"
+                      ><span class="token keyword">val </span>isFilled<span
+                        class="token operator"
+                        >: </span
+                      ><a
+                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                        >Boolean</a
+                      ></span
+                    ></span
+                  ><span class="token punctuation">)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section">
+              <button
+                class="section-tab"
+                data-active=""
+                data-togglable="Constructors"
+              >
+                Constructors</button
+              ><button class="section-tab" data-togglable="Properties">
+                Properties</button
+              ><button class="section-tab" data-togglable="Extensions">
+                Extensions
+              </button>
+            </div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors">
+                <a
+                  data-name="-238961293%2FConstructors%2F201081454"
+                  anchor-label="Data"
+                  id="-238961293%2FConstructors%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-data.html"
+                            ><span><span>Data</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-238961293%2FConstructors%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="-data.html"
+                                ><span class="token function">Data</span></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >type<span class="token operator">: </span
+                                  ><a
+                                    href="../../../dev.teogor.ceres.components.toolbar/-toolbar-type/index.html"
+                                    >ToolbarType</a
+                                  ><span class="token punctuation"
+                                    >,
+                                  </span></span
+                                ><span class="parameter"
+                                  >isTransparent<span class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                    >Boolean</a
+                                  ><span class="token punctuation"
+                                    >,
+                                  </span></span
+                                ><span class="parameter"
+                                  >isFilled<span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                    >Boolean</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties">
+                <a
+                  data-name="-1190041119%2FProperties%2F201081454"
+                  anchor-label="color"
+                  id="-1190041119%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="color.html"
+                            ><span><span>color</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1190041119%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1190041119%2FProperties%2F201081454"
+                              anchor-label="color"
+                              id="-1190041119%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >ColorInt</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="color.html">color</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1590992704%2FProperties%2F201081454"
+                  anchor-label="cornerSize"
+                  id="-1590992704%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="corner-size.html"
+                            ><span>corner</span><wbr /><span
+                              ><span>Size</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1590992704%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1590992704%2FProperties%2F201081454"
+                              anchor-label="cornerSize"
+                              id="-1590992704%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Px///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Px</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Dimension///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Dimension</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="corner-size.html">cornerSize</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"
+                                >Float</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">0.0f</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1852215491%2FProperties%2F201081454"
+                  anchor-label="horizontalMargins"
+                  id="1852215491%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="horizontal-margins.html"
+                            ><span>horizontal</span><wbr /><span
+                              ><span>Margins</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1852215491%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1852215491%2FProperties%2F201081454"
+                              anchor-label="horizontalMargins"
+                              id="1852215491%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Px///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Px</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Dimension///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Dimension</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="horizontal-margins.html"
+                                >horizontalMargins</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-953910480%2FProperties%2F201081454"
+                  anchor-label="increasingAnimator"
+                  id="-953910480%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="increasing-animator.html"
+                            ><span>increasing</span><wbr /><span
+                              ><span>Animator</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-953910480%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-953910480%2FProperties%2F201081454"
+                              anchor-label="increasingAnimator"
+                              id="-953910480%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="increasing-animator.html"
+                                >increasingAnimator</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-32057005%2FProperties%2F201081454"
+                  anchor-label="isExpanded"
+                  id="-32057005%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-expanded.html"
+                            ><span>is</span><wbr /><span
+                              ><span>Expanded</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-32057005%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-32057005%2FProperties%2F201081454"
+                              anchor-label="isExpanded"
+                              id="-32057005%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="is-expanded.html">isExpanded</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              ><span class="token operator"> = </span
+                              ><span class="token boolean">false</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-646580086%2FProperties%2F201081454"
+                  anchor-label="isFilled"
+                  id="-646580086%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-filled.html"
+                            ><span>is</span><wbr /><span
+                              ><span>Filled</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-646580086%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-646580086%2FProperties%2F201081454"
+                              anchor-label="isFilled"
+                              id="-646580086%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="is-filled.html">isFilled</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1153263938%2FProperties%2F201081454"
+                  anchor-label="isHidden"
+                  id="1153263938%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-hidden.html"
+                            ><span>is</span><wbr /><span
+                              ><span>Hidden</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1153263938%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1153263938%2FProperties%2F201081454"
+                              anchor-label="isHidden"
+                              id="1153263938%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="is-hidden.html">isHidden</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              ><span class="token operator"> = </span
+                              ><span class="token boolean">false</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="399633313%2FProperties%2F201081454"
+                  anchor-label="isRounded"
+                  id="399633313%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-rounded.html"
+                            ><span>is</span><wbr /><span
+                              ><span>Rounded</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="399633313%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="399633313%2FProperties%2F201081454"
+                              anchor-label="isRounded"
+                              id="399633313%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="is-rounded.html">isRounded</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              ><span class="token operator"> = </span
+                              ><span class="token boolean">false</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1801874404%2FProperties%2F201081454"
+                  anchor-label="isTransparent"
+                  id="-1801874404%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-transparent.html"
+                            ><span>is</span><wbr /><span
+                              ><span>Transparent</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1801874404%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1801874404%2FProperties%2F201081454"
+                              anchor-label="isTransparent"
+                              id="-1801874404%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="is-transparent.html">isTransparent</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1782552813%2FProperties%2F201081454"
+                  anchor-label="rippleEnabled"
+                  id="-1782552813%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="ripple-enabled.html"
+                            ><span>ripple</span><wbr /><span
+                              ><span>Enabled</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1782552813%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1782552813%2FProperties%2F201081454"
+                              anchor-label="rippleEnabled"
+                              id="-1782552813%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="ripple-enabled.html">rippleEnabled</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-893929284%2FProperties%2F201081454"
+                  anchor-label="type"
+                  id="-893929284%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="type.html"
+                            ><span><span>type</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-893929284%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-893929284%2FProperties%2F201081454"
+                              anchor-label="type"
+                              id="-893929284%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="type.html">type</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="../../../dev.teogor.ceres.components.toolbar/-toolbar-type/index.html"
+                                >ToolbarType</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-650583595%2FProperties%2F201081454"
+                  anchor-label="verticalMargins"
+                  id="-650583595%2FProperties%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="vertical-margins.html"
+                            ><span>vertical</span><wbr /><span
+                              ><span>Margins</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-650583595%2FProperties%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-650583595%2FProperties%2F201081454"
+                              anchor-label="verticalMargins"
+                              id="-650583595%2FProperties%2F201081454"
+                              data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Px///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Px</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Dimension///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Dimension</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="vertical-margins.html"
+                                >verticalMargins</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="tabbedcontent">Extensions</h2>
+              <div class="table" data-togglable="Extensions">
+                <a
+                  data-name="-1386830272%2FExtensions%2F201081454"
+                  anchor-label="colorChanged"
+                  id="-1386830272%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../color-changed.html"
+                            ><span>color</span><wbr /><span
+                              ><span>Changed</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1386830272%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../color-changed.html"
+                                ><span class="token function"
+                                  >colorChanged</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >newData<span class="token operator">: </span
+                                  ><a href="index.html">ToolBar.Data</a></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1064231262%2FExtensions%2F201081454"
+                  anchor-label="expandedChanged"
+                  id="1064231262%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../expanded-changed.html"
+                            ><span>expanded</span><wbr /><span
+                              ><span>Changed</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1064231262%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../expanded-changed.html"
+                                ><span class="token function"
+                                  >expandedChanged</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >newData<span class="token operator">: </span
+                                  ><a href="index.html">ToolBar.Data</a></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="337264685%2FExtensions%2F201081454"
+                  anchor-label="hiddenType"
+                  id="337264685%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../hidden-type.html"
+                            ><span>hidden</span><wbr /><span
+                              ><span>Type</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="337264685%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../hidden-type.html"
+                                ><span class="token function"
+                                  >hiddenType</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >newData<span class="token operator">: </span
+                                  ><a href="index.html">ToolBar.Data</a></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="2133147248%2FExtensions%2F201081454"
+                  anchor-label="roundedTreatmentChanged"
+                  id="2133147248%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../rounded-treatment-changed.html"
+                            ><span>rounded</span><wbr /><span>Treatment</span
+                            ><wbr /><span><span>Changed</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="2133147248%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../rounded-treatment-changed.html"
+                                ><span class="token function"
+                                  >roundedTreatmentChanged</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >newData<span class="token operator">: </span
+                                  ><a href="index.html">ToolBar.Data</a></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-871489219%2FExtensions%2F201081454"
+                  anchor-label="transparencyChanged"
+                  id="-871489219%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../transparency-changed.html"
+                            ><span>transparency</span><wbr /><span
+                              ><span>Changed</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-871489219%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../transparency-changed.html"
+                                ><span class="token function"
+                                  >transparencyChanged</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >newData<span class="token operator">: </span
+                                  ><a href="index.html">ToolBar.Data</a></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="281311903%2FExtensions%2F201081454"
+                  anchor-label="typeChanged"
+                  id="281311903%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../type-changed.html"
+                            ><span>type</span><wbr /><span
+                              ><span>Changed</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="281311903%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../type-changed.html"
+                                ><span class="token function"
+                                  >typeChanged</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >newData<span class="token operator">: </span
+                                  ><a href="index.html">ToolBar.Data</a></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1248510342%2FExtensions%2F201081454"
+                  anchor-label="wasNotSet"
+                  id="-1248510342%2FExtensions%2F201081454"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../../was-not-set.html"
+                            ><span>was</span><wbr /><span>Not</span><wbr /><span
+                              ><span>Set</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1248510342%2FExtensions%2F201081454"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-components:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">ToolBar.Data</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../../was-not-set.html"
+                                ><span class="token function"
+                                  >wasNotSet</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
+        </div>
+      </div>
     </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="components::dev.teogor.ceres.components.view/ToolBar.Data///PointingToDeclaration//201081454">
-  <div class="breadcrumbs"><a href="../../../index.html">components</a><span class="delimiter">/</span><a href="../../index.html">dev.teogor.ceres.components.view</a><span class="delimiter">/</span><a href="../index.html">ToolBar</a><span class="delimiter">/</span><span class="current">Data</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span><span>Data</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">Data</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="../../../dev.teogor.ceres.components.toolbar/-toolbar-type/index.html">ToolbarType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isTransparent<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isFilled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
-    <div class="tabs-section-body">
-      <h2 class="tabbedcontent">Constructors</h2>
-      <div class="table" data-togglable="Constructors"><a data-name="-238961293%2FConstructors%2F201081454" anchor-label="Data" id="-238961293%2FConstructors%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue TabbedContent">
-            <div class=""><span class="inline-flex">
-                <div><a href="-data.html"><span><span>Data</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-238961293%2FConstructors%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-data.html"><span class="token function">Data</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../../../dev.teogor.ceres.components.toolbar/-toolbar-type/index.html">ToolbarType</a><span class="token punctuation">, </span></span><span class="parameter ">isTransparent<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">isFilled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-1190041119%2FProperties%2F201081454" anchor-label="color" id="-1190041119%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="color.html"><span><span>color</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1190041119%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-1190041119%2FProperties%2F201081454" anchor-label="color" id="-1190041119%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"><span class="token annotation builtin">ColorInt</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="color.html">color</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1590992704%2FProperties%2F201081454" anchor-label="cornerSize" id="-1590992704%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="corner-size.html"><span>corner</span><wbr><span><span>Size</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1590992704%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-1590992704%2FProperties%2F201081454" anchor-label="cornerSize" id="-1590992704%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Px///PointingToDeclaration/"><span class="token annotation builtin">Px</span></span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Dimension///PointingToDeclaration/"><span class="token annotation builtin">Dimension</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="corner-size.html">cornerSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.0f</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1852215491%2FProperties%2F201081454" anchor-label="horizontalMargins" id="1852215491%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="horizontal-margins.html"><span>horizontal</span><wbr><span><span>Margins</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1852215491%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="1852215491%2FProperties%2F201081454" anchor-label="horizontalMargins" id="1852215491%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Px///PointingToDeclaration/"><span class="token annotation builtin">Px</span></span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Dimension///PointingToDeclaration/"><span class="token annotation builtin">Dimension</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="horizontal-margins.html">horizontalMargins</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-953910480%2FProperties%2F201081454" anchor-label="increasingAnimator" id="-953910480%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="increasing-animator.html"><span>increasing</span><wbr><span><span>Animator</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-953910480%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-953910480%2FProperties%2F201081454" anchor-label="increasingAnimator" id="-953910480%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="increasing-animator.html">increasingAnimator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-32057005%2FProperties%2F201081454" anchor-label="isExpanded" id="-32057005%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-expanded.html"><span>is</span><wbr><span><span>Expanded</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-32057005%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-32057005%2FProperties%2F201081454" anchor-label="isExpanded" id="-32057005%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-expanded.html">isExpanded</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-646580086%2FProperties%2F201081454" anchor-label="isFilled" id="-646580086%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-filled.html"><span>is</span><wbr><span><span>Filled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-646580086%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-646580086%2FProperties%2F201081454" anchor-label="isFilled" id="-646580086%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-filled.html">isFilled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1153263938%2FProperties%2F201081454" anchor-label="isHidden" id="1153263938%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-hidden.html"><span>is</span><wbr><span><span>Hidden</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1153263938%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="1153263938%2FProperties%2F201081454" anchor-label="isHidden" id="1153263938%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-hidden.html">isHidden</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="399633313%2FProperties%2F201081454" anchor-label="isRounded" id="399633313%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-rounded.html"><span>is</span><wbr><span><span>Rounded</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399633313%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="399633313%2FProperties%2F201081454" anchor-label="isRounded" id="399633313%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-rounded.html">isRounded</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1801874404%2FProperties%2F201081454" anchor-label="isTransparent" id="-1801874404%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-transparent.html"><span>is</span><wbr><span><span>Transparent</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1801874404%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-1801874404%2FProperties%2F201081454" anchor-label="isTransparent" id="-1801874404%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-transparent.html">isTransparent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1782552813%2FProperties%2F201081454" anchor-label="rippleEnabled" id="-1782552813%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="ripple-enabled.html"><span>ripple</span><wbr><span><span>Enabled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1782552813%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-1782552813%2FProperties%2F201081454" anchor-label="rippleEnabled" id="-1782552813%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="ripple-enabled.html">rippleEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-893929284%2FProperties%2F201081454" anchor-label="type" id="-893929284%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="type.html"><span><span>type</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-893929284%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-893929284%2FProperties%2F201081454" anchor-label="type" id="-893929284%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="../../../dev.teogor.ceres.components.toolbar/-toolbar-type/index.html">ToolbarType</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-650583595%2FProperties%2F201081454" anchor-label="verticalMargins" id="-650583595%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="vertical-margins.html"><span>vertical</span><wbr><span><span>Margins</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-650583595%2FProperties%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><a data-name="-650583595%2FProperties%2F201081454" anchor-label="verticalMargins" id="-650583595%2FProperties%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Px///PointingToDeclaration/"><span class="token annotation builtin">Px</span></span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Dimension///PointingToDeclaration/"><span class="token annotation builtin">Dimension</span></span></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="vertical-margins.html">verticalMargins</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="tabbedcontent">Extensions</h2>
-      <div class="table" data-togglable="Extensions"><a data-name="-1386830272%2FExtensions%2F201081454" anchor-label="colorChanged" id="-1386830272%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../color-changed.html"><span>color</span><wbr><span><span>Changed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1386830272%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../color-changed.html"><span class="token function">colorChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newData<span class="token operator">: </span><a href="index.html">ToolBar.Data</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1064231262%2FExtensions%2F201081454" anchor-label="expandedChanged" id="1064231262%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../expanded-changed.html"><span>expanded</span><wbr><span><span>Changed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1064231262%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../expanded-changed.html"><span class="token function">expandedChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newData<span class="token operator">: </span><a href="index.html">ToolBar.Data</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="337264685%2FExtensions%2F201081454" anchor-label="hiddenType" id="337264685%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../hidden-type.html"><span>hidden</span><wbr><span><span>Type</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="337264685%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../hidden-type.html"><span class="token function">hiddenType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newData<span class="token operator">: </span><a href="index.html">ToolBar.Data</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="2133147248%2FExtensions%2F201081454" anchor-label="roundedTreatmentChanged" id="2133147248%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../rounded-treatment-changed.html"><span>rounded</span><wbr><span>Treatment</span><wbr><span><span>Changed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2133147248%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../rounded-treatment-changed.html"><span class="token function">roundedTreatmentChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newData<span class="token operator">: </span><a href="index.html">ToolBar.Data</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-871489219%2FExtensions%2F201081454" anchor-label="transparencyChanged" id="-871489219%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../transparency-changed.html"><span>transparency</span><wbr><span><span>Changed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-871489219%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../transparency-changed.html"><span class="token function">transparencyChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newData<span class="token operator">: </span><a href="index.html">ToolBar.Data</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="281311903%2FExtensions%2F201081454" anchor-label="typeChanged" id="281311903%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../type-changed.html"><span>type</span><wbr><span><span>Changed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="281311903%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../type-changed.html"><span class="token function">typeChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newData<span class="token operator">: </span><a href="index.html">ToolBar.Data</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1248510342%2FExtensions%2F201081454" anchor-label="wasNotSet" id="-1248510342%2FExtensions%2F201081454" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../was-not-set.html"><span>was</span><wbr><span>Not</span><wbr><span><span>Set</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1248510342%2FExtensions%2F201081454"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ToolBar.Data</a><span class="token punctuation">.</span><a href="../../was-not-set.html"><span class="token function">wasNotSet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-
-</body></html>
-
+  </body>
+</html>
