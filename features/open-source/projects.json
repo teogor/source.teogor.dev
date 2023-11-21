@@ -2,13 +2,68 @@
   {
     "title": "Ceres",
     "description": "\uD83E\uDE90 Modern Android development with Hilt, Coroutines, Flow, JetPack(ViewModel) based on MVVM architecture.",
-    "tools": ["Kotlin", "Java"],
-    "link": "./ceres/"
+    "tools": [
+      "Kotlin",
+      "Java"
+    ],
+    "link": "./ceres/",
+    "repo": "ceres",
+    "owner": "teogor"
   },
   {
     "title": "Drifter",
     "description": "🚀 Simplifies the integration between Unity and Android, enhancing performance effortlessly. Bridge the gap with ease.",
-    "tools": ["Kotlin", "Unity", "Android"],
-    "link": "./drifter/"
+    "tools": [
+      "Kotlin",
+      "Unity",
+      "Android"
+    ],
+    "link": "./drifter/",
+    "repo": "drifter",
+    "owner": "teogor"
+  },
+  {
+    "title": "Querent",
+    "description": "\uD83C\uDFD7\uFE0F Querent lays the groundwork for your project's resource management, fostering consistency and efficiency across your development workflow.",
+    "tools": [
+      "Kotlin",
+      "Plugin"
+    ],
+    "link": "./querent/",
+    "repo": "querent",
+    "owner": "teogor"
+  },
+  {
+    "title": "Sudoklify",
+    "description": "\uD83E\uDDE9 Sudoklify is a versatile and intuitive Sudoku puzzle generation library written in Kotlin.",
+    "tools": [
+      "Kotlin"
+    ],
+    "link": "./sudoklify/",
+    "repo": "sudoklify",
+    "owner": "teogor"
+  },
+  {
+    "title": "Winds",
+    "description": "\uD83C\uDF43 Winds build and publish libraries and applications for multiple platforms, simple and efficient.",
+    "tools": [
+      "Kotlin",
+      "Plugin",
+      "Multi-Platform"
+    ],
+    "link": "./winds/",
+    "repo": "winds",
+    "owner": "teogor"
+  },
+  {
+    "title": "Xenoglot",
+    "description": "\uD83C\uDF0D Xenoglot seamlessly masters languages and locales, empowering developers to integrate multilingual capabilities into their applications with ease.",
+    "tools": [
+      "Kotlin",
+      "Plugin"
+    ],
+    "link": "./xenoglot/",
+    "repo": "xenoglot",
+    "owner": "teogor"
   }
 ]

@@ -15,6 +15,20 @@ async function getProjects() {
   const response = await fetch("./features/open-source/projects.json");
   const data = await response.json();
 
+  // Sort the array of objects based on the 'repo' property
+  data.sort((a, b) => {
+    const repoA = a.repo.toUpperCase(); // ignore case
+    const repoB = b.repo.toUpperCase(); // ignore case
+
+    if (repoA < repoB) {
+      return -1;
+    }
+    if (repoA > repoB) {
+      return 1;
+    }
+    return 0;
+  });
+
   data.forEach(({ description, link, title, tools }) => {
     const instance = projectsTemplate.content.cloneNode(true);
     const linkElement = instance.querySelector("a");
