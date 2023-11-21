@@ -44,27 +44,22 @@
     {
       "location": "api-documentation/#api-documentation",
       "title": "API Documentation",
-      "text": "<p>Welcome to the comprehensive API documentation for our project. This guide provides detailed information about the project's structure, API, and usage, empowering you to effectively utilize its capabilities.</p>"
+      "text": "<p>Welcome to the comprehensive API documentation for our project, meticulously crafted to empower you to effectively utilize its capabilities. This guide provides detailed information about the project's structure, API, and usage, enabling you to navigate the project with ease and unlock its full potential.</p>"
     },
     {
       "location": "api-documentation/#project-overview",
       "title": "Project Overview",
-      "text": "<p>The project encompasses three primary modules: Querent, API, and Plugin. Each module plays a crucial role in the project's overall functionality.</p>"
-    },
-    {
-      "location": "api-documentation/#project-documentation",
-      "title": "Project Documentation",
-      "text": "<ul> <li>Querent: Discover the comprehensive API reference for the project.</li> </ul> <p>For in-depth exploration of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>API: Discover the comprehensive API reference for the project's <code>:api</code> module.</p> </li> <li> <p>Plugin: Discover the comprehensive API reference for the project's <code>:gradle-plugin</code> module.</p> </li> </ul>"
+      "text": "<p>Our project encompasses a suite of modules, each designed to address specific functionalities and enhance the overall developer experience. To delve into the intricacies of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>Querent: Discover the heart of our project.</p> </li> <li> <p>API: Navigate directly to the code-specific documentation for the project's <code>:api</code> module</p> </li> <li> <p>Plugin: Navigate directly to the code-specific documentation for the project's <code>:gradle-plugin</code> module</p> </li> </ul>"
     },
     {
       "location": "api-documentation/#contributions-and-support",
       "title": "Contributions and Support",
-      "text": "<p>We encourage your valuable feedback and contributions to the project. If you encounter any issues or have questions, please feel free to raise them on the GitHub Issues page. Our team is committed to assisting you and improving the project's overall quality.</p>"
+      "text": "<p>We welcome your valuable feedback and contributions to the project. Your insights are crucial for shaping the project's future and ensuring it continues to meet the needs of our community. If you encounter any issues or have questions, please feel free to raise them on the GitHub Issues page. Our team is dedicated to assisting you and continuously improving the project's overall quality.</p>"
     },
     {
       "location": "api-documentation/#embark-on-your-coding-journey",
       "title": "Embark on Your Coding Journey",
-      "text": "<p>With this extensive documentation at your fingertips, you are now well-equipped to embark on your coding journey with our project. We hope you find the documentation informative and helpful in your endeavors.</p> <p>Happy coding!</p>"
+      "text": "<p>With this extensive documentation as your guide, you are now well-equipped to embark on your coding journey with our project. We hope you find the documentation informative and helpful as you explore the project's capabilities and bring your ideas to life.</p> <p>Happy coding!</p>"
     },
     { "location": "sponsor/", "title": "Sponsor \ud83e\ude77", "text": "" },
     {
