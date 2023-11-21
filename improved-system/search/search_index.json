@@ -49,7 +49,7 @@
     {
       "location": "api-documentation/#project-overview",
       "title": "Project Overview",
-      "text": "<p>Our project encompasses a suite of modules, each designed to address specific functionalities and enhance the overall developer experience. To delve into the intricacies of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>Querent: Discover the heart of our project.</p> </li> <li> <p>API: Navigate directly to the code-specific documentation for the project's <code>:api</code> module</p> </li> <li> <p>Plugin: Navigate directly to the code-specific documentation for the project's <code>:gradle-plugin</code> module</p> </li> </ul>"
+      "text": "<p>Our project encompasses a suite of modules, each designed to address specific functionalities and enhance the overall developer experience. To delve into the intricacies of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>Querent \ud83d\udd17: Discover the heart of our project.</p> </li> <li> <p>API \ud83d\udd17: Navigate directly to the code-specific documentation for the project's <code>:api</code> module</p> </li> <li> <p>Plugin \ud83d\udd17: Navigate directly to the code-specific documentation for the project's <code>:gradle-plugin</code> module</p> </li> </ul>"
     },
     {
       "location": "api-documentation/#contributions-and-support",
