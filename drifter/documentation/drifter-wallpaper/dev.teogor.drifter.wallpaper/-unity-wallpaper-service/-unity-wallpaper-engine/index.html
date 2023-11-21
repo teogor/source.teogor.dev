@@ -1,0 +1,513 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>UnityWallpaperEngine</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../../index.html">
+                            Drifter
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha01
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":drifter-wallpaper:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="drifter-wallpaper::dev.teogor.drifter.wallpaper/UnityWallpaperService.UnityWallpaperEngine///PointingToDeclaration//-1719655622">
+  <div class="breadcrumbs"><a href="../../../index.html">drifter-wallpaper</a><span class="delimiter">/</span><a href="../../index.html">dev.teogor.drifter.wallpaper</a><span class="delimiter">/</span><a href="../index.html">UnityWallpaperService</a><span class="delimiter">/</span><span class="current">UnityWallpaperEngine</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Unity</span><wbr><span>Wallpaper</span><wbr><span><span>Engine</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="index.html">UnityWallpaperEngine</a> : <a href="https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine.html">WallpaperService.Engine</a>, <a href="../../../../drifter-integration/dev.teogor.drifter.integration.utilities/-multi-tap-detector/-i-multi-tap-detected-listener/index.html">MultiTapDetector.IMultiTapDetectedListener</a></div><p class="paragraph">Wallpaper engine that uses Unity.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1865591970%2FConstructors%2F-1719655622" anchor-label="UnityWallpaperEngine" id="1865591970%2FConstructors%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unity-wallpaper-engine.html"><span>Unity</span><wbr><span>Wallpaper</span><wbr><span><span>Engine</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1865591970%2FConstructors%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1499564633%2FProperties%2F-1719655622" anchor-label="unityPlayerHolder" id="-1499564633%2FProperties%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unity-player-holder.html"><span>unity</span><wbr><span>Player</span><wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1499564633%2FProperties%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="unity-player-holder.html">unityPlayerHolder</a><span class="token operator">: </span><a href="../../../../drifter-integration/dev.teogor.drifter.integration.player/-unity-player-holder/index.html">UnityPlayerHolder</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1128012739%2FFunctions%2F-1719655622" anchor-label="getDesiredMinimumHeight" id="1128012739%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1128012739%2FFunctions%2F-1719655622"><span>get</span><wbr><span>Desired</span><wbr><span>Minimum</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1128012739%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1128012739%2FFunctions%2F-1719655622"><span class="token function">getDesiredMinimumHeight</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2015658954%2FFunctions%2F-1719655622" anchor-label="getDesiredMinimumWidth" id="2015658954%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2015658954%2FFunctions%2F-1719655622"><span>get</span><wbr><span>Desired</span><wbr><span>Minimum</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2015658954%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#2015658954%2FFunctions%2F-1719655622"><span class="token function">getDesiredMinimumWidth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-158376815%2FFunctions%2F-1719655622" anchor-label="getDisplayContext" id="-158376815%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-158376815%2FFunctions%2F-1719655622"><span>get</span><wbr><span>Display</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-158376815%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-158376815%2FFunctions%2F-1719655622"><span class="token function">getDisplayContext</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1007141443%2FFunctions%2F-1719655622" anchor-label="getSurfaceHolder" id="1007141443%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1007141443%2FFunctions%2F-1719655622"><span>get</span><wbr><span>Surface</span><wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1007141443%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1007141443%2FFunctions%2F-1719655622"><span class="token function">getSurfaceHolder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="124771449%2FFunctions%2F-1719655622" anchor-label="getWallpaperFlags" id="124771449%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#124771449%2FFunctions%2F-1719655622"><span>get</span><wbr><span>Wallpaper</span><wbr><span><span>Flags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124771449%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#124771449%2FFunctions%2F-1719655622"><span class="token function">getWallpaperFlags</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1540606922%2FFunctions%2F-1719655622" anchor-label="isPreview" id="-1540606922%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1540606922%2FFunctions%2F-1719655622"><span>is</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1540606922%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1540606922%2FFunctions%2F-1719655622"><span class="token function">isPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-474359092%2FFunctions%2F-1719655622" anchor-label="isVisible" id="-474359092%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-474359092%2FFunctions%2F-1719655622"><span>is</span><wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-474359092%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-474359092%2FFunctions%2F-1719655622"><span class="token function">isVisible</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-558978311%2FFunctions%2F-1719655622" anchor-label="notifyColorsChanged" id="-558978311%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-558978311%2FFunctions%2F-1719655622"><span>notify</span><wbr><span>Colors</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-558978311%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-558978311%2FFunctions%2F-1719655622"><span class="token function">notifyColorsChanged</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-228404557%2FFunctions%2F-1719655622" anchor-label="onApplyWindowInsets" id="-228404557%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-228404557%2FFunctions%2F-1719655622"><span>on</span><wbr><span>Apply</span><wbr><span>Window</span><wbr><span><span>Insets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-228404557%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-228404557%2FFunctions%2F-1719655622"><span class="token function">onApplyWindowInsets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/WindowInsets.html">WindowInsets</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1902454387%2FFunctions%2F-1719655622" anchor-label="onCommand" id="-1902454387%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1902454387%2FFunctions%2F-1719655622"><span>on</span><wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1902454387%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1902454387%2FFunctions%2F-1719655622"><span class="token function">onCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">p2<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">p3<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">p4<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><span class="token punctuation">, </span></span><span class="parameter ">p5<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-497759092%2FFunctions%2F-1719655622" anchor-label="onComputeColors" id="-497759092%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-497759092%2FFunctions%2F-1719655622"><span>on</span><wbr><span>Compute</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-497759092%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-497759092%2FFunctions%2F-1719655622"><span class="token function">onComputeColors</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/WallpaperColors.html">WallpaperColors</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1185813721%2FFunctions%2F-1719655622" anchor-label="onCreate" id="-1185813721%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-create.html"><span>on</span><wbr><span><span>Create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1185813721%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-create.html"><span class="token function">onCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceHolder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-328284218%2FFunctions%2F-1719655622" anchor-label="onDesiredSizeChanged" id="-328284218%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-desired-size-changed.html"><span>on</span><wbr><span>Desired</span><wbr><span>Size</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-328284218%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-desired-size-changed.html"><span class="token function">onDesiredSizeChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">desiredWidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">desiredHeight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="19401390%2FFunctions%2F-1719655622" anchor-label="onDestroy" id="19401390%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-destroy.html"><span>on</span><wbr><span><span>Destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="19401390%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-destroy.html"><span class="token function">onDestroy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="741551801%2FFunctions%2F-1719655622" anchor-label="onMultiTapDetected" id="741551801%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-multi-tap-detected.html"><span>on</span><wbr><span>Multi</span><wbr><span>Tap</span><wbr><span><span>Detected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="741551801%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-multi-tap-detected.html"><span class="token function">onMultiTapDetected</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">finalTapPositionX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">finalTapPositionY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2045594465%2FFunctions%2F-1719655622" anchor-label="onOffsetsChanged" id="2045594465%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-offsets-changed.html"><span>on</span><wbr><span>Offsets</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2045594465%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-offsets-changed.html"><span class="token function">onOffsetsChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">yOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">xOffsetStep<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">yOffsetStep<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">xPixelOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">yPixelOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-324530943%2FFunctions%2F-1719655622" anchor-label="onSurfaceChanged" id="-324530943%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-changed.html"><span>on</span><wbr><span>Surface</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-324530943%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-surface-changed.html"><span class="token function">onSurfaceChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceHolder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a><span class="token punctuation">, </span></span><span class="parameter ">format<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1888886600%2FFunctions%2F-1719655622" anchor-label="onSurfaceCreated" id="1888886600%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-created.html"><span>on</span><wbr><span>Surface</span><wbr><span><span>Created</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1888886600%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-surface-created.html"><span class="token function">onSurfaceCreated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceHolder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-582833161%2FFunctions%2F-1719655622" anchor-label="onSurfaceDestroyed" id="-582833161%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-destroyed.html"><span>on</span><wbr><span>Surface</span><wbr><span><span>Destroyed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-582833161%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-surface-destroyed.html"><span class="token function">onSurfaceDestroyed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceHolder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-338207253%2FFunctions%2F-1719655622" anchor-label="onSurfaceRedrawNeeded" id="-338207253%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-338207253%2FFunctions%2F-1719655622"><span>on</span><wbr><span>Surface</span><wbr><span>Redraw</span><wbr><span><span>Needed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-338207253%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-338207253%2FFunctions%2F-1719655622"><span class="token function">onSurfaceRedrawNeeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="837037181%2FFunctions%2F-1719655622" anchor-label="onTouchEvent" id="837037181%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-touch-event.html"><span>on</span><wbr><span>Touch</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="837037181%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-touch-event.html"><span class="token function">onTouchEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">motionEvent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/MotionEvent.html">MotionEvent</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1716125845%2FFunctions%2F-1719655622" anchor-label="onVisibilityChanged" id="-1716125845%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-visibility-changed.html"><span>on</span><wbr><span>Visibility</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1716125845%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-visibility-changed.html"><span class="token function">onVisibilityChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">visible<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="196920162%2FFunctions%2F-1719655622" anchor-label="onWallpaperFlagsChanged" id="196920162%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#196920162%2FFunctions%2F-1719655622"><span>on</span><wbr><span>Wallpaper</span><wbr><span>Flags</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="196920162%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#196920162%2FFunctions%2F-1719655622"><span class="token function">onWallpaperFlagsChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1810303229%2FFunctions%2F-1719655622" anchor-label="onZoomChanged" id="-1810303229%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1810303229%2FFunctions%2F-1719655622"><span>on</span><wbr><span>Zoom</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1810303229%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1810303229%2FFunctions%2F-1719655622"><span class="token function">onZoomChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-675238837%2FFunctions%2F-1719655622" anchor-label="setOffsetNotificationsEnabled" id="-675238837%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-675238837%2FFunctions%2F-1719655622"><span>set</span><wbr><span>Offset</span><wbr><span>Notifications</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-675238837%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-675238837%2FFunctions%2F-1719655622"><span class="token function">setOffsetNotificationsEnabled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="542475822%2FFunctions%2F-1719655622" anchor-label="setTouchEventsEnabled" id="542475822%2FFunctions%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#542475822%2FFunctions%2F-1719655622"><span>set</span><wbr><span>Touch</span><wbr><span>Events</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="542475822%2FFunctions%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#542475822%2FFunctions%2F-1719655622"><span class="token function">setTouchEventsEnabled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
