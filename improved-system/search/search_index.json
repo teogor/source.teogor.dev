@@ -44,7 +44,27 @@
     {
       "location": "api-documentation/#api-documentation",
       "title": "API Documentation",
-      "text": "<p>Welcome to the documentation for our project. Below are links to the generated documentation for different modules:</p> <ul> <li>API</li> <li>Plugin</li> </ul> <p>Feel free to explore the documentation for each module to understand the project's structure, API, and usage.</p> <p>If you encounter any issues or have questions, please refer to the GitHub Issues page.</p> <p>Happy coding!</p>"
+      "text": "<p>Welcome to the comprehensive API documentation for our project. This guide provides detailed information about the project's structure, API, and usage, empowering you to effectively utilize its capabilities.</p>"
+    },
+    {
+      "location": "api-documentation/#project-overview",
+      "title": "Project Overview",
+      "text": "<p>The project encompasses three primary modules: Querent, API, and Plugin. Each module plays a crucial role in the project's overall functionality.</p>"
+    },
+    {
+      "location": "api-documentation/#project-documentation",
+      "title": "Project Documentation",
+      "text": "<p>For in-depth exploration of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>Querent: Delve into the core functionality of the Querent module.</p> </li> <li> <p>API: Discover the comprehensive API reference for the project's features.</p> </li> <li> <p>Plugin: Uncover the usage and implementation of the Gradle plugin.</p> </li> </ul>"
+    },
+    {
+      "location": "api-documentation/#contributions-and-support",
+      "title": "Contributions and Support",
+      "text": "<p>We encourage your valuable feedback and contributions to the project. If you encounter any issues or have questions, please feel free to raise them on the GitHub Issues page. Our team is committed to assisting you and improving the project's overall quality.</p>"
+    },
+    {
+      "location": "api-documentation/#embark-on-your-coding-journey",
+      "title": "Embark on Your Coding Journey",
+      "text": "<p>With this extensive documentation at your fingertips, you are now well-equipped to embark on your coding journey with our project. We hope you find the documentation informative and helpful in your endeavors.</p> <p>Happy coding!</p>"
     },
     {
       "location": "sponsor/",
