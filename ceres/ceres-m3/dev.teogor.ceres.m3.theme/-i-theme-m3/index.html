@@ -1,336 +1,1140 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>IThemeM3</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../../";
     </script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../styles/main.css" rel="Stylesheet">
-<link href="../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="m3::dev.teogor.ceres.m3.theme/IThemeM3///PointingToDeclaration//-409846242"
+        >
+          <div class="breadcrumbs">
+            <a href="../../index.html">m3</a><span class="delimiter">/</span
+            ><a href="../index.html">dev.teogor.ceres.m3.theme</a
+            ><span class="delimiter">/</span
+            ><span class="current">IThemeM3</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span>ITheme</span><wbr /><span><span>M3</span></span>
+            </h1>
+            <div
+              class="platform-hinted"
+              data-platform-hinted="data-platform-hinted"
+            >
+              <div
+                class="content sourceset-dependent-content"
+                data-active=""
+                data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+              >
+                <div class="symbol monospace">
+                  <span class="token keyword">interface </span
+                  ><a href="index.html">IThemeM3</a> :
+                  <a
+                    href="../../../ceres-core/dev.teogor.ceres.core.logger/-logger/index.html"
+                    >Logger</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section">
+              <button
+                class="section-tab"
+                data-active=""
+                data-togglable="Functions"
+              >
+                Functions</button
+              ><button class="section-tab" data-togglable="Extensions">
+                Extensions</button
+              ><button class="section-tab" data-togglable="Inheritors">
+                Inheritors
+              </button>
+            </div>
+            <div class="tabs-section-body">
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions">
+                <a
+                  data-name="-252677111%2FFunctions%2F-409846242"
+                  anchor-label="colorScheme"
+                  id="-252677111%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="color-scheme.html"
+                            ><span>color</span><wbr /><span
+                              ><span>Scheme</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-252677111%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="color-scheme.html"
+                                ><span class="token function"
+                                  >colorScheme</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="../-color-scheme/index.html"
+                                >ColorScheme</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="209412018%2FFunctions%2F-409846242"
+                  anchor-label="getColorM3"
+                  id="209412018%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="get-color-m3.html"
+                            ><span>get</span><wbr /><span>Color</span
+                            ><wbr /><span><span>M3</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="209412018%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >ColorInt</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="get-color-m3.html"
+                                ><span class="token function"
+                                  >getColorM3</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >colorM3<span class="token operator">: </span
+                                  ><a
+                                    href="../../dev.teogor.ceres.m3/-color-m3/index.html"
+                                    >ColorM3</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-317994977%2FFunctions%2F-409846242"
+                  anchor-label="onThemeChanged"
+                  id="-317994977%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="on-theme-changed.html"
+                            ><span>on</span><wbr /><span>Theme</span
+                            ><wbr /><span><span>Changed</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-317994977%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="on-theme-changed.html"
+                                ><span class="token function"
+                                  >onThemeChanged</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Inheritors</h2>
+              <div class="table" data-togglable="Inheritors">
+                <a
+                  data-name="-1953212073%2FInheritors%2F-409846242"
+                  anchor-label="BottomNavigationViewM3"
+                  id="-1953212073%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-bottom-navigation-view-m3/index.html"
+                            >BottomNavigationViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1953212073%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1899599031%2FInheritors%2F-409846242"
+                  anchor-label="ButtonM3"
+                  id="-1899599031%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-button-m3/index.html"
+                            >ButtonM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1899599031%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="1568680258%2FInheritors%2F-409846242"
+                  anchor-label="CheckedTextViewM3"
+                  id="1568680258%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-checked-text-view-m3/index.html"
+                            >CheckedTextViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1568680258%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="67222761%2FInheritors%2F-409846242"
+                  anchor-label="ContainerBaseM3"
+                  id="67222761%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-container-base-m3/index.html"
+                            >ContainerBaseM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="67222761%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1022214682%2FInheritors%2F-409846242"
+                  anchor-label="DigitsImageM3"
+                  id="-1022214682%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-digits-image-m3/index.html"
+                            >DigitsImageM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1022214682%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="232615745%2FInheritors%2F-409846242"
+                  anchor-label="ErrorTextViewM3"
+                  id="232615745%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-error-text-view-m3/index.html"
+                            >ErrorTextViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="232615745%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1784594704%2FInheritors%2F-409846242"
+                  anchor-label="FragmentContainer"
+                  id="-1784594704%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-fragment-container/index.html"
+                            >FragmentContainer</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1784594704%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-731274117%2FInheritors%2F-409846242"
+                  anchor-label="ImageViewM3"
+                  id="-731274117%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-image-view-m3/index.html"
+                            >ImageViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-731274117%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="965798066%2FInheritors%2F-409846242"
+                  anchor-label="NestedScrollViewM3"
+                  id="965798066%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-nested-scroll-view-m3/index.html"
+                            >NestedScrollViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="965798066%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="1460230181%2FInheritors%2F-409846242"
+                  anchor-label="RatingBarM3"
+                  id="1460230181%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-rating-bar-m3/index.html"
+                            >RatingBarM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1460230181%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="1014601577%2FInheritors%2F-409846242"
+                  anchor-label="ScrollViewM3"
+                  id="1014601577%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-scroll-view-m3/index.html"
+                            >ScrollViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1014601577%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-277780474%2FInheritors%2F-409846242"
+                  anchor-label="SnackbarBetaM3"
+                  id="-277780474%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-snackbar-beta-m3/index.html"
+                            >SnackbarBetaM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-277780474%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="2144659975%2FInheritors%2F-409846242"
+                  anchor-label="SwitchM3"
+                  id="2144659975%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-switch-m3/index.html"
+                            >SwitchM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="2144659975%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1924415223%2FInheritors%2F-409846242"
+                  anchor-label="TextViewM3"
+                  id="-1924415223%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3/-text-view-m3/index.html"
+                            >TextViewM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1924415223%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="484607342%2FInheritors%2F-409846242"
+                  anchor-label="BaseActivityM3"
+                  id="484607342%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3.app/-base-activity-m3/index.html"
+                            >BaseActivityM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="484607342%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="-507439731%2FInheritors%2F-409846242"
+                  anchor-label="BaseFragmentM3"
+                  id="-507439731%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3.app/-base-fragment-m3/index.html"
+                            >BaseFragmentM3</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-507439731%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <a
+                  data-name="619388424%2FInheritors%2F-409846242"
+                  anchor-label="Bar"
+                  id="619388424%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="../../dev.teogor.ceres.m3.widgets.bar/-bar/index.html"
+                            >Bar</a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="619388424%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="tabbedcontent">Extensions</h2>
+              <div class="table" data-togglable="Extensions">
+                <a
+                  data-name="-220112015%2FExtensions%2F-409846242"
+                  anchor-label="backgroundColor"
+                  id="-220112015%2FExtensions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../background-color.html"
+                            ><span>background</span><wbr /><span
+                              ><span>Color</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-220112015%2FExtensions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >ColorInt</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">IThemeM3</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../background-color.html"
+                                ><span class="token function"
+                                  >backgroundColor</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >view<span class="token operator">: </span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/android/view/View.html"
+                                    >View</a
+                                  ><span class="token punctuation"
+                                    >,
+                                  </span></span
+                                ><span class="parameter"
+                                  >surfaceLevel<span class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="../../dev.teogor.ceres.m3.elevation/-surface-level/index.html"
+                                    >SurfaceLevel</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1186332180%2FExtensions%2F-409846242"
+                  anchor-label="getBackgroundDrawable"
+                  id="1186332180%2FExtensions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../get-background-drawable.html"
+                            ><span>get</span><wbr /><span>Background</span
+                            ><wbr /><span><span>Drawable</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1186332180%2FExtensions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="index.html">IThemeM3</a
+                              ><span class="token punctuation">.</span
+                              ><a href="../get-background-drawable.html"
+                                ><span class="token function"
+                                  >getBackgroundDrawable</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >backgroundDrawable<span
+                                    class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="../../dev.teogor.ceres.m3.beta/-beta/-background-drawable/index.html"
+                                    >Beta.BackgroundDrawable</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html"
+                                >Drawable</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
+        </div>
+      </div>
     </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="m3::dev.teogor.ceres.m3.theme/IThemeM3///PointingToDeclaration//-409846242">
-  <div class="breadcrumbs"><a href="../../index.html">m3</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.ceres.m3.theme</a><span class="delimiter">/</span><span class="current">IThemeM3</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span>ITheme</span><wbr><span><span>M3</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">IThemeM3</a> : <a href="../../../ceres-core/dev.teogor.ceres.core.logger/-logger/index.html">Logger</a></div></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Extensions">Extensions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
-    <div class="tabs-section-body">
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="-252677111%2FFunctions%2F-409846242" anchor-label="colorScheme" id="-252677111%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="color-scheme.html"><span>color</span><wbr><span><span>Scheme</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-252677111%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="color-scheme.html"><span class="token function">colorScheme</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-color-scheme/index.html">ColorScheme</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="209412018%2FFunctions%2F-409846242" anchor-label="getColorM3" id="209412018%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-color-m3.html"><span>get</span><wbr><span>Color</span><wbr><span><span>M3</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="209412018%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"><span class="token annotation builtin">ColorInt</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-color-m3.html"><span class="token function">getColorM3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">colorM3<span class="token operator">: </span><a href="../../dev.teogor.ceres.m3/-color-m3/index.html">ColorM3</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-317994977%2FFunctions%2F-409846242" anchor-label="onThemeChanged" id="-317994977%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="on-theme-changed.html"><span>on</span><wbr><span>Theme</span><wbr><span><span>Changed</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-317994977%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-theme-changed.html"><span class="token function">onThemeChanged</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Inheritors</h2>
-      <div class="table" data-togglable="Inheritors"><a data-name="-1953212073%2FInheritors%2F-409846242" anchor-label="BottomNavigationViewM3" id="-1953212073%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-bottom-navigation-view-m3/index.html">BottomNavigationViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1953212073%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-1899599031%2FInheritors%2F-409846242" anchor-label="ButtonM3" id="-1899599031%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-button-m3/index.html">ButtonM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1899599031%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="1568680258%2FInheritors%2F-409846242" anchor-label="CheckedTextViewM3" id="1568680258%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-checked-text-view-m3/index.html">CheckedTextViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1568680258%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="67222761%2FInheritors%2F-409846242" anchor-label="ContainerBaseM3" id="67222761%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-container-base-m3/index.html">ContainerBaseM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="67222761%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-1022214682%2FInheritors%2F-409846242" anchor-label="DigitsImageM3" id="-1022214682%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-digits-image-m3/index.html">DigitsImageM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1022214682%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="232615745%2FInheritors%2F-409846242" anchor-label="ErrorTextViewM3" id="232615745%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-error-text-view-m3/index.html">ErrorTextViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232615745%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-1784594704%2FInheritors%2F-409846242" anchor-label="FragmentContainer" id="-1784594704%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-fragment-container/index.html">FragmentContainer</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1784594704%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-731274117%2FInheritors%2F-409846242" anchor-label="ImageViewM3" id="-731274117%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-image-view-m3/index.html">ImageViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-731274117%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="965798066%2FInheritors%2F-409846242" anchor-label="NestedScrollViewM3" id="965798066%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-nested-scroll-view-m3/index.html">NestedScrollViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965798066%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="1460230181%2FInheritors%2F-409846242" anchor-label="RatingBarM3" id="1460230181%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-rating-bar-m3/index.html">RatingBarM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1460230181%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="1014601577%2FInheritors%2F-409846242" anchor-label="ScrollViewM3" id="1014601577%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-scroll-view-m3/index.html">ScrollViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1014601577%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-277780474%2FInheritors%2F-409846242" anchor-label="SnackbarBetaM3" id="-277780474%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-snackbar-beta-m3/index.html">SnackbarBetaM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-277780474%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="2144659975%2FInheritors%2F-409846242" anchor-label="SwitchM3" id="2144659975%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-switch-m3/index.html">SwitchM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2144659975%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-1924415223%2FInheritors%2F-409846242" anchor-label="TextViewM3" id="-1924415223%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3/-text-view-m3/index.html">TextViewM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924415223%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="484607342%2FInheritors%2F-409846242" anchor-label="BaseActivityM3" id="484607342%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3.app/-base-activity-m3/index.html">BaseActivityM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="484607342%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="-507439731%2FInheritors%2F-409846242" anchor-label="BaseFragmentM3" id="-507439731%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3.app/-base-fragment-m3/index.html">BaseFragmentM3</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-507439731%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-<a data-name="619388424%2FInheritors%2F-409846242" anchor-label="Bar" id="619388424%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../../dev.teogor.ceres.m3.widgets.bar/-bar/index.html">Bar</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="619388424%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-      <h2 class="tabbedcontent">Extensions</h2>
-      <div class="table" data-togglable="Extensions"><a data-name="-220112015%2FExtensions%2F-409846242" anchor-label="backgroundColor" id="-220112015%2FExtensions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../background-color.html"><span>background</span><wbr><span><span>Color</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-220112015%2FExtensions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/ColorInt///PointingToDeclaration/"><span class="token annotation builtin">ColorInt</span></span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">IThemeM3</a><span class="token punctuation">.</span><a href="../background-color.html"><span class="token function">backgroundColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">view<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span></span><span class="parameter ">surfaceLevel<span class="token operator">: </span><a href="../../dev.teogor.ceres.m3.elevation/-surface-level/index.html">SurfaceLevel</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1186332180%2FExtensions%2F-409846242" anchor-label="getBackgroundDrawable" id="1186332180%2FExtensions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../get-background-drawable.html"><span>get</span><wbr><span>Background</span><wbr><span><span>Drawable</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1186332180%2FExtensions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">IThemeM3</a><span class="token punctuation">.</span><a href="../get-background-drawable.html"><span class="token function">getBackgroundDrawable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">backgroundDrawable<span class="token operator">: </span><a href="../../dev.teogor.ceres.m3.beta/-beta/-background-drawable/index.html">Beta.BackgroundDrawable</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-
-</body></html>
-
+  </body>
+</html>

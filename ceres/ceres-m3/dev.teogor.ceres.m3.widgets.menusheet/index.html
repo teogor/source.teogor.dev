@@ -1,159 +1,579 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>dev.teogor.ceres.m3.widgets.menusheet</title>
-<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../";
     </script>
-<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../styles/style.css" rel="Stylesheet">
-<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../styles/main.css" rel="Stylesheet">
-<link href="../../styles/prism.css" rel="Stylesheet">
-<link href="../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../styles/style.css" rel="Stylesheet" />
+    <link href="../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../styles/main.css" rel="Stylesheet" />
+    <link href="../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script type="text/javascript" src="../../scripts/main.js" defer></script>
+    <script type="text/javascript" src="../../scripts/prism.js" async></script>
+    <script
+      type="text/javascript"
+      src="../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="m3::dev.teogor.ceres.m3.widgets.menusheet////PointingToDeclaration//-409846242">
-  <div class="breadcrumbs"><a href="../index.html">m3</a><span class="delimiter">/</span><span class="current">dev.teogor.ceres.m3.widgets.menusheet</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button></div>
-    <div class="tabs-section-body">
-      <h2 class="">Types</h2>
-      <div class="table" data-togglable="Types"><a data-name="-859082761%2FClasslikes%2F-409846242" anchor-label="MenuSheetBehaviour" id="-859082761%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-menu-sheet-behaviour/index.html"><span>Menu</span><wbr><span>Sheet</span><wbr><span><span>Behaviour</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-859082761%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-menu-sheet-behaviour/index.html">MenuSheetBehaviour</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-menu-sheet-behaviour/index.html">V</a><span class="token operator"> : </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">?</span><span class="token operator">&gt;</span> : <span data-unresolved-link="androidx.coordinatorlayout.widget/CoordinatorLayout.Behavior///PointingToDeclaration/">CoordinatorLayout.Behavior</span><span class="token operator">&lt;</span><span data-unresolved-link="androidx.coordinatorlayout.widget/CoordinatorLayout.Behavior///PointingToGenericParameters(0)/">V</span><span class="token operator">&gt; </span></div><div class="brief ">An interaction behavior plugin for a child view of <span data-unresolved-link="androidx.coordinatorlayout.widget/CoordinatorLayout///PointingToDeclaration/">CoordinatorLayout</span> to make it work as a bottom sheet.</div></div></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="m3::dev.teogor.ceres.m3.widgets.menusheet////PointingToDeclaration//-409846242"
+        >
+          <div class="breadcrumbs">
+            <a href="../index.html">m3</a><span class="delimiter">/</span
+            ><span class="current">dev.teogor.ceres.m3.widgets.menusheet</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span><span>Package-level</span></span>
+              <span><span>declarations</span></span>
+            </h1>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section">
+              <button class="section-tab" data-active="" data-togglable="Types">
+                Types
+              </button>
+            </div>
+            <div class="tabs-section-body">
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types">
+                <a
+                  data-name="-859082761%2FClasslikes%2F-409846242"
+                  anchor-label="MenuSheetBehaviour"
+                  id="-859082761%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-menu-sheet-behaviour/index.html"
+                            ><span>Menu</span><wbr /><span>Sheet</span
+                            ><wbr /><span><span>Behaviour</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-859082761%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword">class </span
+                              ><a href="-menu-sheet-behaviour/index.html"
+                                >MenuSheetBehaviour</a
+                              ><span class="token operator">&lt;</span
+                              ><span class="token keyword"></span
+                              ><a href="-menu-sheet-behaviour/index.html">V</a
+                              ><span class="token operator"> : </span
+                              ><a
+                                href="https://developer.android.com/reference/kotlin/android/view/View.html"
+                                >View</a
+                              ><span class="token operator">?</span
+                              ><span class="token operator">&gt;</span> :
+                              <span
+                                data-unresolved-link="androidx.coordinatorlayout.widget/CoordinatorLayout.Behavior///PointingToDeclaration/"
+                                >CoordinatorLayout.Behavior</span
+                              ><span class="token operator">&lt;</span
+                              ><span
+                                data-unresolved-link="androidx.coordinatorlayout.widget/CoordinatorLayout.Behavior///PointingToGenericParameters(0)/"
+                                >V</span
+                              ><span class="token operator">&gt; </span>
+                            </div>
+                            <div class="brief">
+                              An interaction behavior plugin for a child view of
+                              <span
+                                data-unresolved-link="androidx.coordinatorlayout.widget/CoordinatorLayout///PointingToDeclaration/"
+                                >CoordinatorLayout</span
+                              >
+                              to make it work as a bottom sheet.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="515162291%2FClasslikes%2F-409846242"
+                  anchor-label="MenuSheetContainer"
+                  id="515162291%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-menu-sheet-container/index.html"
+                            ><span>Menu</span><wbr /><span>Sheet</span
+                            ><wbr /><span><span>Container</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="515162291%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">class </span
+                              ><a href="-menu-sheet-container/index.html"
+                                >MenuSheetContainer</a
+                              >&nbsp;<span
+                                ><span class="token annotation builtin">@</span
+                                ><a
+                                  href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"
+                                  ><span class="token annotation builtin"
+                                    >JvmOverloads</span
+                                  ></a
+                                >&nbsp;</span
+                              ><span class="token keyword">constructor</span
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >context<span class="token operator">: </span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/android/content/Context.html"
+                                    >Context</a
+                                  ><span class="token punctuation"
+                                    >,
+                                  </span></span
+                                ><span class="parameter"
+                                  >attrs<span class="token operator">: </span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html"
+                                    >AttributeSet</a
+                                  ><span class="token operator">?</span
+                                  ><span class="token operator"> = </span
+                                  >null<span class="token punctuation"
+                                    >,
+                                  </span></span
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><span
+                                      data-unresolved-link="androidx.annotation/StyleRes///PointingToDeclaration/"
+                                      ><span class="token annotation builtin"
+                                        >StyleRes</span
+                                      ></span
+                                    >&nbsp;</span
+                                  >theme<span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                    >Int</a
+                                  ><span class="token operator"> = </span
+                                  ><span class="token constant">0</span></span
+                                ></span
+                              ><span class="token punctuation">)</span> :
+                              <a
+                                href="https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html"
+                                >FrameLayout</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1990244122%2FClasslikes%2F-409846242"
+                  anchor-label="MenuSheetDialog"
+                  id="-1990244122%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-menu-sheet-dialog/index.html"
+                            ><span>Menu</span><wbr /><span>Sheet</span
+                            ><wbr /><span><span>Dialog</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1990244122%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword">class </span
+                              ><a href="-menu-sheet-dialog/index.html"
+                                >MenuSheetDialog</a
+                              >
+                              :
+                              <span
+                                data-unresolved-link="androidx.appcompat.app/AppCompatDialog///PointingToDeclaration/"
+                                >AppCompatDialog</span
+                              >
+                            </div>
+                            <div class="brief">
+                              Base class for
+                              <a
+                                href="https://developer.android.com/reference/kotlin/android/app/Dialog.html"
+                                >android.app.Dialog</a
+                              >s styled as a bottom sheet.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1415472266%2FClasslikes%2F-409846242"
+                  anchor-label="MenuSheetDialogFragment"
+                  id="-1415472266%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-menu-sheet-dialog-fragment/index.html"
+                            ><span>Menu</span><wbr /><span>Sheet</span
+                            ><wbr /><span>Dialog</span><wbr /><span
+                              ><span>Fragment</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1415472266%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword">class </span
+                              ><a href="-menu-sheet-dialog-fragment/index.html"
+                                >MenuSheetDialogFragment</a
+                              >
+                              :
+                              <span
+                                data-unresolved-link="androidx.appcompat.app/AppCompatDialogFragment///PointingToDeclaration/"
+                                >AppCompatDialogFragment</span
+                              >
+                            </div>
+                            <div class="brief">
+                              <p class="paragraph">
+                                Modal bottom sheet. This is a version of
+                                <span
+                                  data-unresolved-link="androidx.fragment.app/DialogFragment///PointingToDeclaration/"
+                                  >androidx.fragment.app.DialogFragment</span
+                                >
+                                that shows a bottom sheet using
+                                <a href="-menu-sheet-dialog/index.html"
+                                  >MenuSheetDialog</a
+                                >
+                                instead of a floating dialog.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1899014819%2FClasslikes%2F-409846242"
+                  anchor-label="MenuSheetDialogLegacy"
+                  id="-1899014819%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-menu-sheet-dialog-legacy/index.html"
+                            ><span>Menu</span><wbr /><span>Sheet</span
+                            ><wbr /><span>Dialog</span><wbr /><span
+                              ><span>Legacy</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1899014819%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword">class </span
+                              ><a href="-menu-sheet-dialog-legacy/index.html"
+                                >MenuSheetDialogLegacy</a
+                              >
+                              :
+                              <span
+                                data-unresolved-link="androidx.appcompat.app/AppCompatDialog///PointingToDeclaration/"
+                                >AppCompatDialog</span
+                              >
+                            </div>
+                            <div class="brief">
+                              Base class for
+                              <a
+                                href="https://developer.android.com/reference/kotlin/android/app/Dialog.html"
+                                >android.app.Dialog</a
+                              >s styled as a bottom sheet.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1198622500%2FClasslikes%2F-409846242"
+                  anchor-label="TranslationUpdater"
+                  id="-1198622500%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-translation-updater/index.html"
+                            ><span>Translation</span><wbr /><span
+                              ><span>Updater</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1198622500%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">interface </span
+                              ><a href="-translation-updater/index.html"
+                                >TranslationUpdater</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-<a data-name="515162291%2FClasslikes%2F-409846242" anchor-label="MenuSheetContainer" id="515162291%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-menu-sheet-container/index.html"><span>Menu</span><wbr><span>Sheet</span><wbr><span><span>Container</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="515162291%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-menu-sheet-container/index.html">MenuSheetContainer</a>&nbsp;<span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a>&nbsp;</span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">attrs<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/StyleRes///PointingToDeclaration/"><span class="token annotation builtin">StyleRes</span></span>&nbsp;</span>theme<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html">FrameLayout</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1990244122%2FClasslikes%2F-409846242" anchor-label="MenuSheetDialog" id="-1990244122%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-menu-sheet-dialog/index.html"><span>Menu</span><wbr><span>Sheet</span><wbr><span><span>Dialog</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1990244122%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-menu-sheet-dialog/index.html">MenuSheetDialog</a> : <span data-unresolved-link="androidx.appcompat.app/AppCompatDialog///PointingToDeclaration/">AppCompatDialog</span></div><div class="brief ">Base class for <a href="https://developer.android.com/reference/kotlin/android/app/Dialog.html">android.app.Dialog</a>s styled as a bottom sheet.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1415472266%2FClasslikes%2F-409846242" anchor-label="MenuSheetDialogFragment" id="-1415472266%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-menu-sheet-dialog-fragment/index.html"><span>Menu</span><wbr><span>Sheet</span><wbr><span>Dialog</span><wbr><span><span>Fragment</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1415472266%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-menu-sheet-dialog-fragment/index.html">MenuSheetDialogFragment</a> : <span data-unresolved-link="androidx.appcompat.app/AppCompatDialogFragment///PointingToDeclaration/">AppCompatDialogFragment</span></div><div class="brief "><p class="paragraph">Modal bottom sheet. This is a version of <span data-unresolved-link="androidx.fragment.app/DialogFragment///PointingToDeclaration/">androidx.fragment.app.DialogFragment</span> that shows a bottom sheet using <a href="-menu-sheet-dialog/index.html">MenuSheetDialog</a> instead of a floating dialog.</p></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1899014819%2FClasslikes%2F-409846242" anchor-label="MenuSheetDialogLegacy" id="-1899014819%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-menu-sheet-dialog-legacy/index.html"><span>Menu</span><wbr><span>Sheet</span><wbr><span>Dialog</span><wbr><span><span>Legacy</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1899014819%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-menu-sheet-dialog-legacy/index.html">MenuSheetDialogLegacy</a> : <span data-unresolved-link="androidx.appcompat.app/AppCompatDialog///PointingToDeclaration/">AppCompatDialog</span></div><div class="brief ">Base class for <a href="https://developer.android.com/reference/kotlin/android/app/Dialog.html">android.app.Dialog</a>s styled as a bottom sheet.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1198622500%2FClasslikes%2F-409846242" anchor-label="TranslationUpdater" id="-1198622500%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-translation-updater/index.html"><span>Translation</span><wbr><span><span>Updater</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1198622500%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-translation-updater/index.html">TranslationUpdater</a></div></div></div>
-              </div>
-            </div>
-          </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
         </div>
       </div>
     </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-
-</body></html>
-
+  </body>
+</html>

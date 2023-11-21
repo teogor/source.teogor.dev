@@ -1,63 +1,761 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>setupWithNavController</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../../";
     </script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../styles/main.css" rel="Stylesheet">
-<link href="../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
-    </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="components::dev.teogor.ceres.components.navigation/NavigationUI/setupWithNavController/#com.google.android.material.navigation.NavigationView#androidx.navigation.NavController/PointingToDeclaration//201081454">
-  <div class="breadcrumbs"><a href="../../index.html">components</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.ceres.components.navigation</a><span class="delimiter">/</span><a href="index.html">NavigationUI</a><span class="delimiter">/</span><span class="current">setupWithNavController</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span>setup</span><wbr><span>With</span><wbr><span>Nav</span><wbr><span><span>Controller</span></span></h1>
-  </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-components:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="setup-with-nav-controller.html"><span class="token function">setupWithNavController</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navigationView<span class="token operator">: </span><span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span><span class="token punctuation">, </span></span><span class="parameter ">navController<span class="token operator">: </span><span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets up a <span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span> for use with a <span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span>. This will call <a href="on-nav-destination-selected.html">onNavDestinationSelected</a> when a menu item is selected. The selected item in the NavigationView will automatically be updated when the destination changes.</p><p class="paragraph">If the <span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span> is directly contained with an <span data-unresolved-link="androidx.customview.widget/Openable///PointingToDeclaration/">Openable</span> layout, it will be closed when a menu item is selected.</p><p class="paragraph">Similarly, if the <span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span> has a <span data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetBehavior///PointingToDeclaration/">BottomSheetBehavior</span> associated with it (as is the case when using a <span data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetDialog///PointingToDeclaration/">com.google.android.material.bottomsheet.BottomSheetDialog</span>), the bottom sheet will be hidden when a menu item is selected.</p><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>navigation</span><wbr><span><span>View</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavigationView that should be kept in sync with changes to the NavController.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>nav</span><wbr><span><span>Controller</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavController that supplies the primary and secondary menu. Navigation actions on this NavController will be reflected in the selected item in the NavigationView.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="setup-with-nav-controller.html"><span class="token function">setupWithNavController</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navigationView<span class="token operator">: </span><span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span><span class="token punctuation">, </span></span><span class="parameter ">navController<span class="token operator">: </span><span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span><span class="token punctuation">, </span></span><span class="parameter ">saveState<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets up a <span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span> for use with a <span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span>. This will call <a href="on-nav-destination-selected.html">onNavDestinationSelected</a> when a menu item is selected. The selected item in the NavigationView will automatically be updated when the destination changes.</p><p class="paragraph">If the <span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span> is directly contained with an <span data-unresolved-link="androidx.customview.widget/Openable///PointingToDeclaration/">Openable</span> layout, it will be closed when a menu item is selected.</p><p class="paragraph">Similarly, if the <span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span> has a <span data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetBehavior///PointingToDeclaration/">BottomSheetBehavior</span> associated with it (as is the case when using a <span data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetDialog///PointingToDeclaration/">com.google.android.material.bottomsheet.BottomSheetDialog</span>), the bottom sheet will be hidden when a menu item is selected.</p><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>navigation</span><wbr><span><span>View</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavigationView that should be kept in sync with changes to the NavController.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>nav</span><wbr><span><span>Controller</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavController that supplies the primary and secondary menu.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>save</span><wbr><span><span>State</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Whether the NavController should save the back stack state. This must always be <code class="lang-kotlin">false</code>: leave this parameter off entirely to use the non-experimental version of this API, which saves the state by default.</p><p class="paragraph">Navigation actions on this NavController will be reflected in the selected item in the NavigationView.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="setup-with-nav-controller.html"><span class="token function">setupWithNavController</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navigationBarView<span class="token operator">: </span><span data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/">NavigationBarView</span><span class="token punctuation">, </span></span><span class="parameter ">navController<span class="token operator">: </span><span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets up a <span data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/">NavigationBarView</span> for use with a <span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span>. This will call <a href="on-nav-destination-selected.html">onNavDestinationSelected</a> when a menu item is selected. The selected item in the NavigationBarView will automatically be updated when the destination changes.</p><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>navigation</span><wbr><span>Bar</span><wbr><span><span>View</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavigationBarView (<span data-unresolved-link="com.google.android.material.bottomnavigation/BottomNavigationView///PointingToDeclaration/">BottomNavigationView</span> or <span data-unresolved-link="com.google.android.material.navigationrail/NavigationRailView///PointingToDeclaration/">NavigationRailView</span>) that should be kept in sync with changes to the NavController.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>nav</span><wbr><span><span>Controller</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavController that supplies the primary menu. Navigation actions on this NavController will be reflected in the selected item in the NavigationBarView.</p></div></div></div></div></div></div></div><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"><span class="token annotation builtin">JvmStatic</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="setup-with-nav-controller.html"><span class="token function">setupWithNavController</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navigationBarView<span class="token operator">: </span><span data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/">NavigationBarView</span><span class="token punctuation">, </span></span><span class="parameter ">navController<span class="token operator">: </span><span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span><span class="token punctuation">, </span></span><span class="parameter ">saveState<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Sets up a <span data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/">NavigationBarView</span> for use with a <span data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/">NavController</span>. This will call <a href="on-nav-destination-selected.html">onNavDestinationSelected</a> when a menu item is selected. The selected item in the NavigationBarView will automatically be updated when the destination changes.</p><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>navigation</span><wbr><span>Bar</span><wbr><span><span>View</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavigationBarView (<span data-unresolved-link="com.google.android.material.bottomnavigation/BottomNavigationView///PointingToDeclaration/">BottomNavigationView</span> or <span data-unresolved-link="com.google.android.material.navigationrail/NavigationRailView///PointingToDeclaration/">NavigationRailView</span>) that should be kept in sync with changes to the NavController.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>nav</span><wbr><span><span>Controller</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The NavController that supplies the primary menu.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":ceres-components:dokkaHtmlPartial/release" data-filterable-set=":ceres-components:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>save</span><wbr><span><span>State</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">Whether the NavController should save the back stack state. This must always be <code class="lang-kotlin">false</code>: leave this parameter off entirely to use the non-experimental version of this API, which saves the state by default.</p><p class="paragraph">Navigation actions on this NavController will be reflected in the selected item in the NavigationBarView.</p></div></div></div></div></div></div></div></div></div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
     </div>
-</div>
-
-</body></html>
-
+    <div id="container">
+      <div id="leftColumn">
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="components::dev.teogor.ceres.components.navigation/NavigationUI/setupWithNavController/#com.google.android.material.navigation.NavigationView#androidx.navigation.NavController/PointingToDeclaration//201081454"
+        >
+          <div class="breadcrumbs">
+            <a href="../../index.html">components</a
+            ><span class="delimiter">/</span
+            ><a href="../index.html">dev.teogor.ceres.components.navigation</a
+            ><span class="delimiter">/</span
+            ><a href="index.html">NavigationUI</a
+            ><span class="delimiter">/</span
+            ><span class="current">setupWithNavController</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span>setup</span><wbr /><span>With</span><wbr /><span>Nav</span
+              ><wbr /><span><span>Controller</span></span>
+            </h1>
+          </div>
+          <div
+            class="platform-hinted"
+            data-platform-hinted="data-platform-hinted"
+          >
+            <div
+              class="content sourceset-dependent-content"
+              data-active=""
+              data-togglable=":ceres-components:dokkaHtmlPartial/release"
+            >
+              <div class="symbol monospace">
+                <div class="block">
+                  <div class="block">
+                    <span class="token annotation builtin">@</span
+                    ><a
+                      href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"
+                      ><span class="token annotation builtin"
+                        >JvmStatic</span
+                      ></a
+                    >
+                  </div>
+                </div>
+                <span class="token keyword"></span
+                ><span class="token keyword">fun </span
+                ><a href="setup-with-nav-controller.html"
+                  ><span class="token function">setupWithNavController</span></a
+                ><span class="token punctuation">(</span
+                ><span class="parameters"
+                  ><span class="parameter"
+                    >navigationView<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                      >NavigationView</span
+                    ><span class="token punctuation">, </span></span
+                  ><span class="parameter"
+                    >navController<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                      >NavController</span
+                    ></span
+                  ></span
+                ><span class="token punctuation">)</span>
+              </div>
+              <p class="paragraph">
+                Sets up a
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                  >NavigationView</span
+                >
+                for use with a
+                <span
+                  data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                  >NavController</span
+                >. This will call
+                <a href="on-nav-destination-selected.html"
+                  >onNavDestinationSelected</a
+                >
+                when a menu item is selected. The selected item in the
+                NavigationView will automatically be updated when the
+                destination changes.
+              </p>
+              <p class="paragraph">
+                If the
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                  >NavigationView</span
+                >
+                is directly contained with an
+                <span
+                  data-unresolved-link="androidx.customview.widget/Openable///PointingToDeclaration/"
+                  >Openable</span
+                >
+                layout, it will be closed when a menu item is selected.
+              </p>
+              <p class="paragraph">
+                Similarly, if the
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                  >NavigationView</span
+                >
+                has a
+                <span
+                  data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetBehavior///PointingToDeclaration/"
+                  >BottomSheetBehavior</span
+                >
+                associated with it (as is the case when using a
+                <span
+                  data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetDialog///PointingToDeclaration/"
+                  >com.google.android.material.bottomsheet.BottomSheetDialog</span
+                >), the bottom sheet will be hidden when a menu item is
+                selected.
+              </p>
+              <h4 class="">Parameters</h4>
+              <div data-togglable="Parameters">
+                <div class="table" data-togglable="Parameters">
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>navigation</span><wbr /><span
+                                ><span>View</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavigationView that should be kept in sync
+                              with changes to the NavController.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>nav</span><wbr /><span
+                                ><span>Controller</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavController that supplies the primary and
+                              secondary menu. Navigation actions on this
+                              NavController will be reflected in the selected
+                              item in the NavigationView.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="symbol monospace">
+                <div class="block">
+                  <div class="block">
+                    <span class="token annotation builtin">@</span
+                    ><a
+                      href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"
+                      ><span class="token annotation builtin"
+                        >JvmStatic</span
+                      ></a
+                    >
+                  </div>
+                </div>
+                <span class="token keyword"></span
+                ><span class="token keyword">fun </span
+                ><a href="setup-with-nav-controller.html"
+                  ><span class="token function">setupWithNavController</span></a
+                ><span class="token punctuation">(</span
+                ><span class="parameters"
+                  ><span class="parameter"
+                    >navigationView<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                      >NavigationView</span
+                    ><span class="token punctuation">, </span></span
+                  ><span class="parameter"
+                    >navController<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                      >NavController</span
+                    ><span class="token punctuation">, </span></span
+                  ><span class="parameter"
+                    >saveState<span class="token operator">: </span
+                    ><a
+                      href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                      >Boolean</a
+                    ></span
+                  ></span
+                ><span class="token punctuation">)</span>
+              </div>
+              <p class="paragraph">
+                Sets up a
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                  >NavigationView</span
+                >
+                for use with a
+                <span
+                  data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                  >NavController</span
+                >. This will call
+                <a href="on-nav-destination-selected.html"
+                  >onNavDestinationSelected</a
+                >
+                when a menu item is selected. The selected item in the
+                NavigationView will automatically be updated when the
+                destination changes.
+              </p>
+              <p class="paragraph">
+                If the
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                  >NavigationView</span
+                >
+                is directly contained with an
+                <span
+                  data-unresolved-link="androidx.customview.widget/Openable///PointingToDeclaration/"
+                  >Openable</span
+                >
+                layout, it will be closed when a menu item is selected.
+              </p>
+              <p class="paragraph">
+                Similarly, if the
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/"
+                  >NavigationView</span
+                >
+                has a
+                <span
+                  data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetBehavior///PointingToDeclaration/"
+                  >BottomSheetBehavior</span
+                >
+                associated with it (as is the case when using a
+                <span
+                  data-unresolved-link="com.google.android.material.bottomsheet/BottomSheetDialog///PointingToDeclaration/"
+                  >com.google.android.material.bottomsheet.BottomSheetDialog</span
+                >), the bottom sheet will be hidden when a menu item is
+                selected.
+              </p>
+              <h4 class="">Parameters</h4>
+              <div data-togglable="Parameters">
+                <div class="table" data-togglable="Parameters">
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>navigation</span><wbr /><span
+                                ><span>View</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavigationView that should be kept in sync
+                              with changes to the NavController.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>nav</span><wbr /><span
+                                ><span>Controller</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavController that supplies the primary and
+                              secondary menu.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>save</span><wbr /><span
+                                ><span>State</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              Whether the NavController should save the back
+                              stack state. This must always be
+                              <code class="lang-kotlin">false</code>: leave this
+                              parameter off entirely to use the non-experimental
+                              version of this API, which saves the state by
+                              default.
+                            </p>
+                            <p class="paragraph">
+                              Navigation actions on this NavController will be
+                              reflected in the selected item in the
+                              NavigationView.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="symbol monospace">
+                <div class="block">
+                  <div class="block">
+                    <span class="token annotation builtin">@</span
+                    ><a
+                      href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"
+                      ><span class="token annotation builtin"
+                        >JvmStatic</span
+                      ></a
+                    >
+                  </div>
+                </div>
+                <span class="token keyword"></span
+                ><span class="token keyword">fun </span
+                ><a href="setup-with-nav-controller.html"
+                  ><span class="token function">setupWithNavController</span></a
+                ><span class="token punctuation">(</span
+                ><span class="parameters"
+                  ><span class="parameter"
+                    >navigationBarView<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/"
+                      >NavigationBarView</span
+                    ><span class="token punctuation">, </span></span
+                  ><span class="parameter"
+                    >navController<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                      >NavController</span
+                    ></span
+                  ></span
+                ><span class="token punctuation">)</span>
+              </div>
+              <p class="paragraph">
+                Sets up a
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/"
+                  >NavigationBarView</span
+                >
+                for use with a
+                <span
+                  data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                  >NavController</span
+                >. This will call
+                <a href="on-nav-destination-selected.html"
+                  >onNavDestinationSelected</a
+                >
+                when a menu item is selected. The selected item in the
+                NavigationBarView will automatically be updated when the
+                destination changes.
+              </p>
+              <h4 class="">Parameters</h4>
+              <div data-togglable="Parameters">
+                <div class="table" data-togglable="Parameters">
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>navigation</span><wbr /><span>Bar</span
+                              ><wbr /><span><span>View</span></span></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavigationBarView (<span
+                                data-unresolved-link="com.google.android.material.bottomnavigation/BottomNavigationView///PointingToDeclaration/"
+                                >BottomNavigationView</span
+                              >
+                              or
+                              <span
+                                data-unresolved-link="com.google.android.material.navigationrail/NavigationRailView///PointingToDeclaration/"
+                                >NavigationRailView</span
+                              >) that should be kept in sync with changes to the
+                              NavController.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>nav</span><wbr /><span
+                                ><span>Controller</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavController that supplies the primary menu.
+                              Navigation actions on this NavController will be
+                              reflected in the selected item in the
+                              NavigationBarView.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="symbol monospace">
+                <div class="block">
+                  <div class="block">
+                    <span class="token annotation builtin">@</span
+                    ><a
+                      href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-static/index.html"
+                      ><span class="token annotation builtin"
+                        >JvmStatic</span
+                      ></a
+                    >
+                  </div>
+                </div>
+                <span class="token keyword"></span
+                ><span class="token keyword">fun </span
+                ><a href="setup-with-nav-controller.html"
+                  ><span class="token function">setupWithNavController</span></a
+                ><span class="token punctuation">(</span
+                ><span class="parameters"
+                  ><span class="parameter"
+                    >navigationBarView<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/"
+                      >NavigationBarView</span
+                    ><span class="token punctuation">, </span></span
+                  ><span class="parameter"
+                    >navController<span class="token operator">: </span
+                    ><span
+                      data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                      >NavController</span
+                    ><span class="token punctuation">, </span></span
+                  ><span class="parameter"
+                    >saveState<span class="token operator">: </span
+                    ><a
+                      href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                      >Boolean</a
+                    ></span
+                  ></span
+                ><span class="token punctuation">)</span>
+              </div>
+              <p class="paragraph">
+                Sets up a
+                <span
+                  data-unresolved-link="com.google.android.material.navigation/NavigationBarView///PointingToDeclaration/"
+                  >NavigationBarView</span
+                >
+                for use with a
+                <span
+                  data-unresolved-link="androidx.navigation/NavController///PointingToDeclaration/"
+                  >NavController</span
+                >. This will call
+                <a href="on-nav-destination-selected.html"
+                  >onNavDestinationSelected</a
+                >
+                when a menu item is selected. The selected item in the
+                NavigationBarView will automatically be updated when the
+                destination changes.
+              </p>
+              <h4 class="">Parameters</h4>
+              <div data-togglable="Parameters">
+                <div class="table" data-togglable="Parameters">
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>navigation</span><wbr /><span>Bar</span
+                              ><wbr /><span><span>View</span></span></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavigationBarView (<span
+                                data-unresolved-link="com.google.android.material.bottomnavigation/BottomNavigationView///PointingToDeclaration/"
+                                >BottomNavigationView</span
+                              >
+                              or
+                              <span
+                                data-unresolved-link="com.google.android.material.navigationrail/NavigationRailView///PointingToDeclaration/"
+                                >NavigationRailView</span
+                              >) that should be kept in sync with changes to the
+                              NavController.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>nav</span><wbr /><span
+                                ><span>Controller</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              The NavController that supplies the primary menu.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="table-row"
+                    data-filterable-current=":ceres-components:dokkaHtmlPartial/release"
+                    data-filterable-set=":ceres-components:dokkaHtmlPartial/release"
+                  >
+                    <div class="main-subrow keyValue WithExtraAttributes">
+                      <div class="">
+                        <span class="inline-flex"
+                          ><div>
+                            <u
+                              ><span>save</span><wbr /><span
+                                ><span>State</span></span
+                              ></u
+                            >
+                          </div></span
+                        >
+                      </div>
+                      <div>
+                        <div class="title">
+                          <div data-togglable="Parameters">
+                            <p class="paragraph">
+                              Whether the NavController should save the back
+                              stack state. This must always be
+                              <code class="lang-kotlin">false</code>: leave this
+                              parameter off entirely to use the non-experimental
+                              version of this API, which saves the state by
+                              default.
+                            </p>
+                            <p class="paragraph">
+                              Navigation actions on this NavController will be
+                              reflected in the selected item in the
+                              NavigationBarView.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

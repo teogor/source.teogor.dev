@@ -1,145 +1,502 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>Companion</title>
-<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link
+      href="../../../../../images/logo-icon.svg"
+      rel="icon"
+      type="image/svg"
+    />
+    <script>
+      var pathToRoot = "../../../../../";
     </script>
-<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../../../styles/style.css" rel="Stylesheet">
-<link href="../../../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../../../styles/main.css" rel="Stylesheet">
-<link href="../../../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../../../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="firebase::dev.teogor.ceres.firebase.remote_config/RemoteConfig.Constants.Companion///PointingToDeclaration//1411733213">
-  <div class="breadcrumbs"><a href="../../../../index.html">firebase</a><span class="delimiter">/</span><a href="../../../index.html">dev.teogor.ceres.firebase.remote_config</a><span class="delimiter">/</span><a href="../../index.html">RemoteConfig</a><span class="delimiter">/</span><a href="../index.html">Constants</a><span class="delimiter">/</span><span class="current">Companion</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span><span>Companion</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a></div></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Properties">Properties</button></div>
-    <div class="tabs-section-body">
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-307615708%2FProperties%2F1411733213" anchor-label="UPDATE_APP_FLEXIBLE" id="-307615708%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-u-p-d-a-t-e_-a-p-p_-f-l-e-x-i-b-l-e.html"><span><span>UPDATE_APP_FLEXIBLE</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-307615708%2FProperties%2F1411733213"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><a data-name="-307615708%2FProperties%2F1411733213" anchor-label="UPDATE_APP_FLEXIBLE" id="-307615708%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-u-p-d-a-t-e_-a-p-p_-f-l-e-x-i-b-l-e.html">UPDATE_APP_FLEXIBLE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="firebase::dev.teogor.ceres.firebase.remote_config/RemoteConfig.Constants.Companion///PointingToDeclaration//1411733213"
+        >
+          <div class="breadcrumbs">
+            <a href="../../../../index.html">firebase</a
+            ><span class="delimiter">/</span
+            ><a href="../../../index.html"
+              >dev.teogor.ceres.firebase.remote_config</a
+            ><span class="delimiter">/</span
+            ><a href="../../index.html">RemoteConfig</a
+            ><span class="delimiter">/</span
+            ><a href="../index.html">Constants</a
+            ><span class="delimiter">/</span
+            ><span class="current">Companion</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span><span>Companion</span></span>
+            </h1>
+            <div
+              class="platform-hinted"
+              data-platform-hinted="data-platform-hinted"
+            >
+              <div
+                class="content sourceset-dependent-content"
+                data-active=""
+                data-togglable=":ceres-firebase:dokkaHtmlPartial/release"
+              >
+                <div class="symbol monospace">
+                  <span class="token keyword">object </span
+                  ><a href="index.html">Companion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section">
+              <button
+                class="section-tab"
+                data-active=""
+                data-togglable="Properties"
+              >
+                Properties
+              </button>
+            </div>
+            <div class="tabs-section-body">
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties">
+                <a
+                  data-name="-307615708%2FProperties%2F1411733213"
+                  anchor-label="UPDATE_APP_FLEXIBLE"
+                  id="-307615708%2FProperties%2F1411733213"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-u-p-d-a-t-e_-a-p-p_-f-l-e-x-i-b-l-e.html"
+                            ><span><span>UPDATE_APP_FLEXIBLE</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-307615708%2FProperties%2F1411733213"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-firebase:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-307615708%2FProperties%2F1411733213"
+                              anchor-label="UPDATE_APP_FLEXIBLE"
+                              id="-307615708%2FProperties%2F1411733213"
+                              data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a
+                                href="-u-p-d-a-t-e_-a-p-p_-f-l-e-x-i-b-l-e.html"
+                                >UPDATE_APP_FLEXIBLE</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                >String</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="456647061%2FProperties%2F1411733213"
+                  anchor-label="UPDATE_APP_MAX_CRITICAL"
+                  id="456647061%2FProperties%2F1411733213"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="-u-p-d-a-t-e_-a-p-p_-m-a-x_-c-r-i-t-i-c-a-l.html"
+                            ><span
+                              ><span>UPDATE_APP_MAX_CRITICAL</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="456647061%2FProperties%2F1411733213"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-firebase:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="456647061%2FProperties%2F1411733213"
+                              anchor-label="UPDATE_APP_MAX_CRITICAL"
+                              id="456647061%2FProperties%2F1411733213"
+                              data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a
+                                href="-u-p-d-a-t-e_-a-p-p_-m-a-x_-c-r-i-t-i-c-a-l.html"
+                                >UPDATE_APP_MAX_CRITICAL</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                >String</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1195759869%2FProperties%2F1411733213"
+                  anchor-label="UPDATE_APP_MIN_CRITICAL"
+                  id="-1195759869%2FProperties%2F1411733213"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a
+                            href="-u-p-d-a-t-e_-a-p-p_-m-i-n_-c-r-i-t-i-c-a-l.html"
+                            ><span
+                              ><span>UPDATE_APP_MIN_CRITICAL</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1195759869%2FProperties%2F1411733213"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-firebase:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1195759869%2FProperties%2F1411733213"
+                              anchor-label="UPDATE_APP_MIN_CRITICAL"
+                              id="-1195759869%2FProperties%2F1411733213"
+                              data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a
+                                href="-u-p-d-a-t-e_-a-p-p_-m-i-n_-c-r-i-t-i-c-a-l.html"
+                                >UPDATE_APP_MIN_CRITICAL</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                >String</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-83327292%2FProperties%2F1411733213"
+                  anchor-label="URL_POLICIES_PP"
+                  id="-83327292%2FProperties%2F1411733213"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-u-r-l_-p-o-l-i-c-i-e-s_-p-p.html"
+                            ><span><span>URL_POLICIES_PP</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-83327292%2FProperties%2F1411733213"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-firebase:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-83327292%2FProperties%2F1411733213"
+                              anchor-label="URL_POLICIES_PP"
+                              id="-83327292%2FProperties%2F1411733213"
+                              data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="-u-r-l_-p-o-l-i-c-i-e-s_-p-p.html"
+                                >URL_POLICIES_PP</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                >String</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1011759486%2FProperties%2F1411733213"
+                  anchor-label="URL_POLICIES_ToS"
+                  id="1011759486%2FProperties%2F1411733213"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-u-r-l_-p-o-l-i-c-i-e-s_-to-s.html"
+                            ><span>URL_POLICIES_To</span><wbr /><span
+                              ><span>S</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1011759486%2FProperties%2F1411733213"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-firebase:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1011759486%2FProperties%2F1411733213"
+                              anchor-label="URL_POLICIES_ToS"
+                              id="1011759486%2FProperties%2F1411733213"
+                              data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="-u-r-l_-p-o-l-i-c-i-e-s_-to-s.html"
+                                >URL_POLICIES_ToS</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
+                                >String</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-<a data-name="456647061%2FProperties%2F1411733213" anchor-label="UPDATE_APP_MAX_CRITICAL" id="456647061%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-u-p-d-a-t-e_-a-p-p_-m-a-x_-c-r-i-t-i-c-a-l.html"><span><span>UPDATE_APP_MAX_CRITICAL</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="456647061%2FProperties%2F1411733213"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><a data-name="456647061%2FProperties%2F1411733213" anchor-label="UPDATE_APP_MAX_CRITICAL" id="456647061%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-u-p-d-a-t-e_-a-p-p_-m-a-x_-c-r-i-t-i-c-a-l.html">UPDATE_APP_MAX_CRITICAL</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1195759869%2FProperties%2F1411733213" anchor-label="UPDATE_APP_MIN_CRITICAL" id="-1195759869%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-u-p-d-a-t-e_-a-p-p_-m-i-n_-c-r-i-t-i-c-a-l.html"><span><span>UPDATE_APP_MIN_CRITICAL</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1195759869%2FProperties%2F1411733213"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><a data-name="-1195759869%2FProperties%2F1411733213" anchor-label="UPDATE_APP_MIN_CRITICAL" id="-1195759869%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-u-p-d-a-t-e_-a-p-p_-m-i-n_-c-r-i-t-i-c-a-l.html">UPDATE_APP_MIN_CRITICAL</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-83327292%2FProperties%2F1411733213" anchor-label="URL_POLICIES_PP" id="-83327292%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-u-r-l_-p-o-l-i-c-i-e-s_-p-p.html"><span><span>URL_POLICIES_PP</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-83327292%2FProperties%2F1411733213"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><a data-name="-83327292%2FProperties%2F1411733213" anchor-label="URL_POLICIES_PP" id="-83327292%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-u-r-l_-p-o-l-i-c-i-e-s_-p-p.html">URL_POLICIES_PP</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1011759486%2FProperties%2F1411733213" anchor-label="URL_POLICIES_ToS" id="1011759486%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-firebase:dokkaHtmlPartial/release" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-u-r-l_-p-o-l-i-c-i-e-s_-to-s.html"><span>URL_POLICIES_To</span><wbr><span><span>S</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1011759486%2FProperties%2F1411733213"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-firebase:dokkaHtmlPartial/release"><a data-name="1011759486%2FProperties%2F1411733213" anchor-label="URL_POLICIES_ToS" id="1011759486%2FProperties%2F1411733213" data-filterable-set=":ceres-firebase:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-u-r-l_-p-o-l-i-c-i-e-s_-to-s.html">URL_POLICIES_ToS</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-              </div>
-            </div>
-          </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
         </div>
       </div>
     </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-
-</body></html>
-
+  </body>
+</html>

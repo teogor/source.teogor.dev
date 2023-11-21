@@ -12,38 +12,40 @@ const projectsContainer = document.querySelector("#projects-container");
  * fetched or if there is an error updating the DOM.
  */
 async function getProjects() {
-    const response = await fetch('./features/open-source/projects.json');
-    const data = await response.json();
+  const response = await fetch("./features/open-source/projects.json");
+  const data = await response.json();
 
-    data.forEach(({ description, link, title, tools }) => {
-        const instance = projectsTemplate.content.cloneNode(true);
-        const linkElement = instance.querySelector("a");
-        const titleElement = instance.querySelector(".text-2xl");
-        const descriptionElement = instance.querySelector(".text-lg:nth-of-type(1)");
+  data.forEach(({ description, link, title, tools }) => {
+    const instance = projectsTemplate.content.cloneNode(true);
+    const linkElement = instance.querySelector("a");
+    const titleElement = instance.querySelector(".text-2xl");
+    const descriptionElement = instance.querySelector(
+      ".text-lg:nth-of-type(1)",
+    );
 
-        linkElement.href = link;
-        titleElement.innerText = title;
-        descriptionElement.innerText = description;
+    linkElement.href = link;
+    titleElement.innerText = title;
+    descriptionElement.innerText = description;
 
-        const tagTemplate = instance.querySelector('#tag-clone');
-        const tagsContainer = instance.querySelector('#tags');
-        const tags = tools.map(tagName => {
-            const tagInstance = tagTemplate.cloneNode(true);
-            tagInstance.id = `tag-${tagName}`;
-            tagInstance.textContent = `#${tagName}`;
-            return tagInstance;
-        });
-        tagsContainer.append(...tags);
-
-        const clonedTag = tagsContainer.querySelector('#tag-clone');
-        tagsContainer.removeChild(clonedTag);
-
-        projectsContainer.appendChild(instance);
+    const tagTemplate = instance.querySelector("#tag-clone");
+    const tagsContainer = instance.querySelector("#tags");
+    const tags = tools.map((tagName) => {
+      const tagInstance = tagTemplate.cloneNode(true);
+      tagInstance.id = `tag-${tagName}`;
+      tagInstance.textContent = `#${tagName}`;
+      return tagInstance;
     });
+    tagsContainer.append(...tags);
+
+    const clonedTag = tagsContainer.querySelector("#tag-clone");
+    tagsContainer.removeChild(clonedTag);
+
+    projectsContainer.appendChild(instance);
+  });
 }
 
-window.addEventListener("load", function() {
-    getProjects().catch(error => {
-        console.error(error);
-    });
+window.addEventListener("load", function () {
+  getProjects().catch((error) => {
+    console.error(error);
+  });
 });

@@ -1,247 +1,897 @@
 <!doctype html>
 <html class="no-js">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>MultiTapDetector</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
-    <script>document.documentElement.classList.replace("no-js","js");</script>
-    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../../";
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/main.css" rel="Stylesheet">
-<link href="../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
+    <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
     <div class="root">
-<nav class="navigation" id="navigation-wrapper">
-    <div class="navigation--inner">
-        <div class="navigation-title">
-            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+      <nav class="navigation" id="navigation-wrapper">
+        <div class="navigation--inner">
+          <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">
+              toggle menu
+            </button>
             <div class="library-name">
-<a class="library-name--link" href="../../../index.html">
-                            Drifter
-                    </a>            </div>
-            <div class="library-version">1.0.0-alpha01
+              <a class="library-name--link" href="../../../index.html">
+                Drifter
+              </a>
             </div>
+            <div class="library-version">1.0.0-alpha01</div>
+          </div>
+          <div class="filter-section" id="filter-section">
+            <button
+              class="platform-tag platform-selector jvm-like"
+              data-active=""
+              data-filter=":drifter-integration:dokkaHtmlPartial/release"
+            >
+              androidJvm
+            </button>
+          </div>
         </div>
-        <div class="filter-section" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":drifter-integration:dokkaHtmlPartial/release">androidJvm</button>
+        <div class="navigation-controls">
+          <button
+            class="navigation-controls--btn navigation-controls--theme"
+            id="theme-toggle-button"
+            type="button"
+          >
+            switch theme
+          </button>
+          <div
+            class="navigation-controls--btn navigation-controls--search"
+            id="searchBar"
+            role="button"
+          >
+            search in API
+          </div>
         </div>
+      </nav>
+      <div id="container">
+        <div class="sidebar" id="leftColumn">
+          <div class="sidebar--inner" id="sideMenu"></div>
+        </div>
+        <div id="main">
+          <div
+            class="main-content"
+            data-page-type="classlike"
+            id="content"
+            pageids="drifter-integration::dev.teogor.drifter.integration.utilities/MultiTapDetector///PointingToDeclaration//1630270504"
+          >
+            <div class="breadcrumbs">
+              <a href="../../index.html">drifter-integration</a
+              ><span class="delimiter">/</span
+              ><a href="../index.html"
+                >dev.teogor.drifter.integration.utilities</a
+              ><span class="delimiter">/</span
+              ><span class="current">MultiTapDetector</span>
+            </div>
+            <div class="cover">
+              <h1 class="cover">
+                <span>Multi</span><wbr /><span>Tap</span><wbr /><span
+                  ><span>Detector</span></span
+                >
+              </h1>
+              <div
+                class="platform-hinted"
+                data-platform-hinted="data-platform-hinted"
+              >
+                <div
+                  class="content sourceset-dependent-content"
+                  data-active=""
+                  data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                >
+                  <div class="symbol monospace">
+                    <span class="token keyword">class </span
+                    ><a href="index.html">MultiTapDetector</a
+                    ><span class="token punctuation">(</span
+                    ><span class="parameters"
+                      ><span class="parameter"
+                        ><span class="token keyword">var </span>screenSize<span
+                          class="token operator"
+                          >: </span
+                        ><a
+                          href="https://developer.android.com/reference/kotlin/android/graphics/Point.html"
+                          >Point</a
+                        ></span
+                      ></span
+                    ><span class="token punctuation">)</span>
+                  </div>
+                  <p class="paragraph">
+                    Detects quick sequences of touch taps and notifies listeners
+                    about them.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tabbedcontent">
+              <div class="tabs-section" tabs-section="tabs-section">
+                <button
+                  class="section-tab"
+                  data-active=""
+                  data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION"
+                >
+                  Members
+                </button>
+              </div>
+              <div class="tabs-section-body">
+                <div data-togglable="CONSTRUCTOR">
+                  <h2 class="">Constructors</h2>
+                  <div class="table">
+                    <a
+                      data-name="306870402%2FConstructors%2F1630270504"
+                      anchor-label="MultiTapDetector"
+                      id="306870402%2FConstructors%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-togglable="CONSTRUCTOR"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="-multi-tap-detector.html"
+                                ><span>Multi</span><wbr /><span>Tap</span
+                                ><wbr /><span><span>Detector</span></span></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="306870402%2FConstructors%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword">constructor</span
+                                  ><span class="token punctuation">(</span
+                                  ><span class="parameters"
+                                    ><span class="parameter"
+                                      >screenSize<span class="token operator"
+                                        >: </span
+                                      ><a
+                                        href="https://developer.android.com/reference/kotlin/android/graphics/Point.html"
+                                        >Point</a
+                                      ></span
+                                    ></span
+                                  ><span class="token punctuation">)</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-togglable="TYPE">
+                  <h2 class="">Types</h2>
+                  <div class="table">
+                    <a
+                      data-name="-1641636669%2FClasslikes%2F1630270504"
+                      anchor-label="Companion"
+                      id="-1641636669%2FClasslikes%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="-companion/index.html"
+                                ><span><span>Companion</span></span></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="-1641636669%2FClasslikes%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword">object </span
+                                  ><a href="-companion/index.html">Companion</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      data-name="553851846%2FClasslikes%2F1630270504"
+                      anchor-label="IMultiTapDetectedListener"
+                      id="553851846%2FClasslikes%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a
+                                href="-i-multi-tap-detected-listener/index.html"
+                                ><span>IMulti</span><wbr /><span>Tap</span
+                                ><wbr /><span>Detected</span><wbr /><span
+                                  ><span>Listener</span></span
+                                ></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="553851846%2FClasslikes%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword">fun </span
+                                  ><span class="token keyword">interface </span
+                                  ><a
+                                    href="-i-multi-tap-detected-listener/index.html"
+                                    >IMultiTapDetectedListener</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-togglable="PROPERTY">
+                  <h2 class="">Properties</h2>
+                  <div class="table">
+                    <a
+                      data-name="-1824285065%2FProperties%2F1630270504"
+                      anchor-label="maxTimeBetweenTaps"
+                      id="-1824285065%2FProperties%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="max-time-between-taps.html"
+                                ><span>max</span><wbr /><span>Time</span
+                                ><wbr /><span>Between</span><wbr /><span
+                                  ><span>Taps</span></span
+                                ></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="-1824285065%2FProperties%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">var </span
+                                  ><a href="max-time-between-taps.html"
+                                    >maxTimeBetweenTaps</a
+                                  ><span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"
+                                    >Long</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      data-name="-737572530%2FProperties%2F1630270504"
+                      anchor-label="numberOfTaps"
+                      id="-737572530%2FProperties%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="number-of-taps.html"
+                                ><span>number</span><wbr /><span>Of</span
+                                ><wbr /><span><span>Taps</span></span></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="-737572530%2FProperties%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">var </span
+                                  ><a href="number-of-taps.html">numberOfTaps</a
+                                  ><span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                    >Int</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      data-name="-2078802447%2FProperties%2F1630270504"
+                      anchor-label="screenSize"
+                      id="-2078802447%2FProperties%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="screen-size.html"
+                                ><span>screen</span><wbr /><span
+                                  ><span>Size</span></span
+                                ></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="-2078802447%2FProperties%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <div class="block">
+                                    <div class="block">
+                                      <span class="token annotation builtin"
+                                        >@</span
+                                      ><a
+                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"
+                                        ><span class="token annotation builtin"
+                                          >JvmField</span
+                                        ></a
+                                      >
+                                    </div>
+                                  </div>
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">var </span
+                                  ><a href="screen-size.html">screenSize</a
+                                  ><span class="token operator">: </span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/android/graphics/Point.html"
+                                    >Point</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      data-name="749772879%2FProperties%2F1630270504"
+                      anchor-label="tapZoneRadiusRelative"
+                      id="749772879%2FProperties%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="tap-zone-radius-relative.html"
+                                ><span>tap</span><wbr /><span>Zone</span
+                                ><wbr /><span>Radius</span><wbr /><span
+                                  ><span>Relative</span></span
+                                ></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="749772879%2FProperties%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">var </span
+                                  ><a href="tap-zone-radius-relative.html"
+                                    >tapZoneRadiusRelative</a
+                                  ><span class="token operator">: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"
+                                    >Float</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-togglable="FUNCTION">
+                  <h2 class="">Functions</h2>
+                  <div class="table">
+                    <a
+                      data-name="1128936586%2FFunctions%2F1630270504"
+                      anchor-label="onTouchEvent"
+                      id="1128936586%2FFunctions%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a href="on-touch-event.html"
+                                ><span>on</span><wbr /><span>Touch</span
+                                ><wbr /><span><span>Event</span></span></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="1128936586%2FFunctions%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">fun </span
+                                  ><a href="on-touch-event.html"
+                                    ><span class="token function"
+                                      >onTouchEvent</span
+                                    ></a
+                                  ><span class="token punctuation">(</span
+                                  ><span class="parameters"
+                                    ><span class="parameter"
+                                      >motionEvent<span class="token operator"
+                                        >: </span
+                                      ><a
+                                        href="https://developer.android.com/reference/kotlin/android/view/MotionEvent.html"
+                                        >MotionEvent</a
+                                      ></span
+                                    ></span
+                                  ><span class="token punctuation">)</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      data-name="2031366022%2FFunctions%2F1630270504"
+                      anchor-label="registerMultiTapDetectedListener"
+                      id="2031366022%2FFunctions%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a
+                                href="register-multi-tap-detected-listener.html"
+                                ><span>register</span><wbr /><span>Multi</span
+                                ><wbr /><span>Tap</span><wbr /><span
+                                  >Detected</span
+                                ><wbr /><span><span>Listener</span></span></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="2031366022%2FFunctions%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <div class="block">
+                                    <div class="block">
+                                      <span class="token annotation builtin"
+                                        >@</span
+                                      ><a
+                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html"
+                                        ><span class="token annotation builtin"
+                                          >Synchronized</span
+                                        ></a
+                                      >
+                                    </div>
+                                  </div>
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">fun </span
+                                  ><a
+                                    href="register-multi-tap-detected-listener.html"
+                                    ><span class="token function"
+                                      >registerMultiTapDetectedListener</span
+                                    ></a
+                                  ><span class="token punctuation">(</span
+                                  ><span class="parameters"
+                                    ><span class="parameter"
+                                      >listener<span class="token operator"
+                                        >: </span
+                                      ><a
+                                        href="-i-multi-tap-detected-listener/index.html"
+                                        >MultiTapDetector.IMultiTapDetectedListener</a
+                                      ><span class="token operator"
+                                        >?</span
+                                      ></span
+                                    ></span
+                                  ><span class="token punctuation">)</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      data-name="2035858765%2FFunctions%2F1630270504"
+                      anchor-label="unregisterMultiTapDetectedListener"
+                      id="2035858765%2FFunctions%2F1630270504"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    ></a>
+                    <div
+                      class="table-row"
+                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
+                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
+                    >
+                      <div class="main-subrow keyValue">
+                        <div class="">
+                          <span class="inline-flex">
+                            <div>
+                              <a
+                                href="unregister-multi-tap-detected-listener.html"
+                                ><span>unregister</span><wbr /><span>Multi</span
+                                ><wbr /><span>Tap</span><wbr /><span
+                                  >Detected</span
+                                ><wbr /><span><span>Listener</span></span></a
+                              >
+                            </div>
+                            <span class="anchor-wrapper"
+                              ><span
+                                class="anchor-icon"
+                                pointing-to="2035858765%2FFunctions%2F1630270504"
+                              ></span>
+                              <div class="copy-popup-wrapper">
+                                <span class="copy-popup-icon"></span
+                                ><span>Link copied to clipboard</span>
+                              </div>
+                            </span></span
+                          >
+                        </div>
+                        <div>
+                          <div class="title">
+                            <div
+                              class="platform-hinted"
+                              data-platform-hinted="data-platform-hinted"
+                            >
+                              <div
+                                class="content sourceset-dependent-content"
+                                data-active=""
+                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
+                              >
+                                <div class="symbol monospace">
+                                  <div class="block">
+                                    <div class="block">
+                                      <span class="token annotation builtin"
+                                        >@</span
+                                      ><a
+                                        href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html"
+                                        ><span class="token annotation builtin"
+                                          >Synchronized</span
+                                        ></a
+                                      >
+                                    </div>
+                                  </div>
+                                  <span class="token keyword"></span
+                                  ><span class="token keyword">fun </span
+                                  ><a
+                                    href="unregister-multi-tap-detected-listener.html"
+                                    ><span class="token function"
+                                      >unregisterMultiTapDetectedListener</span
+                                    ></a
+                                  ><span class="token punctuation">(</span
+                                  ><span class="parameters"
+                                    ><span class="parameter"
+                                      >listener<span class="token operator"
+                                        >: </span
+                                      ><a
+                                        href="-i-multi-tap-detected-listener/index.html"
+                                        >MultiTapDetector.IMultiTapDetectedListener</a
+                                      ><span class="token operator"
+                                        >?</span
+                                      ></span
+                                    ></span
+                                  ><span class="token punctuation">)</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <span class="go-to-top-icon"
+              ><a href="#content" id="go-to-top-link"></a></span
+            ><span>© 2023 Copyright</span
+            ><span class="pull-right"
+              ><span>Generated by </span
+              ><a href="https://github.com/Kotlin/dokka"
+                ><span>dokka</span><span class="padded-icon"></span></a
+            ></span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="navigation-controls">
-        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
-        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
-    </div>
-</nav>
-        <div id="container">
-            <div class="sidebar" id="leftColumn">
-                <div class="sidebar--inner" id="sideMenu"></div>
-            </div>
-            <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageids="drifter-integration::dev.teogor.drifter.integration.utilities/MultiTapDetector///PointingToDeclaration//1630270504">
-  <div class="breadcrumbs"><a href="../../index.html">drifter-integration</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.drifter.integration.utilities</a><span class="delimiter">/</span><span class="current">MultiTapDetector</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span>Multi</span><wbr><span>Tap</span><wbr><span><span>Detector</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MultiTapDetector</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>screenSize<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Point.html">Point</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Detects quick sequences of touch taps and notifies listeners about them.</p></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
-    <div class="tabs-section-body">
-      <div data-togglable="CONSTRUCTOR">
-        <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="306870402%2FConstructors%2F1630270504" anchor-label="MultiTapDetector" id="306870402%2FConstructors%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="-multi-tap-detector.html"><span>Multi</span><wbr><span>Tap</span><wbr><span><span>Detector</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="306870402%2FConstructors%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">screenSize<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Point.html">Point</a></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="TYPE">
-        <h2 class="">Types</h2>
-        <div class="table"><a data-name="-1641636669%2FClasslikes%2F1630270504" anchor-label="Companion" id="-1641636669%2FClasslikes%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1641636669%2FClasslikes%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="553851846%2FClasslikes%2F1630270504" anchor-label="IMultiTapDetectedListener" id="553851846%2FClasslikes%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="-i-multi-tap-detected-listener/index.html"><span>IMulti</span><wbr><span>Tap</span><wbr><span>Detected</span><wbr><span><span>Listener</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="553851846%2FClasslikes%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-i-multi-tap-detected-listener/index.html">IMultiTapDetectedListener</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1824285065%2FProperties%2F1630270504" anchor-label="maxTimeBetweenTaps" id="-1824285065%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="max-time-between-taps.html"><span>max</span><wbr><span>Time</span><wbr><span>Between</span><wbr><span><span>Taps</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1824285065%2FProperties%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="max-time-between-taps.html">maxTimeBetweenTaps</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-737572530%2FProperties%2F1630270504" anchor-label="numberOfTaps" id="-737572530%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="number-of-taps.html"><span>number</span><wbr><span>Of</span><wbr><span><span>Taps</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-737572530%2FProperties%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="number-of-taps.html">numberOfTaps</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2078802447%2FProperties%2F1630270504" anchor-label="screenSize" id="-2078802447%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="screen-size.html"><span>screen</span><wbr><span><span>Size</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2078802447%2FProperties%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-field/index.html"><span class="token annotation builtin">JvmField</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="screen-size.html">screenSize</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Point.html">Point</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="749772879%2FProperties%2F1630270504" anchor-label="tapZoneRadiusRelative" id="749772879%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="tap-zone-radius-relative.html"><span>tap</span><wbr><span>Zone</span><wbr><span>Radius</span><wbr><span><span>Relative</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="749772879%2FProperties%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="tap-zone-radius-relative.html">tapZoneRadiusRelative</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="FUNCTION">
-        <h2 class="">Functions</h2>
-        <div class="table"><a data-name="1128936586%2FFunctions%2F1630270504" anchor-label="onTouchEvent" id="1128936586%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="on-touch-event.html"><span>on</span><wbr><span>Touch</span><wbr><span><span>Event</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1128936586%2FFunctions%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-touch-event.html"><span class="token function">onTouchEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">motionEvent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/MotionEvent.html">MotionEvent</a></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="2031366022%2FFunctions%2F1630270504" anchor-label="registerMultiTapDetectedListener" id="2031366022%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="register-multi-tap-detected-listener.html"><span>register</span><wbr><span>Multi</span><wbr><span>Tap</span><wbr><span>Detected</span><wbr><span><span>Listener</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2031366022%2FFunctions%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html"><span class="token annotation builtin">Synchronized</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="register-multi-tap-detected-listener.html"><span class="token function">registerMultiTapDetectedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="-i-multi-tap-detected-listener/index.html">MultiTapDetector.IMultiTapDetectedListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="2035858765%2FFunctions%2F1630270504" anchor-label="unregisterMultiTapDetectedListener" id="2035858765%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="unregister-multi-tap-detected-listener.html"><span>unregister</span><wbr><span>Multi</span><wbr><span>Tap</span><wbr><span>Detected</span><wbr><span><span>Listener</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2035858765%2FFunctions%2F1630270504"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-synchronized/index.html"><span class="token annotation builtin">Synchronized</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="unregister-multi-tap-detected-listener.html"><span class="token function">unregisterMultiTapDetectedListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="-i-multi-tap-detected-listener/index.html">MultiTapDetector.IMultiTapDetectedListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-            </div>
-        </div>
-    </div>
-</body>
+  </body>
 </html>
-

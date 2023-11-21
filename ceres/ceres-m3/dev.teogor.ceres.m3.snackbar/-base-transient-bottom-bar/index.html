@@ -1,526 +1,2577 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
     <title>BaseTransientBottomBar</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
-        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-        if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    } else {
-        const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
-        }
-    }
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
+    <script>
+      var pathToRoot = "../../../";
     </script>
-<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
-<link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
-<link href="../../../styles/main.css" rel="Stylesheet">
-<link href="../../../styles/prism.css" rel="Stylesheet">
-<link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
-<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
-<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
-<script type="text/javascript" src="../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
-<body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../../index.html">
-<span>Ceres</span>            </a>    </div>
-    <div>1.0.0-beta01
-    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+    <script>
+      const storage = localStorage.getItem("dokka-dark-mode");
+      if (storage == null) {
+        const osDarkSchemePreferred =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage);
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/sourceset_dependencies.js"
+      async
+    ></script>
+    <link href="../../../styles/style.css" rel="Stylesheet" />
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet" />
+    <link href="../../../styles/main.css" rel="Stylesheet" />
+    <link href="../../../styles/prism.css" rel="Stylesheet" />
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
+    <script
+      type="text/javascript"
+      src="../../../scripts/clipboard.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/navigation-loader.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/platform-content-handler.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/main.js"
+      defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/prism.js"
+      async
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="navigation-wrapper" id="navigation-wrapper">
+      <div id="leftToggler"><span class="icon-toggler"></span></div>
+      <div class="library-name">
+        <a href="../../../index.html"> <span>Ceres</span> </a>
+      </div>
+      <div>1.0.0-beta01</div>
+      <div class="pull-right d-flex">
+        <button id="theme-toggle-button">
+          <span id="theme-toggle"></span>
+        </button>
         <div id="searchBar"></div>
+      </div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
+    <div id="container">
+      <div id="leftColumn">
         <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div
+          class="main-content"
+          id="content"
+          pageids="m3::dev.teogor.ceres.m3.snackbar/BaseTransientBottomBar///PointingToDeclaration//-409846242"
+        >
+          <div class="breadcrumbs">
+            <a href="../../index.html">m3</a><span class="delimiter">/</span
+            ><a href="../index.html">dev.teogor.ceres.m3.snackbar</a
+            ><span class="delimiter">/</span
+            ><span class="current">BaseTransientBottomBar</span>
+          </div>
+          <div class="cover">
+            <h1 class="cover">
+              <span>Base</span><wbr /><span>Transient</span><wbr /><span
+                >Bottom</span
+              ><wbr /><span><span>Bar</span></span>
+            </h1>
+            <div
+              class="platform-hinted"
+              data-platform-hinted="data-platform-hinted"
+            >
+              <div
+                class="content sourceset-dependent-content"
+                data-active=""
+                data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+              >
+                <div class="symbol monospace">
+                  <span class="token keyword">abstract </span
+                  ><span class="token keyword">class </span
+                  ><a href="index.html">BaseTransientBottomBar</a
+                  ><span class="token operator">&lt;</span
+                  ><span class="token keyword"></span><a href="index.html">B</a
+                  ><span class="token operator"> : </span
+                  ><a href="index.html">BaseTransientBottomBar</a
+                  ><span class="token operator">&lt;</span
+                  ><a href="index.html">B</a
+                  ><span class="token operator">&gt;</span
+                  ><span class="token operator">?</span
+                  ><span class="token operator">&gt;</span>
+                </div>
+                <p class="paragraph">
+                  Base class for lightweight transient bars that are displayed
+                  along the bottom edge of the application window.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section">
+              <button class="section-tab" data-active="" data-togglable="Types">
+                Types</button
+              ><button class="section-tab" data-togglable="Functions">
+                Functions</button
+              ><button class="section-tab" data-togglable="Properties">
+                Properties</button
+              ><button class="section-tab" data-togglable="Parameters">
+                Parameters</button
+              ><button class="section-tab" data-togglable="Inheritors">
+                Inheritors
+              </button>
+            </div>
+            <div class="tabs-section-body">
+              <h4 class="">Parameters</h4>
+              <div data-togglable="Parameters">
+                <div
+                  class="platform-hinted WithExtraAttributes"
+                  data-platform-hinted="data-platform-hinted"
+                  data-togglable="Parameters"
+                >
+                  <div
+                    class="content sourceset-dependent-content"
+                    data-active=""
+                    data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                  >
+                    <div data-togglable="Parameters">
+                      <div class="table" data-togglable="Parameters">
+                        <div
+                          class="table-row"
+                          data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                          data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                        >
+                          <div class="main-subrow keyValue WithExtraAttributes">
+                            <div class="">
+                              <span class="inline-flex"
+                                ><div>
+                                  <u
+                                    ><span><span>&lt;B&gt;</span></span></u
+                                  >
+                                </div></span
+                              >
+                            </div>
+                            <div>
+                              <div class="title">
+                                <div data-togglable="Parameters">
+                                  <p class="paragraph">
+                                    The transient bottom bar subclass.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types">
+                <a
+                  data-name="-1524515538%2FClasslikes%2F-409846242"
+                  anchor-label="AnimationMode"
+                  id="-1524515538%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-animation-mode/index.html"
+                            ><span>Animation</span><wbr /><span
+                              ><span>Mode</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1524515538%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/RestrictTo///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >RestrictTo</span
+                                    ></span
+                                  ><span class="token punctuation">(</span
+                                  ><span
+                                    >value<span class="token operator"> = </span
+                                    ><span
+                                      data-unresolved-link='androidx.annotation/RestrictTo.Scope.LIBRARY_GROUP///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}'
+                                      >LIBRARY_GROUP</span
+                                    ></span
+                                  ><wbr /><span class="token punctuation"
+                                    >)</span
+                                  >
+                                </div>
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/java/lang/annotation/Retention.html"
+                                    ><span class="token annotation builtin"
+                                      >Retention</span
+                                    ></a
+                                  ><span class="token punctuation">(</span
+                                  ><span
+                                    >value<span class="token operator"> = </span
+                                    ><a
+                                      href="https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy.html"
+                                      >RetentionPolicy.SOURCE</a
+                                    ></span
+                                  ><wbr /><span class="token punctuation"
+                                    >)</span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"
+                                >annotation class </span
+                              ><a href="-animation-mode/index.html"
+                                >AnimationMode</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Animation modes that can be set on the
+                              <a href="index.html">BaseTransientBottomBar</a>.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-582322217%2FClasslikes%2F-409846242"
+                  anchor-label="BaseCallback"
+                  id="-582322217%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-base-callback/index.html"
+                            ><span>Base</span><wbr /><span
+                              ><span>Callback</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-582322217%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">abstract </span
+                              ><span class="token keyword">class </span
+                              ><a href="-base-callback/index.html"
+                                >BaseCallback</a
+                              ><span class="token operator">&lt;</span
+                              ><span class="token keyword"></span
+                              ><a href="-base-callback/index.html">B</a
+                              ><span class="token operator">&gt;</span>
+                            </div>
+                            <div class="brief">
+                              Base class for
+                              <a href="index.html">BaseTransientBottomBar</a>
+                              callbacks.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-862128837%2FClasslikes%2F-409846242"
+                  anchor-label="Behavior"
+                  id="-862128837%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-behavior/index.html"
+                            ><span><span>Behavior</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-862128837%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword">class </span
+                              ><a href="-behavior/index.html">Behavior</a> :
+                              <span
+                                data-unresolved-link="com.google.android.material.behavior/SwipeDismissBehavior///PointingToDeclaration/"
+                                >SwipeDismissBehavior</span
+                              ><span class="token operator">&lt;</span
+                              ><span
+                                data-unresolved-link="com.google.android.material.behavior/SwipeDismissBehavior///PointingToGenericParameters(0)/"
+                                >V</span
+                              ><span class="token operator">&gt; </span>
+                            </div>
+                            <div class="brief">
+                              Behavior for
+                              <a href="index.html">BaseTransientBottomBar</a>.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="381140278%2FClasslikes%2F-409846242"
+                  anchor-label="BehaviorDelegate"
+                  id="381140278%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-behavior-delegate/index.html"
+                            ><span>Behavior</span><wbr /><span
+                              ><span>Delegate</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="381140278%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/RestrictTo///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >RestrictTo</span
+                                    ></span
+                                  ><span class="token punctuation">(</span
+                                  ><span
+                                    >value<span class="token operator"> = </span
+                                    ><span
+                                      data-unresolved-link='androidx.annotation/RestrictTo.Scope.LIBRARY_GROUP///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}'
+                                      >LIBRARY_GROUP</span
+                                    ></span
+                                  ><wbr /><span class="token punctuation"
+                                    >)</span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword">class </span
+                              ><a href="-behavior-delegate/index.html"
+                                >BehaviorDelegate</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="2124379090%2FClasslikes%2F-409846242"
+                  anchor-label="ContentViewCallback"
+                  id="2124379090%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-content-view-callback/index.html"
+                            ><span>Content</span><wbr /><span>View</span
+                            ><wbr /><span><span>Callback</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="2124379090%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">interface </span
+                              ><a href="-content-view-callback/index.html"
+                                ><strike>ContentViewCallback</strike></a
+                              >
+                              :
+                              <a href="../-content-view-callback/index.html"
+                                >ContentViewCallback</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Interface that defines the behavior of the main
+                              content of a transient bottom bar.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1033689031%2FClasslikes%2F-409846242"
+                  anchor-label="Duration"
+                  id="-1033689031%2FClasslikes%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-duration/index.html"
+                            ><span><span>Duration</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1033689031%2FClasslikes%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/RestrictTo///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >RestrictTo</span
+                                    ></span
+                                  ><span class="token punctuation">(</span
+                                  ><span
+                                    >value<span class="token operator"> = </span
+                                    ><span
+                                      data-unresolved-link='androidx.annotation/RestrictTo.Scope.LIBRARY_GROUP///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}'
+                                      >LIBRARY_GROUP</span
+                                    ></span
+                                  ><wbr /><span class="token punctuation"
+                                    >)</span
+                                  >
+                                </div>
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/IntRange///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >IntRange</span
+                                    ></span
+                                  ><span class="token punctuation">(</span
+                                  ><span
+                                    >from<span class="token operator"> = </span
+                                    ><span class="breakable-word"
+                                      ><span class="token constant"
+                                        >-2</span
+                                      ></span
+                                    ></span
+                                  ><wbr /><span class="token punctuation"
+                                    >)</span
+                                  >
+                                </div>
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/java/lang/annotation/Retention.html"
+                                    ><span class="token annotation builtin"
+                                      >Retention</span
+                                    ></a
+                                  ><span class="token punctuation">(</span
+                                  ><span
+                                    >value<span class="token operator"> = </span
+                                    ><a
+                                      href="https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy.html"
+                                      >RetentionPolicy.SOURCE</a
+                                    ></span
+                                  ><wbr /><span class="token punctuation"
+                                    >)</span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"
+                                >annotation class </span
+                              ><a href="-duration/index.html">Duration</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions">
+                <a
+                  data-name="1768567817%2FFunctions%2F-409846242"
+                  anchor-label="addCallback"
+                  id="1768567817%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="add-callback.html"
+                            ><span>add</span><wbr /><span
+                              ><span>Callback</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1768567817%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="add-callback.html"
+                                ><span class="token function"
+                                  >addCallback</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><span
+                                      data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"
+                                      ><span class="token annotation builtin"
+                                        >Nullable</span
+                                      ></span
+                                    >&nbsp;</span
+                                  >callback<span class="token operator">: </span
+                                  ><a href="-base-callback/index.html"
+                                    >BaseTransientBottomBar.BaseCallback</a
+                                  ><span class="token operator">&lt;</span
+                                  ><a href="index.html">B</a
+                                  ><span class="token operator"
+                                    >&gt;</span
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="index.html">B</a>
+                            </div>
+                            <div class="brief">
+                              Adds the specified callback to the list of
+                              callbacks that will be notified of transient
+                              bottom bar events.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-575818824%2FFunctions%2F-409846242"
+                  anchor-label="dismiss"
+                  id="-575818824%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="dismiss.html"
+                            ><span><span>dismiss</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-575818824%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="dismiss.html"
+                                ><span class="token function">dismiss</span></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                            <div class="brief">
+                              Dismiss the
+                              <a href="index.html">BaseTransientBottomBar</a>.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="338753106%2FFunctions%2F-409846242"
+                  anchor-label="getAnchorView"
+                  id="338753106%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="get-anchor-view.html"
+                            ><span>get</span><wbr /><span>Anchor</span
+                            ><wbr /><span><span>View</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="338753106%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >Nullable</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="get-anchor-view.html"
+                                ><span class="token function"
+                                  >getAnchorView</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://developer.android.com/reference/kotlin/android/view/View.html"
+                                >View</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Returns the anchor view for this
+                              <a href="index.html">BaseTransientBottomBar</a>.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-887283801%2FFunctions%2F-409846242"
+                  anchor-label="getAnimationMode"
+                  id="-887283801%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="get-animation-mode.html"
+                            ><span>get</span><wbr /><span>Animation</span
+                            ><wbr /><span><span>Mode</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-887283801%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="get-animation-mode.html"
+                                ><span class="token function"
+                                  >getAnimationMode</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              >
+                            </div>
+                            <div class="brief">Returns the animation mode.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1376835655%2FFunctions%2F-409846242"
+                  anchor-label="getView"
+                  id="1376835655%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="get-view.html"
+                            ><span>get</span><wbr /><span
+                              ><span>View</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1376835655%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="get-view.html"
+                                ><span class="token function">getView</span></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://developer.android.com/reference/kotlin/android/view/View.html"
+                                >View</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Returns the
+                              <a href="index.html">BaseTransientBottomBar</a>'s
+                              view.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1776636323%2FFunctions%2F-409846242"
+                  anchor-label="isAnchorViewLayoutListenerEnabled"
+                  id="1776636323%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-anchor-view-layout-listener-enabled.html"
+                            ><span>is</span><wbr /><span>Anchor</span
+                            ><wbr /><span>View</span><wbr /><span>Layout</span
+                            ><wbr /><span>Listener</span><wbr /><span
+                              ><span>Enabled</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1776636323%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a
+                                href="is-anchor-view-layout-listener-enabled.html"
+                                ><span class="token function"
+                                  >isAnchorViewLayoutListenerEnabled</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Returns whether the anchor view layout listener is
+                              enabled.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="59431289%2FFunctions%2F-409846242"
+                  anchor-label="isGestureInsetBottomIgnored"
+                  id="59431289%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-gesture-inset-bottom-ignored.html"
+                            ><span>is</span><wbr /><span>Gesture</span
+                            ><wbr /><span>Inset</span><wbr /><span>Bottom</span
+                            ><wbr /><span><span>Ignored</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="59431289%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="is-gesture-inset-bottom-ignored.html"
+                                ><span class="token function"
+                                  >isGestureInsetBottomIgnored</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Returns whether this bottom bar should adjust it's
+                              position based on the system gesture area on
+                              Android Q and above.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-193090853%2FFunctions%2F-409846242"
+                  anchor-label="isShown"
+                  id="-193090853%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-shown.html"
+                            ><span>is</span><wbr /><span
+                              ><span>Shown</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-193090853%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="is-shown.html"
+                                ><span class="token function">isShown</span></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Return whether this
+                              <a href="index.html">BaseTransientBottomBar</a> is
+                              currently being shown.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1192921157%2FFunctions%2F-409846242"
+                  anchor-label="isShownOrQueued"
+                  id="1192921157%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="is-shown-or-queued.html"
+                            ><span>is</span><wbr /><span>Shown</span
+                            ><wbr /><span>Or</span><wbr /><span
+                              ><span>Queued</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1192921157%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="is-shown-or-queued.html"
+                                ><span class="token function"
+                                  >isShownOrQueued</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                >Boolean</a
+                              >
+                            </div>
+                            <div class="brief">
+                              Returns whether this
+                              <a href="index.html">BaseTransientBottomBar</a> is
+                              currently being shown, or is queued to be shown
+                              next.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="829682262%2FFunctions%2F-409846242"
+                  anchor-label="removeCallback"
+                  id="829682262%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="remove-callback.html"
+                            ><span>remove</span><wbr /><span
+                              ><span>Callback</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="829682262%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="remove-callback.html"
+                                ><span class="token function"
+                                  >removeCallback</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><span
+                                      data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"
+                                      ><span class="token annotation builtin"
+                                        >Nullable</span
+                                      ></span
+                                    >&nbsp;</span
+                                  >callback<span class="token operator">: </span
+                                  ><a href="-base-callback/index.html"
+                                    >BaseTransientBottomBar.BaseCallback</a
+                                  ><span class="token operator">&lt;</span
+                                  ><a href="index.html">B</a
+                                  ><span class="token operator"
+                                    >&gt;</span
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="index.html">B</a>
+                            </div>
+                            <div class="brief">
+                              Removes the specified callback from the list of
+                              callbacks that will be notified of transient
+                              bottom bar events.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1094039660%2FFunctions%2F-409846242"
+                  anchor-label="setAnchorView"
+                  id="1094039660%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="set-anchor-view.html"
+                            ><span>set</span><wbr /><span>Anchor</span
+                            ><wbr /><span><span>View</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1094039660%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="set-anchor-view.html"
+                                ><span class="token function"
+                                  >setAnchorView</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><span
+                                      data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"
+                                      ><span class="token annotation builtin"
+                                        >Nullable</span
+                                      ></span
+                                    >&nbsp;</span
+                                  >anchorView<span class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="https://developer.android.com/reference/kotlin/android/view/View.html"
+                                    >View</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="index.html">B</a>
+                            </div>
+                            <div class="brief">
+                              Sets the view the
+                              <a href="index.html">BaseTransientBottomBar</a>
+                              should be anchored above.
+                            </div>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="set-anchor-view.html"
+                                ><span class="token function"
+                                  >setAnchorView</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  ><span
+                                    ><span class="token annotation builtin"
+                                      >@</span
+                                    ><span
+                                      data-unresolved-link="androidx.annotation/IdRes///PointingToDeclaration/"
+                                      ><span class="token annotation builtin"
+                                        >IdRes</span
+                                      ></span
+                                    >&nbsp;</span
+                                  >anchorViewId<span class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                    >Int</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="index.html">B</a>
+                            </div>
+                            <div class="brief">
+                              Sets the view the
+                              <a href="index.html">BaseTransientBottomBar</a>
+                              should be anchored above by id.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1548148617%2FFunctions%2F-409846242"
+                  anchor-label="setAnchorViewLayoutListenerEnabled"
+                  id="1548148617%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="set-anchor-view-layout-listener-enabled.html"
+                            ><span>set</span><wbr /><span>Anchor</span
+                            ><wbr /><span>View</span><wbr /><span>Layout</span
+                            ><wbr /><span>Listener</span><wbr /><span
+                              ><span>Enabled</span></span
+                            ></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1548148617%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a
+                                href="set-anchor-view-layout-listener-enabled.html"
+                                ><span class="token function"
+                                  >setAnchorViewLayoutListenerEnabled</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >anchorViewLayoutListenerEnabled<span
+                                    class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                    >Boolean</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                            <div class="brief">
+                              Sets whether the anchor view layout listener is
+                              enabled.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="617970784%2FFunctions%2F-409846242"
+                  anchor-label="setAnimationMode"
+                  id="617970784%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="set-animation-mode.html"
+                            ><span>set</span><wbr /><span>Animation</span
+                            ><wbr /><span><span>Mode</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="617970784%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="set-animation-mode.html"
+                                ><span class="token function"
+                                  >setAnimationMode</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >animationMode<span class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                    >Int</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="index.html">B</a>
+                            </div>
+                            <div class="brief">Sets the animation mode.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="2012625011%2FFunctions%2F-409846242"
+                  anchor-label="setGestureInsetBottomIgnored"
+                  id="2012625011%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="set-gesture-inset-bottom-ignored.html"
+                            ><span>set</span><wbr /><span>Gesture</span
+                            ><wbr /><span>Inset</span><wbr /><span>Bottom</span
+                            ><wbr /><span><span>Ignored</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="2012625011%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin">@</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="set-gesture-inset-bottom-ignored.html"
+                                ><span class="token function"
+                                  >setGestureInsetBottomIgnored</span
+                                ></a
+                              ><span class="token punctuation">(</span
+                              ><span class="parameters"
+                                ><span class="parameter"
+                                  >gestureInsetBottomIgnored<span
+                                    class="token operator"
+                                    >: </span
+                                  ><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
+                                    >Boolean</a
+                                  ></span
+                                ></span
+                              ><span class="token punctuation">)</span
+                              ><span class="token operator">: </span
+                              ><a href="index.html">B</a>
+                            </div>
+                            <div class="brief">
+                              Sets whether this bottom bar should adjust it's
+                              position based on the system gesture area on
+                              Android Q and above.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-766457285%2FFunctions%2F-409846242"
+                  anchor-label="show"
+                  id="-766457285%2FFunctions%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="show.html"
+                            ><span><span>show</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-766457285%2FFunctions%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <div class="symbol monospace">
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">fun </span
+                              ><a href="show.html"
+                                ><span class="token function">show</span></a
+                              ><span class="token punctuation">(</span
+                              ><span class="token punctuation">)</span>
+                            </div>
+                            <div class="brief">
+                              Show the
+                              <a href="index.html">BaseTransientBottomBar</a>.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties">
+                <a
+                  data-name="-493121115%2FProperties%2F-409846242"
+                  anchor-label="ANIMATION_MODE_FADE"
+                  id="-493121115%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-f-a-d-e.html"
+                            ><span><span>ANIMATION_MODE_FADE</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-493121115%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-493121115%2FProperties%2F-409846242"
+                              anchor-label="ANIMATION_MODE_FADE"
+                              id="-493121115%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a
+                                href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-f-a-d-e.html"
+                                >ANIMATION_MODE_FADE</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">1</span>
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="-493121115%2FProperties%2F-409846242"
+                                anchor-label="ANIMATION_MODE_FADE"
+                                id="-493121115%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a
+                              >Animation mode that corresponds to the fade in
+                              and out animations.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-1021544728%2FProperties%2F-409846242"
+                  anchor-label="ANIMATION_MODE_SLIDE"
+                  id="-1021544728%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-s-l-i-d-e.html"
+                            ><span><span>ANIMATION_MODE_SLIDE</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-1021544728%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-1021544728%2FProperties%2F-409846242"
+                              anchor-label="ANIMATION_MODE_SLIDE"
+                              id="-1021544728%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a
+                                href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-s-l-i-d-e.html"
+                                >ANIMATION_MODE_SLIDE</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">0</span>
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="-1021544728%2FProperties%2F-409846242"
+                                anchor-label="ANIMATION_MODE_SLIDE"
+                                id="-1021544728%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a
+                              >Animation mode that corresponds to the slide in
+                              and out animations.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-190740730%2FProperties%2F-409846242"
+                  anchor-label="behavior"
+                  id="-190740730%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="behavior.html"
+                            ><span><span>behavior</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-190740730%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-190740730%2FProperties%2F-409846242"
+                              anchor-label="behavior"
+                              id="-190740730%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin"
+                                    >@set:</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="behavior.html">behavior</a
+                              ><span class="token operator">: </span
+                              ><a href="-behavior/index.html"
+                                >BaseTransientBottomBar.Behavior</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1307350067%2FProperties%2F-409846242"
+                  anchor-label="context"
+                  id="1307350067%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="context.html"
+                            ><span><span>context</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1307350067%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1307350067%2FProperties%2F-409846242"
+                              anchor-label="context"
+                              id="1307350067%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin"
+                                    >@get:</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="context.html">context</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://developer.android.com/reference/kotlin/android/content/Context.html"
+                                >Context</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-362300924%2FProperties%2F-409846242"
+                  anchor-label="duration"
+                  id="-362300924%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="duration.html"
+                            ><span><span>duration</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-362300924%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-362300924%2FProperties%2F-409846242"
+                              anchor-label="duration"
+                              id="-362300924%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <div class="block">
+                                <div class="block">
+                                  <span class="token annotation builtin"
+                                    >@set:</span
+                                  ><span
+                                    data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"
+                                    ><span class="token annotation builtin"
+                                      >NonNull</span
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                              <span class="token keyword">open </span
+                              ><span class="token keyword"></span
+                              ><span class="token keyword">var </span
+                              ><a href="duration.html">duration</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="944622836%2FProperties%2F-409846242"
+                  anchor-label="LENGTH_INDEFINITE"
+                  id="944622836%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-l-e-n-g-t-h_-i-n-d-e-f-i-n-i-t-e.html"
+                            ><span><span>LENGTH_INDEFINITE</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="944622836%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="944622836%2FProperties%2F-409846242"
+                              anchor-label="LENGTH_INDEFINITE"
+                              id="944622836%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="-l-e-n-g-t-h_-i-n-d-e-f-i-n-i-t-e.html"
+                                >LENGTH_INDEFINITE</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">-2</span>
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="944622836%2FProperties%2F-409846242"
+                                anchor-label="LENGTH_INDEFINITE"
+                                id="944622836%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a
+                              >Show the Snackbar indefinitely.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="-713049619%2FProperties%2F-409846242"
+                  anchor-label="LENGTH_LONG"
+                  id="-713049619%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-l-e-n-g-t-h_-l-o-n-g.html"
+                            ><span><span>LENGTH_LONG</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="-713049619%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="-713049619%2FProperties%2F-409846242"
+                              anchor-label="LENGTH_LONG"
+                              id="-713049619%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="-l-e-n-g-t-h_-l-o-n-g.html"
+                                >LENGTH_LONG</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">0</span>
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="-713049619%2FProperties%2F-409846242"
+                                anchor-label="LENGTH_LONG"
+                                id="-713049619%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a
+                              >Show the Snackbar for a long period of time.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  data-name="1230490421%2FProperties%2F-409846242"
+                  anchor-label="LENGTH_SHORT"
+                  id="1230490421%2FProperties%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="-l-e-n-g-t-h_-s-h-o-r-t.html"
+                            ><span><span>LENGTH_SHORT</span></span></a
+                          >
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="1230490421%2FProperties%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div>
+                      <div class="title">
+                        <div
+                          class="platform-hinted"
+                          data-platform-hinted="data-platform-hinted"
+                          data-togglable="Properties"
+                        >
+                          <div
+                            class="content sourceset-dependent-content"
+                            data-active=""
+                            data-togglable=":ceres-m3:dokkaHtmlPartial/release"
+                          >
+                            <a
+                              data-name="1230490421%2FProperties%2F-409846242"
+                              anchor-label="LENGTH_SHORT"
+                              id="1230490421%2FProperties%2F-409846242"
+                              data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                            ></a>
+                            <div class="symbol monospace">
+                              <span class="token keyword"></span
+                              ><span class="token keyword">val </span
+                              ><a href="-l-e-n-g-t-h_-s-h-o-r-t.html"
+                                >LENGTH_SHORT</a
+                              ><span class="token operator">: </span
+                              ><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"
+                                >Int</a
+                              ><span class="token operator"> = </span
+                              ><span class="token constant">-1</span>
+                            </div>
+                            <div class="brief">
+                              <a
+                                data-name="1230490421%2FProperties%2F-409846242"
+                                anchor-label="LENGTH_SHORT"
+                                id="1230490421%2FProperties%2F-409846242"
+                                data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                              ></a
+                              >Show the Snackbar for a short period of time.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Inheritors</h2>
+              <div class="table" data-togglable="Inheritors">
+                <a
+                  data-name="28267249%2FInheritors%2F-409846242"
+                  anchor-label="Snackbar"
+                  id="28267249%2FInheritors%2F-409846242"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                ></a>
+                <div
+                  class="table-row"
+                  data-filterable-current=":ceres-m3:dokkaHtmlPartial/release"
+                  data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"
+                >
+                  <div class="main-subrow keyValue">
+                    <div class="">
+                      <span class="inline-flex">
+                        <div>
+                          <a href="../-snackbar/index.html">Snackbar</a>
+                        </div>
+                        <span class="anchor-wrapper"
+                          ><span
+                            class="anchor-icon"
+                            pointing-to="28267249%2FInheritors%2F-409846242"
+                          ></span>
+                          <div class="copy-popup-wrapper">
+                            <span class="copy-popup-icon"></span
+                            ><span>Link copied to clipboard</span>
+                          </div>
+                        </span></span
+                      >
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span class="go-to-top-icon"
+            ><a href="#content" id="go-to-top-link"></a></span
+          ><span>© 2022 Copyright</span
+          ><span class="pull-right"
+            ><span>Generated by </span
+            ><a href="https://github.com/Kotlin/dokka"
+              ><span>dokka</span><span class="padded-icon"></span></a
+          ></span>
+        </div>
+      </div>
     </div>
-    <div id="main">
-<div class="main-content" id="content" pageids="m3::dev.teogor.ceres.m3.snackbar/BaseTransientBottomBar///PointingToDeclaration//-409846242">
-  <div class="breadcrumbs"><a href="../../index.html">m3</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.ceres.m3.snackbar</a><span class="delimiter">/</span><span class="current">BaseTransientBottomBar</span></div>
-  <div class="cover ">
-    <h1 class="cover"><span>Base</span><wbr><span>Transient</span><wbr><span>Bottom</span><wbr><span><span>Bar</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">BaseTransientBottomBar</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">B</a><span class="token operator"> : </span><a href="index.html">BaseTransientBottomBar</a><span class="token operator">&lt;</span><a href="index.html">B</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator">&gt;</span></div><p class="paragraph">Base class for lightweight transient bars that are displayed along the bottom edge of the application window.</p></div></div>
-  </div>
-  <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
-    <div class="tabs-section-body">
-      <h4 class="">Parameters</h4>
-      <div data-togglable="Parameters">
-        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>&lt;B&gt;</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The transient bottom bar subclass.</p></div></div></div></div></div></div></div></div></div>
-      </div>
-      <h2 class="">Types</h2>
-      <div class="table" data-togglable="Types"><a data-name="-1524515538%2FClasslikes%2F-409846242" anchor-label="AnimationMode" id="-1524515538%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-animation-mode/index.html"><span>Animation</span><wbr><span><span>Mode</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1524515538%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/RestrictTo///PointingToDeclaration/"><span class="token annotation builtin">RestrictTo</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span data-unresolved-link="androidx.annotation/RestrictTo.Scope.LIBRARY_GROUP///PointingToDeclaration/{&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;:{&quot;key&quot;:&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;}}">LIBRARY_GROUP</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/java/lang/annotation/Retention.html"><span class="token annotation builtin">Retention</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><a href="https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy.html">RetentionPolicy.SOURCE</a></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="-animation-mode/index.html">AnimationMode</a></div><div class="brief ">Animation modes that can be set on the <a href="index.html">BaseTransientBottomBar</a>.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-582322217%2FClasslikes%2F-409846242" anchor-label="BaseCallback" id="-582322217%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-base-callback/index.html"><span>Base</span><wbr><span><span>Callback</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-582322217%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-base-callback/index.html">BaseCallback</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-base-callback/index.html">B</a><span class="token operator">&gt;</span></div><div class="brief ">Base class for <a href="index.html">BaseTransientBottomBar</a> callbacks.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-862128837%2FClasslikes%2F-409846242" anchor-label="Behavior" id="-862128837%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-behavior/index.html"><span><span>Behavior</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-862128837%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-behavior/index.html">Behavior</a> : <span data-unresolved-link="com.google.android.material.behavior/SwipeDismissBehavior///PointingToDeclaration/">SwipeDismissBehavior</span><span class="token operator">&lt;</span><span data-unresolved-link="com.google.android.material.behavior/SwipeDismissBehavior///PointingToGenericParameters(0)/">V</span><span class="token operator">&gt; </span></div><div class="brief ">Behavior for <a href="index.html">BaseTransientBottomBar</a>.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="381140278%2FClasslikes%2F-409846242" anchor-label="BehaviorDelegate" id="381140278%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-behavior-delegate/index.html"><span>Behavior</span><wbr><span><span>Delegate</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="381140278%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/RestrictTo///PointingToDeclaration/"><span class="token annotation builtin">RestrictTo</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span data-unresolved-link="androidx.annotation/RestrictTo.Scope.LIBRARY_GROUP///PointingToDeclaration/{&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;:{&quot;key&quot;:&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;}}">LIBRARY_GROUP</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">class </span><a href="-behavior-delegate/index.html">BehaviorDelegate</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="2124379090%2FClasslikes%2F-409846242" anchor-label="ContentViewCallback" id="2124379090%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-content-view-callback/index.html"><span>Content</span><wbr><span>View</span><wbr><span><span>Callback</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2124379090%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-content-view-callback/index.html"><strike>ContentViewCallback</strike></a> : <a href="../-content-view-callback/index.html">ContentViewCallback</a></div><div class="brief ">Interface that defines the behavior of the main content of a transient bottom bar.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1033689031%2FClasslikes%2F-409846242" anchor-label="Duration" id="-1033689031%2FClasslikes%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-duration/index.html"><span><span>Duration</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1033689031%2FClasslikes%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/RestrictTo///PointingToDeclaration/"><span class="token annotation builtin">RestrictTo</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span data-unresolved-link="androidx.annotation/RestrictTo.Scope.LIBRARY_GROUP///PointingToDeclaration/{&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;:{&quot;key&quot;:&quot;org.jetbrains.dokka.links.EnumEntryDRIExtra&quot;}}">LIBRARY_GROUP</span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/IntRange///PointingToDeclaration/"><span class="token annotation builtin">IntRange</span></span><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">-2</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/java/lang/annotation/Retention.html"><span class="token annotation builtin">Retention</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><a href="https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy.html">RetentionPolicy.SOURCE</a></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="-duration/index.html">Duration</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="1768567817%2FFunctions%2F-409846242" anchor-label="addCallback" id="1768567817%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="add-callback.html"><span>add</span><wbr><span><span>Callback</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1768567817%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-callback.html"><span class="token function">addCallback</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>callback<span class="token operator">: </span><a href="-base-callback/index.html">BaseTransientBottomBar.BaseCallback</a><span class="token operator">&lt;</span><a href="index.html">B</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">B</a></div><div class="brief ">Adds the specified callback to the list of callbacks that will be notified of transient bottom bar events.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-575818824%2FFunctions%2F-409846242" anchor-label="dismiss" id="-575818824%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="dismiss.html"><span><span>dismiss</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-575818824%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="dismiss.html"><span class="token function">dismiss</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Dismiss the <a href="index.html">BaseTransientBottomBar</a>.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="338753106%2FFunctions%2F-409846242" anchor-label="getAnchorView" id="338753106%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-anchor-view.html"><span>get</span><wbr><span>Anchor</span><wbr><span><span>View</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="338753106%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-anchor-view.html"><span class="token function">getAnchorView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a></div><div class="brief ">Returns the anchor view for this <a href="index.html">BaseTransientBottomBar</a>.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-887283801%2FFunctions%2F-409846242" anchor-label="getAnimationMode" id="-887283801%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-animation-mode.html"><span>get</span><wbr><span>Animation</span><wbr><span><span>Mode</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-887283801%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-animation-mode.html"><span class="token function">getAnimationMode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief ">Returns the animation mode.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1376835655%2FFunctions%2F-409846242" anchor-label="getView" id="1376835655%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-view.html"><span>get</span><wbr><span><span>View</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1376835655%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-view.html"><span class="token function">getView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a></div><div class="brief ">Returns the <a href="index.html">BaseTransientBottomBar</a>'s view.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1776636323%2FFunctions%2F-409846242" anchor-label="isAnchorViewLayoutListenerEnabled" id="1776636323%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-anchor-view-layout-listener-enabled.html"><span>is</span><wbr><span>Anchor</span><wbr><span>View</span><wbr><span>Layout</span><wbr><span>Listener</span><wbr><span><span>Enabled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1776636323%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-anchor-view-layout-listener-enabled.html"><span class="token function">isAnchorViewLayoutListenerEnabled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Returns whether the anchor view layout listener is enabled.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="59431289%2FFunctions%2F-409846242" anchor-label="isGestureInsetBottomIgnored" id="59431289%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-gesture-inset-bottom-ignored.html"><span>is</span><wbr><span>Gesture</span><wbr><span>Inset</span><wbr><span>Bottom</span><wbr><span><span>Ignored</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="59431289%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-gesture-inset-bottom-ignored.html"><span class="token function">isGestureInsetBottomIgnored</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Returns whether this bottom bar should adjust it's position based on the system gesture area on Android Q and above.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-193090853%2FFunctions%2F-409846242" anchor-label="isShown" id="-193090853%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-shown.html"><span>is</span><wbr><span><span>Shown</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-193090853%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-shown.html"><span class="token function">isShown</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Return whether this <a href="index.html">BaseTransientBottomBar</a> is currently being shown.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1192921157%2FFunctions%2F-409846242" anchor-label="isShownOrQueued" id="1192921157%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-shown-or-queued.html"><span>is</span><wbr><span>Shown</span><wbr><span>Or</span><wbr><span><span>Queued</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1192921157%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-shown-or-queued.html"><span class="token function">isShownOrQueued</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Returns whether this <a href="index.html">BaseTransientBottomBar</a> is currently being shown, or is queued to be shown next.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="829682262%2FFunctions%2F-409846242" anchor-label="removeCallback" id="829682262%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="remove-callback.html"><span>remove</span><wbr><span><span>Callback</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="829682262%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-callback.html"><span class="token function">removeCallback</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>callback<span class="token operator">: </span><a href="-base-callback/index.html">BaseTransientBottomBar.BaseCallback</a><span class="token operator">&lt;</span><a href="index.html">B</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">B</a></div><div class="brief ">Removes the specified callback from the list of callbacks that will be notified of transient bottom bar events.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1094039660%2FFunctions%2F-409846242" anchor-label="setAnchorView" id="1094039660%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="set-anchor-view.html"><span>set</span><wbr><span>Anchor</span><wbr><span><span>View</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1094039660%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-anchor-view.html"><span class="token function">setAnchorView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span>&nbsp;</span>anchorView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">B</a></div><div class="brief ">Sets the view the <a href="index.html">BaseTransientBottomBar</a> should be anchored above.</div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-anchor-view.html"><span class="token function">setAnchorView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/IdRes///PointingToDeclaration/"><span class="token annotation builtin">IdRes</span></span>&nbsp;</span>anchorViewId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">B</a></div><div class="brief ">Sets the view the <a href="index.html">BaseTransientBottomBar</a> should be anchored above by id.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1548148617%2FFunctions%2F-409846242" anchor-label="setAnchorViewLayoutListenerEnabled" id="1548148617%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="set-anchor-view-layout-listener-enabled.html"><span>set</span><wbr><span>Anchor</span><wbr><span>View</span><wbr><span>Layout</span><wbr><span>Listener</span><wbr><span><span>Enabled</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1548148617%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-anchor-view-layout-listener-enabled.html"><span class="token function">setAnchorViewLayoutListenerEnabled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">anchorViewLayoutListenerEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets whether the anchor view layout listener is enabled.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="617970784%2FFunctions%2F-409846242" anchor-label="setAnimationMode" id="617970784%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="set-animation-mode.html"><span>set</span><wbr><span>Animation</span><wbr><span><span>Mode</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="617970784%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-animation-mode.html"><span class="token function">setAnimationMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">animationMode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">B</a></div><div class="brief ">Sets the animation mode.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="2012625011%2FFunctions%2F-409846242" anchor-label="setGestureInsetBottomIgnored" id="2012625011%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="set-gesture-inset-bottom-ignored.html"><span>set</span><wbr><span>Gesture</span><wbr><span>Inset</span><wbr><span>Bottom</span><wbr><span><span>Ignored</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2012625011%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-gesture-inset-bottom-ignored.html"><span class="token function">setGestureInsetBottomIgnored</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gestureInsetBottomIgnored<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">B</a></div><div class="brief ">Sets whether this bottom bar should adjust it's position based on the system gesture area on Android Q and above.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-766457285%2FFunctions%2F-409846242" anchor-label="show" id="-766457285%2FFunctions%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="show.html"><span><span>show</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-766457285%2FFunctions%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="show.html"><span class="token function">show</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Show the <a href="index.html">BaseTransientBottomBar</a>.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-493121115%2FProperties%2F-409846242" anchor-label="ANIMATION_MODE_FADE" id="-493121115%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-f-a-d-e.html"><span><span>ANIMATION_MODE_FADE</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-493121115%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-493121115%2FProperties%2F-409846242" anchor-label="ANIMATION_MODE_FADE" id="-493121115%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-f-a-d-e.html">ANIMATION_MODE_FADE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1</span></div><div class="brief "><a data-name="-493121115%2FProperties%2F-409846242" anchor-label="ANIMATION_MODE_FADE" id="-493121115%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>Animation mode that corresponds to the fade in and out animations.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-1021544728%2FProperties%2F-409846242" anchor-label="ANIMATION_MODE_SLIDE" id="-1021544728%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-s-l-i-d-e.html"><span><span>ANIMATION_MODE_SLIDE</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1021544728%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-1021544728%2FProperties%2F-409846242" anchor-label="ANIMATION_MODE_SLIDE" id="-1021544728%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-n-i-m-a-t-i-o-n_-m-o-d-e_-s-l-i-d-e.html">ANIMATION_MODE_SLIDE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></div><div class="brief "><a data-name="-1021544728%2FProperties%2F-409846242" anchor-label="ANIMATION_MODE_SLIDE" id="-1021544728%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>Animation mode that corresponds to the slide in and out animations.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-190740730%2FProperties%2F-409846242" anchor-label="behavior" id="-190740730%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="behavior.html"><span><span>behavior</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-190740730%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-190740730%2FProperties%2F-409846242" anchor-label="behavior" id="-190740730%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@set:</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="behavior.html">behavior</a><span class="token operator">: </span><a href="-behavior/index.html">BaseTransientBottomBar.Behavior</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1307350067%2FProperties%2F-409846242" anchor-label="context" id="1307350067%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="context.html"><span><span>context</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1307350067%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="1307350067%2FProperties%2F-409846242" anchor-label="context" id="1307350067%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-362300924%2FProperties%2F-409846242" anchor-label="duration" id="-362300924%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="duration.html"><span><span>duration</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-362300924%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-362300924%2FProperties%2F-409846242" anchor-label="duration" id="-362300924%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@set:</span><span data-unresolved-link="androidx.annotation/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="duration.html">duration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="944622836%2FProperties%2F-409846242" anchor-label="LENGTH_INDEFINITE" id="944622836%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-l-e-n-g-t-h_-i-n-d-e-f-i-n-i-t-e.html"><span><span>LENGTH_INDEFINITE</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="944622836%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="944622836%2FProperties%2F-409846242" anchor-label="LENGTH_INDEFINITE" id="944622836%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-l-e-n-g-t-h_-i-n-d-e-f-i-n-i-t-e.html">LENGTH_INDEFINITE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">-2</span></div><div class="brief "><a data-name="944622836%2FProperties%2F-409846242" anchor-label="LENGTH_INDEFINITE" id="944622836%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>Show the Snackbar indefinitely.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="-713049619%2FProperties%2F-409846242" anchor-label="LENGTH_LONG" id="-713049619%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-l-e-n-g-t-h_-l-o-n-g.html"><span><span>LENGTH_LONG</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-713049619%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="-713049619%2FProperties%2F-409846242" anchor-label="LENGTH_LONG" id="-713049619%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-l-e-n-g-t-h_-l-o-n-g.html">LENGTH_LONG</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></div><div class="brief "><a data-name="-713049619%2FProperties%2F-409846242" anchor-label="LENGTH_LONG" id="-713049619%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>Show the Snackbar for a long period of time.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-<a data-name="1230490421%2FProperties%2F-409846242" anchor-label="LENGTH_SHORT" id="1230490421%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-l-e-n-g-t-h_-s-h-o-r-t.html"><span><span>LENGTH_SHORT</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1230490421%2FProperties%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ceres-m3:dokkaHtmlPartial/release"><a data-name="1230490421%2FProperties%2F-409846242" anchor-label="LENGTH_SHORT" id="1230490421%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-l-e-n-g-t-h_-s-h-o-r-t.html">LENGTH_SHORT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">-1</span></div><div class="brief "><a data-name="1230490421%2FProperties%2F-409846242" anchor-label="LENGTH_SHORT" id="1230490421%2FProperties%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>Show the Snackbar for a short period of time.</div></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Inheritors</h2>
-      <div class="table" data-togglable="Inheritors"><a data-name="28267249%2FInheritors%2F-409846242" anchor-label="Snackbar" id="28267249%2FInheritors%2F-409846242" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release"></a>
-        <div class="table-row" data-filterable-current=":ceres-m3:dokkaHtmlPartial/release" data-filterable-set=":ceres-m3:dokkaHtmlPartial/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-snackbar/index.html">Snackbar</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="28267249%2FInheritors%2F-409846242"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
-    </div>
-</div>
-
-</body></html>
-
+  </body>
+</html>
