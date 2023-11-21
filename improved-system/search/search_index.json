@@ -54,7 +54,7 @@
     {
       "location": "api-documentation/#project-documentation",
       "title": "Project Documentation",
-      "text": "<p>For in-depth exploration of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>Querent: Delve into the core functionality of the Querent module.</p> </li> <li> <p>API: Discover the comprehensive API reference for the project's features.</p> </li> <li> <p>Plugin: Uncover the usage and implementation of the Gradle plugin.</p> </li> </ul>"
+      "text": "<ul> <li>Querent: Discover the comprehensive API reference for the project.</li> </ul> <p>For in-depth exploration of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>API: Discover the comprehensive API reference for the project's <code>:api</code> module.</p> </li> <li> <p>Plugin: Discover the comprehensive API reference for the project's <code>:gradle-plugin</code> module.</p> </li> </ul>"
     },
     {
       "location": "api-documentation/#contributions-and-support",
