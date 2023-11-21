@@ -69,12 +69,37 @@
     {
       "location": "sponsor/",
       "title": "Sponsor \ud83e\ude77",
-      "text": "<p>Teodor Grigor (also known as teogor) has created and contributed more than +70 open-source projects and libraries related to Android and Kotlin. With over his open-source projects and libraries, his work has left a significant impact on the development landscape. These projects have been widely embraced by millions of projects, software engineers, and end-users worldwide, with prominent organizations like PayPal, Twitter, Wikipedia, and others benefiting from their creations.</p> <p>If your team or personal projects have benefited from reduced development costs by using this library, you can show your appreciation and support by sponsoring him through the links below:</p> <ul> <li>GitHub Sponsor</li> <li>PayPal</li> </ul> <p>Sponsoring helps sustain the continuous development and improvement of the library, ensuring that it remains a valuable resource for the community. Your contribution not only shows gratitude but also contributes to the growth and success of open-source projects like this one. Feel free to lend your support and make a positive impact on the developer's efforts.</p> <p>If you want to suggest a feature request or sponsorship collaboration, you can reach out to the auther with the contacts below:</p> <ul> <li>open-source@teogor.dev</li> <li>LinkedIn</li> <li>Instagram</li> <li>X (formerly known as Twitter)</li> </ul>"
+      "text": "<p>As an active open-source developer, Teodor Grigor (also known as Teogor) has made significant contributions to the developer community by creating and maintaining an extensive portfolio of open-source projects and libraries, primarily focused on Android and Kotlin development. His work has had a profound impact on the development landscape, with his projects being adopted by millions of projects, software engineers, and end-users worldwide.</p> <p>This rephrased version provides more context about Teodor Grigor's contributions to open-source development and highlights the impact of his work on the developer community and prominent organizations.</p> <p>Has this library helped you streamline your development process and reduce costs? If so, consider expressing your gratitude and supporting the developer's efforts through the provided sponsorship links below.</p> <ul> <li>GitHub Sponsor</li> <li>PayPal</li> </ul> <p>Your support is crucial for the ongoing development and enhancement of this library, ensuring it remains a valuable asset for the community. By contributing, you not only express your appreciation but also actively participate in the growth and success of open-source projects like this one. Join us in making a positive impact on the developer's efforts and the future of this project.</p> <p>If you have suggestions for feature requests or would like to explore sponsorship opportunities, please contact the author using the following details:</p> <ul> <li>open-source@teogor.dev</li> <li>LinkedIn</li> <li>Instagram</li> <li>X (formerly known as Twitter)</li> </ul>"
     },
     {
       "location": "sponsor/#sponsors",
       "title": "Sponsors",
-      "text": "<p>Be the first sponsor for this library!</p>"
+      "text": "<p>Show your support by being the first sponsor of this library!</p>"
+    },
+    {
+      "location": "sponsor/#sponsors_1",
+      "title": "Sponsors",
+      "text": "<p>We are incredibly grateful for the generous support of our sponsors. Their contributions help us continue developing and improving this library.</p>"
+    },
+    {
+      "location": "sponsor/#gold-sponsors",
+      "title": "Gold Sponsors",
+      "text": "<ul> <li>Sponsor Name</li> <li>Sponsor Name</li> </ul>"
+    },
+    {
+      "location": "sponsor/#silver-sponsors",
+      "title": "Silver Sponsors",
+      "text": "<ul> <li>Sponsor Name</li> <li>Sponsor Name</li> </ul>"
+    },
+    {
+      "location": "sponsor/#bronze-sponsors",
+      "title": "Bronze Sponsors",
+      "text": "<ul> <li>Sponsor Name</li> <li>Sponsor Name</li> </ul>"
+    },
+    {
+      "location": "sponsor/#become-a-sponsor",
+      "title": "Become a Sponsor",
+      "text": "<p>Your support is crucial for the ongoing development and enhancement of this library. By becoming a sponsor, you can help us:</p> <ul> <li>Continue developing new features and improvements</li> <li>Maintain and update the library for compatibility with the latest technologies</li> <li>Provide timely support to users</li> </ul> <p>If you are interested in becoming a sponsor, please contact us at [email protected]</p> <p>Thank you for your consideration!</p>"
     }
   ]
 }
