@@ -65,7 +65,7 @@
     {
       "location": "security/#supported-versions",
       "title": "Supported Versions",
-      "text": "<p>Please refer to this table to see which versions of the project are currently receiving security updates:</p> Version Supported Release :white_check_mark: ALPHA :x: BETA :x:"
+      "text": "<p>Please refer to this table to see which versions of the project are currently receiving security updates:</p> Version Supported Release \u2705 ALPHA \u274c BETA \u274c"
     },
     {
       "location": "security/#reporting-a-vulnerability",
