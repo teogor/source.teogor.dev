@@ -13,15 +13,17 @@
 
     <link
       rel="canonical"
-      href="https://github.com/teogor/redesigned-garbanzo/security/"
+      href="https://github.com/teogor/redesigned-garbanzo/mapping/"
     />
 
-    <link rel="prev" href="../sponsor/" />
+    <link rel="prev" href="../api-documentation/" />
+
+    <link rel="next" href="../version-catalog/" />
 
     <link rel="icon" href="../assets/images/favicon.png" />
     <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.10" />
 
-    <title>Security - Xenoglot</title>
+    <title>Mapping - Xenoglot</title>
 
     <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css" />
 
@@ -125,7 +127,9 @@
     />
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      <a href="#security-policy" class="md-skip"> Skip to content </a>
+      <a href="#libraries-implementation-version-catalog" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce"></div>
 
@@ -155,7 +159,7 @@
               <span class="md-ellipsis"> Xenoglot </span>
             </div>
             <div class="md-header__topic" data-md-component="header-topic">
-              <span class="md-ellipsis"> Security </span>
+              <span class="md-ellipsis"> Mapping </span>
             </div>
           </div>
         </div>
@@ -317,10 +321,142 @@
                       </a>
                     </li>
 
-                    <li class="md-nav__item">
-                      <a href="../mapping/" class="md-nav__link">
+                    <li class="md-nav__item md-nav__item--active">
+                      <input
+                        class="md-nav__toggle md-toggle"
+                        type="checkbox"
+                        id="__toc"
+                      />
+
+                      <label
+                        class="md-nav__link md-nav__link--active"
+                        for="__toc"
+                      >
+                        <span class="md-ellipsis"> Mapping </span>
+
+                        <span class="md-nav__icon md-icon"></span>
+                      </label>
+
+                      <a href="./" class="md-nav__link md-nav__link--active">
                         <span class="md-ellipsis"> Mapping </span>
                       </a>
+
+                      <nav
+                        class="md-nav md-nav--secondary"
+                        aria-label="Table of contents"
+                      >
+                        <label class="md-nav__title" for="__toc">
+                          <span class="md-nav__icon md-icon"></span>
+                          Table of contents
+                        </label>
+                        <ul
+                          class="md-nav__list"
+                          data-md-component="toc"
+                          data-md-scrollfix
+                        >
+                          <li class="md-nav__item">
+                            <a
+                              href="#libraries-implementation-version-catalog"
+                              class="md-nav__link"
+                            >
+                              <span class="md-ellipsis">
+                                Libraries Implementation Version Catalog
+                              </span>
+                            </a>
+                          </li>
+
+                          <li class="md-nav__item">
+                            <a
+                              href="#libraries-implementation-buildgradlekts-file"
+                              class="md-nav__link"
+                            >
+                              <span class="md-ellipsis">
+                                Libraries Implementation build.gradle.kts File
+                              </span>
+                            </a>
+                          </li>
+
+                          <li class="md-nav__item">
+                            <a href="#xenoglot-android" class="md-nav__link">
+                              <span class="md-ellipsis">
+                                Xenoglot android
+                              </span>
+                            </a>
+
+                            <nav class="md-nav" aria-label="Xenoglot android">
+                              <ul class="md-nav__list">
+                                <li class="md-nav__item">
+                                  <a
+                                    href="#implementation-android"
+                                    class="md-nav__link"
+                                  >
+                                    <span class="md-ellipsis">
+                                      Implementation Android
+                                    </span>
+                                  </a>
+
+                                  <nav
+                                    class="md-nav"
+                                    aria-label="Implementation Android"
+                                  >
+                                    <ul class="md-nav__list">
+                                      <li class="md-nav__item">
+                                        <a
+                                          href="#gradle-dependency"
+                                          class="md-nav__link"
+                                        >
+                                          <span class="md-ellipsis">
+                                            Gradle Dependency
+                                          </span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+
+                          <li class="md-nav__item">
+                            <a href="#xenoglot-core" class="md-nav__link">
+                              <span class="md-ellipsis"> Xenoglot core </span>
+                            </a>
+
+                            <nav class="md-nav" aria-label="Xenoglot core">
+                              <ul class="md-nav__list">
+                                <li class="md-nav__item">
+                                  <a
+                                    href="#implementation-core"
+                                    class="md-nav__link"
+                                  >
+                                    <span class="md-ellipsis">
+                                      Implementation Core
+                                    </span>
+                                  </a>
+
+                                  <nav
+                                    class="md-nav"
+                                    aria-label="Implementation Core"
+                                  >
+                                    <ul class="md-nav__list">
+                                      <li class="md-nav__item">
+                                        <a
+                                          href="#gradle-dependency_1"
+                                          class="md-nav__link"
+                                        >
+                                          <span class="md-ellipsis">
+                                            Gradle Dependency
+                                          </span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                        </ul>
+                      </nav>
                     </li>
 
                     <li class="md-nav__item">
@@ -341,59 +477,10 @@
                       </a>
                     </li>
 
-                    <li class="md-nav__item md-nav__item--active">
-                      <input
-                        class="md-nav__toggle md-toggle"
-                        type="checkbox"
-                        id="__toc"
-                      />
-
-                      <label
-                        class="md-nav__link md-nav__link--active"
-                        for="__toc"
-                      >
-                        <span class="md-ellipsis"> Security </span>
-
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
-
-                      <a href="./" class="md-nav__link md-nav__link--active">
+                    <li class="md-nav__item">
+                      <a href="../security/" class="md-nav__link">
                         <span class="md-ellipsis"> Security </span>
                       </a>
-
-                      <nav
-                        class="md-nav md-nav--secondary"
-                        aria-label="Table of contents"
-                      >
-                        <label class="md-nav__title" for="__toc">
-                          <span class="md-nav__icon md-icon"></span>
-                          Table of contents
-                        </label>
-                        <ul
-                          class="md-nav__list"
-                          data-md-component="toc"
-                          data-md-scrollfix
-                        >
-                          <li class="md-nav__item">
-                            <a href="#supported-versions" class="md-nav__link">
-                              <span class="md-ellipsis">
-                                Supported Versions
-                              </span>
-                            </a>
-                          </li>
-
-                          <li class="md-nav__item">
-                            <a
-                              href="#reporting-a-vulnerability"
-                              class="md-nav__link"
-                            >
-                              <span class="md-ellipsis">
-                                Reporting a Vulnerability
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
                     </li>
                   </ul>
                 </nav>
@@ -422,17 +509,100 @@
                     data-md-scrollfix
                   >
                     <li class="md-nav__item">
-                      <a href="#supported-versions" class="md-nav__link">
-                        <span class="md-ellipsis"> Supported Versions </span>
+                      <a
+                        href="#libraries-implementation-version-catalog"
+                        class="md-nav__link"
+                      >
+                        <span class="md-ellipsis">
+                          Libraries Implementation Version Catalog
+                        </span>
                       </a>
                     </li>
 
                     <li class="md-nav__item">
-                      <a href="#reporting-a-vulnerability" class="md-nav__link">
+                      <a
+                        href="#libraries-implementation-buildgradlekts-file"
+                        class="md-nav__link"
+                      >
                         <span class="md-ellipsis">
-                          Reporting a Vulnerability
+                          Libraries Implementation build.gradle.kts File
                         </span>
                       </a>
+                    </li>
+
+                    <li class="md-nav__item">
+                      <a href="#xenoglot-android" class="md-nav__link">
+                        <span class="md-ellipsis"> Xenoglot android </span>
+                      </a>
+
+                      <nav class="md-nav" aria-label="Xenoglot android">
+                        <ul class="md-nav__list">
+                          <li class="md-nav__item">
+                            <a
+                              href="#implementation-android"
+                              class="md-nav__link"
+                            >
+                              <span class="md-ellipsis">
+                                Implementation Android
+                              </span>
+                            </a>
+
+                            <nav
+                              class="md-nav"
+                              aria-label="Implementation Android"
+                            >
+                              <ul class="md-nav__list">
+                                <li class="md-nav__item">
+                                  <a
+                                    href="#gradle-dependency"
+                                    class="md-nav__link"
+                                  >
+                                    <span class="md-ellipsis">
+                                      Gradle Dependency
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+
+                    <li class="md-nav__item">
+                      <a href="#xenoglot-core" class="md-nav__link">
+                        <span class="md-ellipsis"> Xenoglot core </span>
+                      </a>
+
+                      <nav class="md-nav" aria-label="Xenoglot core">
+                        <ul class="md-nav__list">
+                          <li class="md-nav__item">
+                            <a href="#implementation-core" class="md-nav__link">
+                              <span class="md-ellipsis">
+                                Implementation Core
+                              </span>
+                            </a>
+
+                            <nav
+                              class="md-nav"
+                              aria-label="Implementation Core"
+                            >
+                              <ul class="md-nav__list">
+                                <li class="md-nav__item">
+                                  <a
+                                    href="#gradle-dependency_1"
+                                    class="md-nav__link"
+                                  >
+                                    <span class="md-ellipsis">
+                                      Gradle Dependency
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </li>
+                        </ul>
+                      </nav>
                     </li>
                   </ul>
                 </nav>
@@ -442,122 +612,200 @@
 
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
-              <h1 id="security-policy">
-                Security Policy<a
+              <h1>Mapping</h1>
+
+              <h2 id="libraries-implementation-version-catalog">
+                Libraries Implementation Version Catalog<a
                   class="headerlink"
-                  href="#security-policy"
-                  title="Permanent link"
-                  >&para;</a
-                >
-              </h1>
-              <h2 id="supported-versions">
-                Supported Versions<a
-                  class="headerlink"
-                  href="#supported-versions"
+                  href="#libraries-implementation-version-catalog"
                   title="Permanent link"
                   >&para;</a
                 >
               </h2>
               <p>
-                Please refer to this table to see which versions of the project
-                are currently receiving security updates:
+                This catalog provides the implementation details of Xenoglot
+                libraries, including Build of Materials (BoM) and individual
+                libraries, in TOML format.
               </p>
+              <div class="highlight">
+                <pre><span></span><code><span class="k">[versions]</span>
+<span class="n">xenoglot-bom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0-alpha01&quot;</span>
+
+<span class="k">[libraries]</span>
+<span class="c1"># Xenoglot BoM</span>
+<span class="n">xenoglot-bom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dev.teogor.xenoglot&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;bom&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">version</span><span class="p">.</span><span class="n">ref</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;xenoglot-bom&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="c1"># Xenoglot Libraries</span>
+<span class="n">xenoglot-android</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dev.teogor.xenoglot&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;android&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="n">xenoglot-core</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dev.teogor.xenoglot&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;core&quot;</span><span class="w"> </span><span class="p">}</span>
+</code></pre>
+              </div>
+              <h2 id="libraries-implementation-buildgradlekts-file">
+                Libraries Implementation build.gradle.kts File<a
+                  class="headerlink"
+                  href="#libraries-implementation-buildgradlekts-file"
+                  title="Permanent link"
+                  >&para;</a
+                >
+              </h2>
+              <p>
+                This section presents the implementation dependencies for
+                Xenoglot libraries in a Kotlin build.gradle.kts file format.
+              </p>
+              <div class="highlight">
+                <pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Xenoglot BoM</span>
+<span class="w">  </span><span class="n">implementation</span><span class="p">(</span><span class="n">platform</span><span class="p">(</span><span class="n">libs</span><span class="p">.</span><span class="na">xenoglot</span><span class="p">.</span><span class="na">bom</span><span class="p">))</span>
+<span class="w">  </span><span class="c1">// Xenoglot Libraries</span>
+<span class="w">  </span><span class="n">implementation</span><span class="p">(</span><span class="n">libs</span><span class="p">.</span><span class="na">xenoglot</span><span class="p">.</span><span class="na">android</span><span class="p">)</span>
+<span class="w">  </span><span class="n">implementation</span><span class="p">(</span><span class="n">libs</span><span class="p">.</span><span class="na">xenoglot</span><span class="p">.</span><span class="na">core</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+              </div>
+              <h2 id="xenoglot-android">
+                Xenoglot android<a
+                  class="headerlink"
+                  href="#xenoglot-android"
+                  title="Permanent link"
+                  >&para;</a
+                >
+              </h2>
               <table>
                 <thead>
                   <tr>
-                    <th>Version</th>
-                    <th>Supported</th>
+                    <th>Status</th>
+                    <th>Library</th>
+                    <th>Gradle dependency</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Release</td>
-                    <td>✅</td>
-                  </tr>
-                  <tr>
-                    <td>ALPHA</td>
-                    <td>❌</td>
-                  </tr>
-                  <tr>
-                    <td>BETA</td>
-                    <td>❌</td>
+                    <td>🧪</td>
+                    <td><a href="../documentation/android">android</a></td>
+                    <td>
+                      <a href="#implementation-android"
+                        >dev.teogor.xenoglot:android:1.0.0-alpha01</a
+                      >
+                    </td>
                   </tr>
                 </tbody>
               </table>
-              <h2 id="reporting-a-vulnerability">
-                Reporting a Vulnerability<a
+              <p>
+                By referring to the
+                <a href="../bom/versions/">BoM documentation</a>, you can learn
+                how to integrate the BoM into your project and benefit from this
+                hassle-free approach to library version management. It's a
+                powerful tool for staying up-to-date with the latest Xenoglot
+                library versions and seamlessly integrating them into your
+                projects.
+              </p>
+              <h3 id="implementation-android">
+                Implementation Android<a
                   class="headerlink"
-                  href="#reporting-a-vulnerability"
+                  href="#implementation-android"
+                  title="Permanent link"
+                  >&para;</a
+                >
+              </h3>
+              <p>
+                To use android in your project, add the following dependency to
+                your module-level Gradle file (usually
+                <code>app/build.gradle.kts</code>):
+              </p>
+              <div class="highlight">
+                <pre><span></span><code><span class="n">implementation</span><span class="p">(</span><span class="s">&quot;dev.teogor.xenoglot:android:1.0.0-alpha01&quot;</span><span class="p">)</span>
+</code></pre>
+              </div>
+              <h4 id="gradle-dependency">
+                Gradle Dependency<a
+                  class="headerlink"
+                  href="#gradle-dependency"
+                  title="Permanent link"
+                  >&para;</a
+                >
+              </h4>
+              <ul>
+                <li>
+                  <strong>Group ID:</strong> <code>dev.teogor.xenoglot</code>
+                </li>
+                <li><strong>Artifact ID:</strong> <code>android</code></li>
+                <li>
+                  <strong>Version:</strong> <code>1.0.0-alpha01</code> (not
+                  required when using <a href="../bom/versions/">BoM</a>)
+                </li>
+              </ul>
+              <p>⚠️ Depends on <code>:android</code></p>
+              <h2 id="xenoglot-core">
+                Xenoglot core<a
+                  class="headerlink"
+                  href="#xenoglot-core"
                   title="Permanent link"
                   >&para;</a
                 >
               </h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Status</th>
+                    <th>Library</th>
+                    <th>Gradle dependency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>🧪</td>
+                    <td><a href="../documentation/core">core</a></td>
+                    <td>
+                      <a href="#implementation-core"
+                        >dev.teogor.xenoglot:core:1.0.0-alpha01</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
               <p>
-                If you discover a security vulnerability within this project,
-                please follow these steps:
+                By referring to the
+                <a href="../bom/versions/">BoM documentation</a>, you can learn
+                how to integrate the BoM into your project and benefit from this
+                hassle-free approach to library version management. It's a
+                powerful tool for staying up-to-date with the latest Xenoglot
+                library versions and seamlessly integrating them into your
+                projects.
               </p>
-              <ol>
-                <li>
-                  <p>
-                    <strong>Do Not Disclose Publicly:</strong> Do not publicly
-                    disclose the vulnerability until it has been addressed and a
-                    security release is available.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Contact Us:</strong> Report the vulnerability to us
-                    by sending an email to
-                    <a href="mailto:open-source@teogor.dev"
-                      >open-source@teogor.dev</a
-                    >. You can encrypt sensitive information using our
-                    <a href="https://source.teogor.dev/security/pgp-key"
-                      >PGP key</a
-                    >
-                    to ensure the confidentiality of the report.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Provide Details:</strong> Please provide us with
-                    detailed information about the vulnerability, including
-                    steps to reproduce, affected versions, and potential impact.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Acknowledgment:</strong> We will acknowledge your
-                    report within 48 hours to confirm that we have received it
-                    and are investigating.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Resolution:</strong> Our security team will work to
-                    validate and address the vulnerability. We will keep you
-                    informed about our progress and expected timelines for
-                    resolution.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Disclosure:</strong> Once the vulnerability is fixed
-                    and a release is available, we will work with you to
-                    determine an appropriate timeline for public disclosure. We
-                    appreciate your patience during this process.
-                  </p>
-                </li>
-              </ol>
-              <p>
-                Thank you for helping us improve the security of our project.
-              </p>
-              <p>
-                <em
-                  ><a href="https://source.teogor.dev/security/pgp-key"
-                    >PGP key</a
-                  ></em
+              <h3 id="implementation-core">
+                Implementation Core<a
+                  class="headerlink"
+                  href="#implementation-core"
+                  title="Permanent link"
+                  >&para;</a
                 >
+              </h3>
+              <p>
+                To use core in your project, add the following dependency to
+                your module-level Gradle file (usually
+                <code>app/build.gradle.kts</code>):
               </p>
+              <div class="highlight">
+                <pre><span></span><code><span class="n">implementation</span><span class="p">(</span><span class="s">&quot;dev.teogor.xenoglot:core:1.0.0-alpha01&quot;</span><span class="p">)</span>
+</code></pre>
+              </div>
+              <h4 id="gradle-dependency_1">
+                Gradle Dependency<a
+                  class="headerlink"
+                  href="#gradle-dependency_1"
+                  title="Permanent link"
+                  >&para;</a
+                >
+              </h4>
+              <ul>
+                <li>
+                  <strong>Group ID:</strong> <code>dev.teogor.xenoglot</code>
+                </li>
+                <li><strong>Artifact ID:</strong> <code>core</code></li>
+                <li>
+                  <strong>Version:</strong> <code>1.0.0-alpha01</code> (not
+                  required when using <a href="../bom/versions/">BoM</a>)
+                </li>
+              </ul>
             </article>
           </div>
 
