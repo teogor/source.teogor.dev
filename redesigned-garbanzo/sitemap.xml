@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/redesigned-garbanzo/implementation/</loc>
+         <lastmod>2023-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/redesigned-garbanzo/mapping/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
@@ -27,11 +32,6 @@
     </url>
     <url>
          <loc>https://github.com/teogor/redesigned-garbanzo/sponsor/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/version-catalog/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
