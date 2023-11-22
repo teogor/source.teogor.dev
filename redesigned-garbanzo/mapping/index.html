@@ -127,9 +127,7 @@
     />
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      <a href="#libraries-implementation-version-catalog" class="md-skip">
-        Skip to content
-      </a>
+      <a href="#xenoglot-mapping" class="md-skip"> Skip to content </a>
     </div>
     <div data-md-component="announce"></div>
 
@@ -355,28 +353,6 @@
                           data-md-scrollfix
                         >
                           <li class="md-nav__item">
-                            <a
-                              href="#libraries-implementation-version-catalog"
-                              class="md-nav__link"
-                            >
-                              <span class="md-ellipsis">
-                                Libraries Implementation Version Catalog
-                              </span>
-                            </a>
-                          </li>
-
-                          <li class="md-nav__item">
-                            <a
-                              href="#libraries-implementation-buildgradlekts-file"
-                              class="md-nav__link"
-                            >
-                              <span class="md-ellipsis">
-                                Libraries Implementation build.gradle.kts File
-                              </span>
-                            </a>
-                          </li>
-
-                          <li class="md-nav__item">
                             <a href="#xenoglot-android" class="md-nav__link">
                               <span class="md-ellipsis">
                                 Xenoglot android
@@ -509,28 +485,6 @@
                     data-md-scrollfix
                   >
                     <li class="md-nav__item">
-                      <a
-                        href="#libraries-implementation-version-catalog"
-                        class="md-nav__link"
-                      >
-                        <span class="md-ellipsis">
-                          Libraries Implementation Version Catalog
-                        </span>
-                      </a>
-                    </li>
-
-                    <li class="md-nav__item">
-                      <a
-                        href="#libraries-implementation-buildgradlekts-file"
-                        class="md-nav__link"
-                      >
-                        <span class="md-ellipsis">
-                          Libraries Implementation build.gradle.kts File
-                        </span>
-                      </a>
-                    </li>
-
-                    <li class="md-nav__item">
                       <a href="#xenoglot-android" class="md-nav__link">
                         <span class="md-ellipsis"> Xenoglot android </span>
                       </a>
@@ -612,55 +566,14 @@
 
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
-              <h1>Mapping</h1>
-
-              <h2 id="libraries-implementation-version-catalog">
-                Libraries Implementation Version Catalog<a
+              <h1 id="xenoglot-mapping">
+                Xenoglot Mapping<a
                   class="headerlink"
-                  href="#libraries-implementation-version-catalog"
+                  href="#xenoglot-mapping"
                   title="Permanent link"
                   >&para;</a
                 >
-              </h2>
-              <p>
-                This catalog provides the implementation details of Xenoglot
-                libraries, including Build of Materials (BoM) and individual
-                libraries, in TOML format.
-              </p>
-              <div class="highlight">
-                <pre><span></span><code><span class="k">[versions]</span>
-<span class="n">xenoglot-bom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0-alpha01&quot;</span>
-
-<span class="k">[libraries]</span>
-<span class="c1"># Xenoglot BoM</span>
-<span class="n">xenoglot-bom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dev.teogor.xenoglot&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;bom&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">version</span><span class="p">.</span><span class="n">ref</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;xenoglot-bom&quot;</span><span class="w"> </span><span class="p">}</span>
-<span class="c1"># Xenoglot Libraries</span>
-<span class="n">xenoglot-android</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dev.teogor.xenoglot&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;android&quot;</span><span class="w"> </span><span class="p">}</span>
-<span class="n">xenoglot-core</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;dev.teogor.xenoglot&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;core&quot;</span><span class="w"> </span><span class="p">}</span>
-</code></pre>
-              </div>
-              <h2 id="libraries-implementation-buildgradlekts-file">
-                Libraries Implementation build.gradle.kts File<a
-                  class="headerlink"
-                  href="#libraries-implementation-buildgradlekts-file"
-                  title="Permanent link"
-                  >&para;</a
-                >
-              </h2>
-              <p>
-                This section presents the implementation dependencies for
-                Xenoglot libraries in a Kotlin build.gradle.kts file format.
-              </p>
-              <div class="highlight">
-                <pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">// Xenoglot BoM</span>
-<span class="w">  </span><span class="n">implementation</span><span class="p">(</span><span class="n">platform</span><span class="p">(</span><span class="n">libs</span><span class="p">.</span><span class="na">xenoglot</span><span class="p">.</span><span class="na">bom</span><span class="p">))</span>
-<span class="w">  </span><span class="c1">// Xenoglot Libraries</span>
-<span class="w">  </span><span class="n">implementation</span><span class="p">(</span><span class="n">libs</span><span class="p">.</span><span class="na">xenoglot</span><span class="p">.</span><span class="na">android</span><span class="p">)</span>
-<span class="w">  </span><span class="n">implementation</span><span class="p">(</span><span class="n">libs</span><span class="p">.</span><span class="na">xenoglot</span><span class="p">.</span><span class="na">core</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre>
-              </div>
+              </h1>
               <h2 id="xenoglot-android">
                 Xenoglot android<a
                   class="headerlink"

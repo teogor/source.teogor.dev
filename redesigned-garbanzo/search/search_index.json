@@ -43,17 +43,7 @@
       "title": "Embark on Your Coding Journey",
       "text": "<p>With this extensive documentation as your guide, you are now well-equipped to embark on your coding journey with our project. We hope you find the documentation informative and helpful as you explore the project's capabilities and bring your ideas to life.</p> <p>Happy coding!</p>"
     },
-    { "location": "mapping/", "title": "Mapping", "text": "" },
-    {
-      "location": "mapping/#libraries-implementation-version-catalog",
-      "title": "Libraries Implementation Version Catalog",
-      "text": "<p>This catalog provides the implementation details of Xenoglot libraries, including Build of Materials (BoM) and individual libraries, in TOML format.</p> <pre><code>[versions]\nxenoglot-bom = \"1.0.0-alpha01\"\n\n[libraries]\n# Xenoglot BoM\nxenoglot-bom = { group = \"dev.teogor.xenoglot\", name = \"bom\", version.ref = \"xenoglot-bom\" }\n# Xenoglot Libraries\nxenoglot-android = { group = \"dev.teogor.xenoglot\", name = \"android\" }\nxenoglot-core = { group = \"dev.teogor.xenoglot\", name = \"core\" }\n</code></pre>"
-    },
-    {
-      "location": "mapping/#libraries-implementation-buildgradlekts-file",
-      "title": "Libraries Implementation build.gradle.kts File",
-      "text": "<p>This section presents the implementation dependencies for Xenoglot libraries in a Kotlin build.gradle.kts file format.</p> <pre><code>dependencies {\n  // Xenoglot BoM\n  implementation(platform(libs.xenoglot.bom))\n  // Xenoglot Libraries\n  implementation(libs.xenoglot.android)\n  implementation(libs.xenoglot.core)\n}\n</code></pre>"
-    },
+    { "location": "mapping/", "title": "Xenoglot Mapping", "text": "" },
     {
       "location": "mapping/#xenoglot-android",
       "title": "Xenoglot android",
