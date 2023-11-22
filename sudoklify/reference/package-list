@@ -1,0 +1,10 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:sudoklify
+dev.teogor.sudoklify
+dev.teogor.sudoklify.extensions
+dev.teogor.sudoklify.model
+dev.teogor.sudoklify.seeds
+dev.teogor.sudoklify.types
+dev.teogor.sudoklify.utils
