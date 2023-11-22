@@ -15,12 +15,12 @@
     {
       "location": "#find-this-repository-useful",
       "title": "Find this repository useful? \ud83e\ude77",
-      "text": "<ul> <li>Support it by joining stargazers for this repository. :star: </li> <li>Get notified about my new projects by following me on GitHub. \ud83d\udcbb</li> <li>Interested in sponsoring me? Support me on GitHub! \ud83e\udd1d</li> </ul>"
+      "text": "<ul> <li>Support it by joining stargazers for this repository. \ud83d\udcc1</li> <li>Get notified about my new projects by following me on GitHub. \ud83d\udcbb</li> <li>Interested in sponsoring me? Support me on GitHub! \ud83e\udd1d</li> </ul>"
     },
     {
       "location": "#license",
       "title": "License",
-      "text": "<pre><code>Designed and developed by 2022 teogor (Teodor Grigor)\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n</code></pre>"
+      "text": "<pre><code>Designed and developed by 2023 teogor (Teodor Grigor)\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n</code></pre>"
     },
     { "location": "api-reference/", "title": "API Reference", "text": "" },
     {
