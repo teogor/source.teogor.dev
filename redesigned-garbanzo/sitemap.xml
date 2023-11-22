@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/implementation/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/teogor/redesigned-garbanzo/mapping/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
@@ -52,6 +47,16 @@
     </url>
     <url>
          <loc>https://github.com/teogor/redesigned-garbanzo/bom/1.0.0-alpha01/bom-version-1.0.0-alpha01/</loc>
+         <lastmod>2023-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/redesigned-garbanzo/releases/implementation/</loc>
+         <lastmod>2023-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/redesigned-garbanzo/releases/changelog/1.0.0-alpha01/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
