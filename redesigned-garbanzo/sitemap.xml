@@ -56,11 +56,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/releases/changelog/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/teogor/redesigned-garbanzo/releases/implementation/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
