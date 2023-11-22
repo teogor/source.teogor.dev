@@ -10,28 +10,24 @@
       "title": "xenoglot",
       "text": "<p>\ud83c\udf0d Xenoglot seamlessly masters languages and locales, empowering developers to integrate multilingual capabilities into their applications with ease.</p>"
     },
+    { "location": "api-reference/", "title": "API Reference", "text": "" },
     {
-      "location": "api-documentation/",
-      "title": "API Documentation",
-      "text": ""
-    },
-    {
-      "location": "api-documentation/#api-documentation",
+      "location": "api-reference/#api-documentation",
       "title": "API Documentation",
       "text": "<p>Welcome to the comprehensive API documentation for our project, meticulously crafted to empower you to effectively utilize its capabilities. This guide provides detailed information about the project's structure, API, and usage, enabling you to navigate the project with ease and unlock its full potential.</p>"
     },
     {
-      "location": "api-documentation/#project-overview",
+      "location": "api-reference/#project-overview",
       "title": "Project Overview",
       "text": "<p>Our project encompasses a suite of modules, each designed to address specific functionalities and enhance the overall developer experience. To delve into the intricacies of each module, refer to the dedicated documentation pages:</p> <ul> <li> <p>Xenoglot \ud83d\udd17: Discover the heart of our project.</p> </li> <li> <p>Android \ud83d\udd17: Navigate directly to the code-specific documentation for the project's <code>:android</code> module</p> </li> <li> <p>Core \ud83d\udd17: Navigate directly to the code-specific documentation for the project's</p> </li> <li><code>:core</code> module</li> </ul>"
     },
     {
-      "location": "api-documentation/#contributions-and-support",
+      "location": "api-reference/#contributions-and-support",
       "title": "Contributions and Support",
       "text": "<p>We welcome your valuable feedback and contributions to the project. Your insights are crucial for shaping the project's future and ensuring it continues to meet the needs of our community. If you encounter any issues or have questions, please feel free to raise them on the GitHub Issues \ud83d\udd17 page. Our team is dedicated to assisting you and continuously improving the project's overall quality.</p>"
     },
     {
-      "location": "api-documentation/#embark-on-your-coding-journey",
+      "location": "api-reference/#embark-on-your-coding-journey",
       "title": "Embark on Your Coding Journey",
       "text": "<p>With this extensive documentation as your guide, you are now well-equipped to embark on your coding journey with our project. We hope you find the documentation informative and helpful as you explore the project's capabilities and bring your ideas to life.</p> <p>Happy coding!</p>"
     },
