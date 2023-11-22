@@ -26,36 +26,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/version-catalog/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/xenoglot-android/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/xenoglot-core/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/xenoglot-libraries/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/bom/versions/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/redesigned-garbanzo/bom/1.0.0-alpha01/bom-version-1.0.0-alpha01/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/teogor/redesigned-garbanzo/releases/implementation/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
