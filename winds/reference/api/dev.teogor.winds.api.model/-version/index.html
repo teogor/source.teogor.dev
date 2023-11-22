@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Version</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>winds</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":api:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="api::dev.teogor.winds.api.model/Version///PointingToDeclaration//-1197683648">
+  <div class="breadcrumbs"><a href="../../index.html">api</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.winds.api.model</a><span class="delimiter">/</span><span class="current">Version</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Version</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">Version</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>major<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>patch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>flag<span class="token operator">: </span><a href="../-library-flag/index.html">LibraryFlag</a><span class="token operator"> = </span>LibraryFlag.None<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>isDeprecated<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">versionQualifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">versionQualifierPadding<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">2</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Represents a version number with optional deprecated and release flag information.</p><p class="paragraph">This data class represents a semantic version number consisting of major, minor, and patch components. It additionally provides properties for indicating whether the version is deprecated and its release flag (alpha or beta).</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>major</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The major version number.</p></div></div></div></div><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>minor</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The minor version number.</p></div></div></div></div><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>patch</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The patch version number.</p></div></div></div></div><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>flag</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The release flag, indicating whether the version is an alpha or beta release (default: None).</p></div></div></div></div><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>is</span><wbr><span><span>Deprecated</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether the version is deprecated (default: false).</p></div></div></div></div><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>version</span><wbr><span><span>Qualifier</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The version qualifier for alpha or beta releases (default: 0).</p></div></div></div></div><div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>version</span><wbr><span>Qualifier</span><wbr><span><span>Padding</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The padding for the version qualifier (default: 2).</p><p class="paragraph">TODO Create an interface called Version that can be used to represent different types of versions, such as date versions and number versions</p><ul><li><p class="paragraph">DateVersion : Version     Example: DateVersion(2023, 11, 02)</p></li><li><p class="paragraph">NumericVersion : Version     Example: NumericVersion(10, 3, 4)</p></li></ul><p class="paragraph">TODO: Create an interface called Version that can be used to represent different types of versions, such as date versions and numeric versions.</p><p class="paragraph">Tasks:</p><ul><li><p class="paragraph">Create an interface called Version.</p></li><li><p class="paragraph">Create a class called DateVersion that implements the Version interface.</p></li><li><p class="paragraph">Add the following properties to the DateVersion class:</p></li><ul><li><p class="paragraph">year: The year of the version.</p></li><li><p class="paragraph">month: The month of the version.</p></li><li><p class="paragraph">day: The day of the version.</p></li></ul><li><p class="paragraph">Create a class called NumericVersion that implements the Version interface.</p></li><li><p class="paragraph">Add the following properties to the NumericVersion class:</p></li><ul><li><p class="paragraph">major: The major version number.</p></li><li><p class="paragraph">minor: The minor version number.</p></li><li><p class="paragraph">patch: The patch version number.</p></li></ul><li><p class="paragraph">Update the interface to reference the new DateVersion and NumericVersion classes.</p></li></ul><p class="paragraph">Examples: // Example of a date version val dateVersion = DateVersion(2023, 11, 2) // Example of a number version val numericVersion = NumericVersion(10, 3, 4)</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="970068935%2FConstructors%2F-1197683648" anchor-label="Version" id="970068935%2FConstructors%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-version.html"><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="970068935%2FConstructors%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">major<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">minor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">patch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">flag<span class="token operator">: </span><a href="../-library-flag/index.html">LibraryFlag</a><span class="token operator"> = </span>LibraryFlag.None<span class="token punctuation">, </span></span><span class="parameter ">isDeprecated<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">versionQualifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">versionQualifierPadding<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">2</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1880490561%2FClasslikes%2F-1197683648" anchor-label="Companion" id="1880490561%2FClasslikes%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1880490561%2FClasslikes%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-878446988%2FProperties%2F-1197683648" anchor-label="flag" id="-878446988%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="flag.html"><span><span>flag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-878446988%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="flag.html">flag</a><span class="token operator">: </span><a href="../-library-flag/index.html">LibraryFlag</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="845612269%2FProperties%2F-1197683648" anchor-label="isAlphaRelease" id="845612269%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-alpha-release.html"><span>is</span><wbr><span>Alpha</span><wbr><span><span>Release</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="845612269%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-alpha-release.html">isAlphaRelease</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if the version is an alpha release.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1079707987%2FProperties%2F-1197683648" anchor-label="isBetaRelease" id="-1079707987%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-beta-release.html"><span>is</span><wbr><span>Beta</span><wbr><span><span>Release</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1079707987%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-beta-release.html">isBetaRelease</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if the version is a beta release.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1034214013%2FProperties%2F-1197683648" anchor-label="isDeprecated" id="-1034214013%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-deprecated.html"><span>is</span><wbr><span><span>Deprecated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1034214013%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-deprecated.html">isDeprecated</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2071440415%2FProperties%2F-1197683648" anchor-label="major" id="-2071440415%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="major.html"><span><span>major</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2071440415%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="major.html">major</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1840540315%2FProperties%2F-1197683648" anchor-label="minor" id="-1840540315%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minor.html"><span><span>minor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1840540315%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="minor.html">minor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="745445426%2FProperties%2F-1197683648" anchor-label="patch" id="745445426%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="patch.html"><span><span>patch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="745445426%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="patch.html">patch</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="189586522%2FFunctions%2F-1197683648" anchor-label="toBuilder" id="189586522%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-builder.html"><span>to</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="189586522%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-builder.html"><span class="token function">toBuilder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-version-builder/index.html">VersionBuilder</a></div><div class="brief "><p class="paragraph">Creates a <code class="lang-kotlin">VersionBuilder</code> object initialized with the current properties of this version object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2084174324%2FFunctions%2F-1197683648" anchor-label="toString" id="2084174324%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2084174324%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Converts the version object to a string representation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
