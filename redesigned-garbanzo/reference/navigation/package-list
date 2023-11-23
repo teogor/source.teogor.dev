@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:core
+dev.teogor.ceres.navigation.core
+dev.teogor.ceres.navigation.core.lib.common
+dev.teogor.ceres.navigation.core.menu
+dev.teogor.ceres.navigation.core.models
+dev.teogor.ceres.navigation.core.utilities
