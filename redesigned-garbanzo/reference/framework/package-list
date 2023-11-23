@@ -1,9 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-
-module:core
-dev.teogor.ceres.framework.core
-dev.teogor.ceres.framework.core.app
-dev.teogor.ceres.framework.core.menu
-dev.teogor.ceres.framework.core.model
-dev.teogor.ceres.framework.core.screen
