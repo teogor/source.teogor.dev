@@ -1,0 +1,7 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:analytics
+dev.teogor.ceres.firebase.analytics
+module:crashlytics
+dev.teogor.ceres.firebase.crashlytics
