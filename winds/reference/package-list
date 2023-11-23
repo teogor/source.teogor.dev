@@ -12,6 +12,7 @@ dev.teogor.winds.common.dependencies
 dev.teogor.winds.common.utils
 module:gradle-plugin
 dev.teogor.winds.api.impl
+dev.teogor.winds.codegen
 dev.teogor.winds.gradle
 dev.teogor.winds.gradle.tasks.impl
 dev.teogor.winds.gradle.utils
