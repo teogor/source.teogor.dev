@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":framework:core:dokkaHtmlPartial/debug":[],":framework:core:dokkaHtmlPartial/generatedByKspDebugKotlin":[],":framework:core:dokkaHtmlPartial/generatedByKspReleaseKotlin":[],":framework:core:dokkaHtmlPartial/main":[],":framework:core:dokkaHtmlPartial/release":[]}'

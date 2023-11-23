@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Parent Sitemap Link -->
-  <url>
-    <loc>https://source.teogor.dev/ceres/ceres-sitemap.xml</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-</urlset>

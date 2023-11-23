@@ -1,0 +1,17 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:admob
+dev.teogor.ceres.monetisation.admob
+dev.teogor.ceres.monetisation.admob.annotations
+dev.teogor.ceres.monetisation.admob.formats
+dev.teogor.ceres.monetisation.admob.formats.nativead
+dev.teogor.ceres.monetisation.admob.formats.ui
+dev.teogor.ceres.monetisation.admob.models
+module:ads
+dev.teogor.ceres.monetisation.ads
+dev.teogor.ceres.monetisation.ads.extensions
+dev.teogor.ceres.monetisation.ads.model
+module:messaging
+dev.teogor.ceres.monetisation.messaging
+dev.teogor.ceres.monetisation.messaging.utils
