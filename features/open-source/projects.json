@@ -65,5 +65,16 @@
     "link": "./xenoglot/",
     "repo": "xenoglot",
     "owner": "teogor"
+  },
+  {
+    "title": "Stitch",
+    "description": "\uD83E\uDEA1 Stitch handles the Room boilerplate, including automatic generation of repositories, dependency injection integration, and flexible customizations.",
+    "tools": [
+      "Kotlin",
+      "Plugin"
+    ],
+    "link": "./stitch/",
+    "repo": "stitch",
+    "owner": "teogor"
   }
 ]
