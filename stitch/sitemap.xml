@@ -36,21 +36,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/teogor/stitch/releases/changelog/1.0.0-alpha02/</loc>
-         <lastmod>2024-02-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/stitch/releases/changelog/1.0.0-alpha03/</loc>
-         <lastmod>2024-02-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/teogor/stitch/releases/changelog/1.0.0-alpha04/</loc>
-         <lastmod>2024-02-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://github.com/teogor/stitch/blog/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
