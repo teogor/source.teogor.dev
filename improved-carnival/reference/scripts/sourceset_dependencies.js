@@ -1,1 +1,0 @@
-sourceset_dependencies = '{":codegen:dokkaHtmlPartial/main":[],":common:dokkaHtmlPartial/main":[],":gradle-plugin-api:dokkaHtmlPartial/main":[],":gradle-plugin:dokkaHtmlPartial/main":[],":ksp:dokkaHtmlPartial/main":[]}'
