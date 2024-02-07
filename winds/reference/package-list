@@ -3,14 +3,18 @@ $dokka.linkExtension:html
 
 module:api
 dev.teogor.winds.api
+dev.teogor.winds.api.docs
 dev.teogor.winds.api.model
 dev.teogor.winds.api.provider
+dev.teogor.winds.api.util
 dev.teogor.winds.gradle.tasks
 module:common
 dev.teogor.winds.common
 dev.teogor.winds.common.dependencies
 dev.teogor.winds.common.utils
 module:gradle-plugin
+dev.teogor.winds.api.docs.impl
+dev.teogor.winds.api.docs.impl.factory
 dev.teogor.winds.api.impl
 dev.teogor.winds.codegen
 dev.teogor.winds.gradle
