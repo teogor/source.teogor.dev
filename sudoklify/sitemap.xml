@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/sudoklify/releases/changelog/1.0.0-alpha04/</loc>
+         <lastmod>2024-02-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/sudoklify/blog/</loc>
          <lastmod>2024-02-08</lastmod>
          <changefreq>daily</changefreq>
