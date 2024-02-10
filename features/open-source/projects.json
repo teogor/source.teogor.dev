@@ -76,5 +76,16 @@
     "link": "./stitch/",
     "repo": "stitch",
     "owner": "teogor"
+  },
+  {
+    "title": "Gleam",
+    "description": "\uD83D\uDD16 Gleam effortlessly integrates modern, customizable bottom sheets into your Kotlin Compose app for a polished user experience.",
+    "tools": [
+      "Kotlin",
+      "Kotlin Compose"
+    ],
+    "link": "./gleam/",
+    "repo": "gleam",
+    "owner": "teogor"
   }
 ]
