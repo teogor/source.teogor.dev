@@ -1,0 +1,307 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>GleamState</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Gleam
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":gleam:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="gleam::dev.teogor.gleam/GleamState///PointingToDeclaration//-2012112167">
+  <div class="breadcrumbs"><a href="../../index.html">gleam</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.gleam</a><span class="delimiter">/</span><span class="current">GleamState</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Gleam</span><wbr><span><span>State</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">class </span><a href="index.html">GleamState</a>&nbsp;<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">skipPartiallyExpanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">density<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/unit/Density.html">Density</a><span class="token punctuation">, </span></span><span class="parameter ">initialValue<span class="token operator">: </span><a href="../-gleam-value/index.html">GleamValue</a><span class="token operator"> = </span>Hidden<span class="token punctuation">, </span></span><span class="parameter ">confirmValueChange<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-gleam-value/index.html">GleamValue</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>{ true }<span class="token punctuation">, </span></span><span class="parameter ">skipHiddenState<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">State of a Gleam composable, such as <a href="../-gleam.html">Gleam</a>.</p><p class="paragraph">Contains states relating to its swipe position and animations between state values.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>skip</span><wbr><span>Partially</span><wbr><span><span>Expanded</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether the partially expanded state, if the Gleam is large enough, should be skipped. If true, the Gleam will always expand to the <a href="../-gleam-value/-expanded/index.html">Expanded</a> state and move to the <a href="../-gleam-value/-hidden/index.html">Hidden</a> state if available when hiding the Gleam, either programmatically or by user interaction.</p></div></div></div></div><div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>initial</span><wbr><span><span>Value</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The initial value of the state, representing the Gleam's initial visibility.</p></div></div></div></div><div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>density</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The density that this state can use to convert values to and from dp.</p></div></div></div></div><div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>confirm</span><wbr><span>Value</span><wbr><span><span>Change</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Optional callback invoked to confirm or veto a pending Gleam state change.</p></div></div></div></div><div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>skip</span><wbr><span>Hidden</span><wbr><span><span>State</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether the hidden state should be skipped. If true, the Gleam will always expand to the <a href="../-gleam-value/-expanded/index.html">Expanded</a> state and move to the <a href="../-gleam-value/-partially-expanded/index.html">PartiallyExpanded</a> if available, either programmatically or by user interaction.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1554925288%2FConstructors%2F-2012112167" anchor-label="GleamState" id="-1554925288%2FConstructors%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gleam-state.html"><span>Gleam</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1554925288%2FConstructors%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">skipPartiallyExpanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">density<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/unit/Density.html">Density</a><span class="token punctuation">, </span></span><span class="parameter ">initialValue<span class="token operator">: </span><a href="../-gleam-value/index.html">GleamValue</a><span class="token operator"> = </span>Hidden<span class="token punctuation">, </span></span><span class="parameter ">confirmValueChange<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-gleam-value/index.html">GleamValue</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>{ true }<span class="token punctuation">, </span></span><span class="parameter ">skipHiddenState<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1968346946%2FClasslikes%2F-2012112167" anchor-label="Companion" id="1968346946%2FClasslikes%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1968346946%2FClasslikes%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-407576505%2FProperties%2F-2012112167" anchor-label="currentValue" id="-407576505%2FProperties%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-value.html"><span>current</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-407576505%2FProperties%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="current-value.html">currentValue</a><span class="token operator">: </span><a href="../-gleam-value/index.html">GleamValue</a></div><div class="brief "><p class="paragraph">The current visibility state of the <a href="../-gleam.html">Gleam</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="384375457%2FProperties%2F-2012112167" anchor-label="hasExpandedState" id="384375457%2FProperties%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-expanded-state.html"><span>has</span><wbr><span>Expanded</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="384375457%2FProperties%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="has-expanded-state.html">hasExpandedState</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if the <a href="../-gleam.html">Gleam</a> has a defined <a href="../-gleam-value/-expanded/index.html">Expanded</a> state.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-804623337%2FProperties%2F-2012112167" anchor-label="hasPartiallyExpandedState" id="-804623337%2FProperties%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-partially-expanded-state.html"><span>has</span><wbr><span>Partially</span><wbr><span>Expanded</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-804623337%2FProperties%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="has-partially-expanded-state.html">hasPartiallyExpandedState</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if the <a href="../-gleam.html">Gleam</a> has a defined <a href="../-gleam-value/-partially-expanded/index.html">PartiallyExpanded</a> state.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="851559187%2FProperties%2F-2012112167" anchor-label="isVisible" id="851559187%2FProperties%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-visible.html"><span>is</span><wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="851559187%2FProperties%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-visible.html">isVisible</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if the <a href="../-gleam.html">Gleam</a> is currently visible.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1062410267%2FProperties%2F-2012112167" anchor-label="targetValue" id="1062410267%2FProperties%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target-value.html"><span>target</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1062410267%2FProperties%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="target-value.html">targetValue</a><span class="token operator">: </span><a href="../-gleam-value/index.html">GleamValue</a></div><div class="brief "><p class="paragraph">The target visibility state of the <a href="../-gleam.html">Gleam</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="723435156%2FFunctions%2F-2012112167" anchor-label="confirmValueChange" id="723435156%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="confirm-value-change.html"><span>confirm</span><wbr><span>Value</span><wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="723435156%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="confirm-value-change.html"><span class="token function">confirmValueChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newValue<span class="token operator">: </span><a href="../-gleam-value/index.html">GleamValue</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Delegates the confirmation of a proposed value change to the underlying <a href="../../../gleam/dev.teogor.gleam/-gleam-state/anchored-draggable-state.html">anchoredDraggableState</a>. This allows for centralized control over value change logic, including potential vetoing of changes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="799653093%2FFunctions%2F-2012112167" anchor-label="expand" id="799653093%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="expand.html"><span><span>expand</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="799653093%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="expand.html"><span class="token function">expand</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Animates the <a href="../-gleam.html">Gleam</a> to its <a href="../-gleam-value/-expanded/index.html">Expanded</a> state and suspends the coroutine until the animation finishes or is cancelled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1818317284%2FFunctions%2F-2012112167" anchor-label="forcedHide" id="1818317284%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="forced-hide.html"><span>forced</span><wbr><span><span>Hide</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1818317284%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="forced-hide.html"><span class="token function">forcedHide</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph"><strong>Forcibly</strong> hides the <a href="../-gleam.html">Gleam</a> without animation and suspends the coroutine until it is fully hidden. This function differs from <a href="hide.html">hide</a> by ignoring any ongoing user interactions like swipes or taps, ensuring the <a href="../-gleam.html">Gleam</a> is hidden immediately.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-434519107%2FFunctions%2F-2012112167" anchor-label="hide" id="-434519107%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hide.html"><span><span>hide</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-434519107%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="hide.html"><span class="token function">hide</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Hides the <a href="../-gleam.html">Gleam</a> with animation and suspends the coroutine until it is fully hidden or animation has been cancelled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1512609760%2FFunctions%2F-2012112167" anchor-label="partialExpand" id="1512609760%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="partial-expand.html"><span>partial</span><wbr><span><span>Expand</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1512609760%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="partial-expand.html"><span class="token function">partialExpand</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Animates the <a href="../-gleam.html">Gleam</a> to its <a href="../-gleam-value/-partially-expanded/index.html">PartiallyExpanded</a> state and suspends the coroutine until the animation finishes or is cancelled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="810244003%2FFunctions%2F-2012112167" anchor-label="requireOffset" id="810244003%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="require-offset.html"><span>require</span><wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="810244003%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="require-offset.html"><span class="token function">requireOffset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Retrieves the current offset (in pixels) of the <a href="../-gleam.html">Gleam</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1400577634%2FFunctions%2F-2012112167" anchor-label="show" id="1400577634%2FFunctions%2F-2012112167" data-filterable-set=":gleam:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam:dokkaHtmlPartial/release" data-filterable-set=":gleam:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show.html"><span><span>show</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1400577634%2FFunctions%2F-2012112167"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="show.html"><span class="token function">show</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Animates the <a href="../-gleam.html">Gleam</a> to either its <a href="../-gleam-value/-partially-expanded/index.html">PartiallyExpanded</a> state (if defined) or the <a href="../-gleam-value/-expanded/index.html">Expanded</a> state, and suspends the coroutine until the animation finishes or is cancelled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

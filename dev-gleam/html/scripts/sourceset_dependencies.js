@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":gleam:dokkaHtmlPartial/debug":[],":gleam:dokkaHtmlPartial/main":[],":gleam:dokkaHtmlPartial/release":[],":gleam-navigation:dokkaHtmlPartial/debug":[],":gleam-navigation:dokkaHtmlPartial/main":[],":gleam-navigation:dokkaHtmlPartial/release":[]}'
