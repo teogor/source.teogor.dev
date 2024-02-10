@@ -1,0 +1,322 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>GleamNavigator</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Gleam
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":gleam-navigation:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="gleam-navigation::dev.teogor.gleam.navigation/GleamNavigator///PointingToDeclaration//-2082046594">
+  <div class="breadcrumbs"><a href="../../index.html">gleam-navigation</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.gleam.navigation</a><span class="delimiter">/</span><span class="current">GleamNavigator</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Gleam</span><wbr><span><span>Navigator</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">GleamNavigator</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gleamState<span class="token operator">: </span><a href="../../../gleam/dev.teogor.gleam/-gleam-state/index.html">GleamState</a></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/navigation/Navigator.html">Navigator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-destination/index.html">GleamNavigator.Destination</a><span class="token operator">&gt; </span></div><p class="paragraph">Navigator that drives a <a href="../../../gleam/dev.teogor.gleam/-gleam-state/index.html">GleamState</a> for use with <a href="../-gleam-scaffold.html">GleamScaffold</a>s within the navigation library. Every destination using this Navigator must set a valid <a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html">Composable</a> by defining it directly on an instantiated <a href="-destination/index.html">Destination</a> or calling <a href="../gleam.html">gleam</a>.</p><p class="paragraph"><strong>Key behavior:</strong></p><ul><li><p class="paragraph">The <a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html">gleamContent</a> always displays the latest entry from the back stack.</p></li><li><p class="paragraph">Navigating between Gleam destinations replaces the current content instead of creating a new gleam.</p></li><li><p class="paragraph">Dismissing the Gleam via user interaction pops the latest entry from the <code class="lang-kotlin">state</code>'s back stack.</p></li></ul><p class="paragraph"><strong>Public Usage:</strong></p><p class="paragraph">Use <a href="../remember-gleam-navigator.html">rememberGleamNavigator</a> to create and access a <a href="index.html">GleamNavigator</a> instance in your composables. This function handles memory management and ensures consistent usage throughout your application.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>gleam</span><wbr><span><span>State</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The <a href="../../../gleam/dev.teogor.gleam/-gleam-state/index.html">GleamState</a> that the <a href="index.html">GleamNavigator</a> will control.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1545703476%2FConstructors%2F-2082046594" anchor-label="GleamNavigator" id="1545703476%2FConstructors%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gleam-navigator.html"><span>Gleam</span><wbr><span><span>Navigator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1545703476%2FConstructors%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">gleamState<span class="token operator">: </span><a href="../../../gleam/dev.teogor.gleam/-gleam-state/index.html">GleamState</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1672337258%2FClasslikes%2F-2082046594" anchor-label="Destination" id="-1672337258%2FClasslikes%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-destination/index.html"><span><span>Destination</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1672337258%2FClasslikes%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-destination/index.html">Destination</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navigator<span class="token operator">: </span><a href="index.html">GleamNavigator</a><span class="token punctuation">, </span></span><span class="parameter ">content<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/ColumnScope.html">ColumnScope</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavBackStackEntry.html">NavBackStackEntry</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavDestination.html">NavDestination</a>, <a href="https://developer.android.com/reference/kotlin/androidx/navigation/FloatingWindow.html">FloatingWindow</a></div><div class="brief "><p class="paragraph"><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavDestination.html">NavDestination</a> specific to <a href="index.html">GleamNavigator</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-958105028%2FProperties%2F-2082046594" anchor-label="gleamContent" id="-958105028%2FProperties%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gleam-content.html"><span>gleam</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-958105028%2FProperties%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="gleam-content.html">gleamContent</a><span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/ColumnScope.html">ColumnScope</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></div><div class="brief "><p class="paragraph">A <a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html">Composable</a> function that hosts the current gleam content. This should be set as gleamContent of your <a href="../-gleam-scaffold.html">GleamScaffold</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-641149855%2FProperties%2F-2082046594" anchor-label="isAttached" id="-641149855%2FProperties%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-641149855%2FProperties%2F-2082046594"><span>is</span><wbr><span><span>Attached</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-641149855%2FProperties%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-641149855%2FProperties%2F-2082046594">isAttached</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1398472727%2FProperties%2F-2082046594" anchor-label="isVisible" id="-1398472727%2FProperties%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-visible.html"><span>is</span><wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1398472727%2FProperties%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="is-visible.html">isVisible</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Determines the overall visibility state of the Gleam content.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1425284107%2FProperties%2F-2082046594" anchor-label="navigatorGleamState" id="-1425284107%2FProperties%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="navigator-gleam-state.html"><span>navigator</span><wbr><span>Gleam</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1425284107%2FProperties%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="navigator-gleam-state.html">navigatorGleamState</a><span class="token operator">: </span><a href="../-gleam-navigator-state/index.html">GleamNavigatorState</a></div><div class="brief "><p class="paragraph">Access properties of the <a href="../-gleam-scaffold.html">GleamScaffold</a>'s <a href="../../../gleam/dev.teogor.gleam/-gleam-state/index.html">GleamState</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1357848853%2FProperties%2F-2082046594" anchor-label="shouldBeVisible" id="1357848853%2FProperties%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="should-be-visible.html"><span>should</span><wbr><span>Be</span><wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1357848853%2FProperties%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword"></span><span class="token keyword">val </span><a href="should-be-visible.html">shouldBeVisible</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Determines whether the current navigation state should be visible based on the back stack.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-90817121%2FFunctions%2F-2082046594" anchor-label="createDestination" id="-90817121%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-destination.html"><span>create</span><wbr><span><span>Destination</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-90817121%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="create-destination.html"><span class="token function">createDestination</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-destination/index.html">GleamNavigator.Destination</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1721941202%2FFunctions%2F-2082046594" anchor-label="navigate" id="-1721941202%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1072107152%2FFunctions%2F-2082046594"><span><span>navigate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1721941202%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1072107152%2FFunctions%2F-2082046594"><span class="token function">navigate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">destination<span class="token operator">: </span><a href="-destination/index.html">GleamNavigator.Destination</a><span class="token punctuation">, </span></span><span class="parameter ">args<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">navOptions<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavOptions.html">NavOptions</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">navigatorExtras<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/Navigator.Extras.html">Navigator.Extras</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavDestination.html">NavDestination</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="navigate.html"><span class="token function">navigate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">entries<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavBackStackEntry.html">NavBackStackEntry</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">navOptions<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavOptions.html">NavOptions</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">navigatorExtras<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/Navigator.Extras.html">Navigator.Extras</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1045947946%2FFunctions%2F-2082046594" anchor-label="onAttach" id="-1045947946%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-attach.html"><span>on</span><wbr><span><span>Attach</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1045947946%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-attach.html"><span class="token function">onAttach</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">state<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavigatorState.html">NavigatorState</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1664757427%2FFunctions%2F-2082046594" anchor-label="onLaunchSingleTop" id="1664757427%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1664757427%2FFunctions%2F-2082046594"><span>on</span><wbr><span>Launch</span><wbr><span>Single</span><wbr><span><span>Top</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1664757427%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1664757427%2FFunctions%2F-2082046594"><span class="token function">onLaunchSingleTop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">backStackEntry<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavBackStackEntry.html">NavBackStackEntry</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1896934104%2FFunctions%2F-2082046594" anchor-label="onRestoreState" id="-1896934104%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1896934104%2FFunctions%2F-2082046594"><span>on</span><wbr><span>Restore</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1896934104%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1896934104%2FFunctions%2F-2082046594"><span class="token function">onRestoreState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">savedState<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1778862038%2FFunctions%2F-2082046594" anchor-label="onSaveState" id="1778862038%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1778862038%2FFunctions%2F-2082046594"><span>on</span><wbr><span>Save</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1778862038%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1778862038%2FFunctions%2F-2082046594"><span class="token function">onSaveState</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-371775027%2FFunctions%2F-2082046594" anchor-label="popBackStack" id="-371775027%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#676612223%2FFunctions%2F-2082046594"><span>pop</span><wbr><span>Back</span><wbr><span><span>Stack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-371775027%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#676612223%2FFunctions%2F-2082046594"><span class="token function">popBackStack</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="pop-back-stack.html"><span class="token function">popBackStack</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">popUpTo<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavBackStackEntry.html">NavBackStackEntry</a><span class="token punctuation">, </span></span><span class="parameter ">savedState<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1893724842%2FFunctions%2F-2082046594" anchor-label="provideNavController" id="-1893724842%2FFunctions%2F-2082046594" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":gleam-navigation:dokkaHtmlPartial/release" data-filterable-set=":gleam-navigation:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../provide-nav-controller.html"><span>provide</span><wbr><span>Nav</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1893724842%2FFunctions%2F-2082046594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gleam-navigation:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">GleamNavigator</a><span class="token punctuation">.</span><a href="../provide-nav-controller.html"><span class="token function">provideNavController</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navController<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavHostController.html">NavHostController</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">GleamNavigator</a></div><div class="brief "><p class="paragraph">Associates a <a href="https://developer.android.com/reference/kotlin/androidx/navigation/NavHostController.html">NavHostController</a> with this <a href="index.html">GleamNavigator</a>, enabling navigation using Gleam composables.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
