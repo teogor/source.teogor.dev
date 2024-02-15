@@ -62,7 +62,7 @@
   <div class="breadcrumbs"><a href="../../index.html">gradle-plugin-api</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.stitch.api</a><span class="delimiter">/</span><span class="current">StitchExtension</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Stitch</span><wbr><span><span>Extension</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">StitchExtension</a></div><p class="paragraph">Interface for configuring Stitch's behavior and features.</p><p class="paragraph">This interface allows you to:</p><ul><li><p class="paragraph">Enable or disable documentation generation.</p></li><li><p class="paragraph">Control the generation of operations (plugins or similar functionality).</p></li><li><p class="paragraph">Set the base package name for generated code or artifacts.</p></li></ul></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">StitchExtension</a></div><p class="paragraph">Defines configuration options for Stitch code generation within your project.</p><p class="paragraph">This interface provides properties that control various aspects of the generation process. You can extend this interface and implement it in your plugin to customize Stitch functionalities.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":gradle-plugin-api:dokkaHtmlPartial/main" data-filterable-set=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span>dev.</span><wbr><span>teogor.</span><wbr><span>stitch.</span><wbr><span>Plugin</span></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -79,7 +79,22 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="add-documentation.html">addDocumentation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enables or disables the generation of documentation.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="add-documentation.html">addDocumentation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Controls whether to generate documentation comments in the generated code.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1438650741%2FProperties%2F1090939476" anchor-label="enableOperationGeneration" id="-1438650741%2FProperties%2F1090939476" data-filterable-set=":gradle-plugin-api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":gradle-plugin-api:dokkaHtmlPartial/main" data-filterable-set=":gradle-plugin-api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-operation-generation.html"><span>enable</span><wbr><span>Operation</span><wbr><span><span>Generation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1438650741%2FProperties%2F1090939476"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="enable-operation-generation.html">enableOperationGeneration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Controls the overall generation of operation classes for DAO methods.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -99,17 +114,17 @@
               </div>
             </div>
           </div>
-<a data-name="-1580963790%2FProperties%2F1090939476" anchor-label="generateOperations" id="-1580963790%2FProperties%2F1090939476" data-filterable-set=":gradle-plugin-api:dokkaHtmlPartial/main"></a>
+<a data-name="306823822%2FProperties%2F1090939476" anchor-label="operationGenerationLevel" id="306823822%2FProperties%2F1090939476" data-filterable-set=":gradle-plugin-api:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":gradle-plugin-api:dokkaHtmlPartial/main" data-filterable-set=":gradle-plugin-api:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="generate-operations.html"><span>generate</span><wbr><span><span>Operations</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1580963790%2FProperties%2F1090939476"></span>
+                  <div><a href="operation-generation-level.html"><span>operation</span><wbr><span>Generation</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="306823822%2FProperties%2F1090939476"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="generate-operations.html">generateOperations</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enables or disables the generation of operations.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gradle-plugin-api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="operation-generation-level.html">operationGenerationLevel</a><span class="token operator">: </span><a href="../-operation-generation-level/index.html">OperationGenerationLevel</a></div><div class="brief "><p class="paragraph">Defines the level of generation for Stitch operation classes.</p></div></div></div>
                 </div>
               </div>
             </div>
