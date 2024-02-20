@@ -1,10 +1,16 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:sudoklify
-dev.teogor.sudoklify
-dev.teogor.sudoklify.extensions
-dev.teogor.sudoklify.model
+module:sudoklify-common
+dev.teogor.sudoklify.common.model
+dev.teogor.sudoklify.common.types
+module:sudoklify-core
+dev.teogor.sudoklify.core.generation
+dev.teogor.sudoklify.core.io
+dev.teogor.sudoklify.core.solver
+dev.teogor.sudoklify.core.tokenizer
+dev.teogor.sudoklify.core.util
+module:sudoklify-ktx
+dev.teogor.sudoklify.ktx
+module:sudoklify-seeds
 dev.teogor.sudoklify.seeds
-dev.teogor.sudoklify.types
-dev.teogor.sudoklify.utils
