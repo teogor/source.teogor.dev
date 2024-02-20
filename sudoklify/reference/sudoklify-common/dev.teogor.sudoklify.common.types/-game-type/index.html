@@ -1,0 +1,453 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>GameType</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Sudoklify
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha04
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":sudoklify-common:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="sudoklify-common::dev.teogor.sudoklify.common.types/GameType///PointingToDeclaration//-22065954">
+  <div class="breadcrumbs"><a href="../../index.html">sudoklify-common</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.sudoklify.common.types</a><span class="delimiter">/</span><span class="current">GameType</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Game</span><wbr><span><span>Type</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">GameType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">GameType</a><span class="token operator">&gt; </span></div><p class="paragraph">Represents the different game types available in the Sudoku game.</p><p class="paragraph">Each game type is defined by its grid height and grid width. The grid height and width determine the size of the puzzle grid and the number of digits in the puzzle.</p><p class="paragraph">The <code class="lang-kotlin">GameType</code> enum also includes a <code class="lang-kotlin">cells</code> property that returns the total number of cells in the puzzle, and an <code class="lang-kotlin">isSquare</code> property that returns whether the puzzle is a square.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="">Entries</h2>
+        <div class="table"><a data-name="-448998887%2FClasslikes%2F-22065954" anchor-label="Unspecified" id="-448998887%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unspecified/index.html">Unspecified</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-448998887%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-unspecified/index.html">Unspecified</a></div></div><div class="brief "><p class="paragraph">The unspecified game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-141447950%2FClasslikes%2F-22065954" anchor-label="FourDigits" id="-141447950%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-four-digits/index.html">FourDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-141447950%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-four-digits/index.html">FourDigits</a></div></div><div class="brief "><p class="paragraph">The 4x4 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1391231222%2FClasslikes%2F-22065954" anchor-label="SixDigits" id="-1391231222%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-six-digits/index.html">SixDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1391231222%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-six-digits/index.html">SixDigits</a></div></div><div class="brief "><p class="paragraph">The 6x6 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1999820983%2FClasslikes%2F-22065954" anchor-label="EightDigits" id="1999820983%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-eight-digits/index.html">EightDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1999820983%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-eight-digits/index.html">EightDigits</a></div></div><div class="brief "><p class="paragraph">The 8x8 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1515728258%2FClasslikes%2F-22065954" anchor-label="NineDigits" id="-1515728258%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-nine-digits/index.html">NineDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1515728258%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-nine-digits/index.html">NineDigits</a></div></div><div class="brief "><p class="paragraph">The 9x9 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1421689659%2FClasslikes%2F-22065954" anchor-label="TenDigits" id="-1421689659%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ten-digits/index.html">TenDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1421689659%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-ten-digits/index.html">TenDigits</a></div></div><div class="brief "><p class="paragraph">The 10x10 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="191020133%2FClasslikes%2F-22065954" anchor-label="TwelveDigits" id="191020133%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-twelve-digits/index.html">TwelveDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="191020133%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-twelve-digits/index.html">TwelveDigits</a></div></div><div class="brief "><p class="paragraph">The 12x12 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-720815355%2FClasslikes%2F-22065954" anchor-label="FifteenDigits" id="-720815355%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-fifteen-digits/index.html">FifteenDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-720815355%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-fifteen-digits/index.html">FifteenDigits</a></div></div><div class="brief "><p class="paragraph">The 15x15 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1169763556%2FClasslikes%2F-22065954" anchor-label="SixteenDigits" id="1169763556%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sixteen-digits/index.html">SixteenDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169763556%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-sixteen-digits/index.html">SixteenDigits</a></div></div><div class="brief "><p class="paragraph">The 16x16 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-665526257%2FClasslikes%2F-22065954" anchor-label="TwentyFiveDigits" id="-665526257%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-twenty-five-digits/index.html">TwentyFiveDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-665526257%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-twenty-five-digits/index.html">TwentyFiveDigits</a></div></div><div class="brief "><p class="paragraph">The 25x25 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1706489784%2FClasslikes%2F-22065954" anchor-label="ThirtySixDigits" id="-1706489784%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-thirty-six-digits/index.html">ThirtySixDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1706489784%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-thirty-six-digits/index.html">ThirtySixDigits</a></div></div><div class="brief "><p class="paragraph">The 36x36 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="460100488%2FClasslikes%2F-22065954" anchor-label="FortyNineDigits" id="460100488%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-forty-nine-digits/index.html">FortyNineDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="460100488%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-forty-nine-digits/index.html">FortyNineDigits</a></div></div><div class="brief "><p class="paragraph">The 49x49 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1479965995%2FClasslikes%2F-22065954" anchor-label="SixtyFourDigits" id="-1479965995%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sixty-four-digits/index.html">SixtyFourDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1479965995%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-sixty-four-digits/index.html">SixtyFourDigits</a></div></div><div class="brief "><p class="paragraph">The 64x64 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1841515236%2FClasslikes%2F-22065954" anchor-label="EightyOneDigits" id="1841515236%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-eighty-one-digits/index.html">EightyOneDigits</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1841515236%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><a href="-eighty-one-digits/index.html">EightyOneDigits</a></div></div><div class="brief "><p class="paragraph">The 81x81 game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1798792993%2FProperties%2F-22065954" anchor-label="cells" id="-1798792993%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cells.html"><span><span>cells</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1798792993%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="cells.html">cells</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of cells in the puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1873134528%2FProperties%2F-22065954" anchor-label="entries" id="1873134528%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entries.html"><span><span>entries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1873134528%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="entries.html">entries</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.enums/-enum-entries/index.html">EnumEntries</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">GameType</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a representation of an immutable list of all enum entries, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2088726307%2FProperties%2F-22065954" anchor-label="gridHeight" id="-2088726307%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="grid-height.html"><span>grid</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2088726307%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="grid-height.html">gridHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-581958800%2FProperties%2F-22065954" anchor-label="gridWidth" id="-581958800%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="grid-width.html"><span>grid</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-581958800%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="grid-width.html">gridWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1453946237%2FProperties%2F-22065954" anchor-label="isSquare" id="-1453946237%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-square.html"><span>is</span><wbr><span><span>Square</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1453946237%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-square.html">isSquare</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether the puzzle is a square.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-372974862%2FProperties%2F-22065954" anchor-label="name" id="-372974862%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-eighty-one-digits/index.html#-372974862%2FProperties%2F-22065954"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-eighty-one-digits/index.html#-372974862%2FProperties%2F-22065954">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739389684%2FProperties%2F-22065954" anchor-label="ordinal" id="-739389684%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-eighty-one-digits/index.html#-739389684%2FProperties%2F-22065954"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-eighty-one-digits/index.html#-739389684%2FProperties%2F-22065954">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="468161182%2FFunctions%2F-22065954" anchor-label="toString" id="468161182%2FFunctions%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="468161182%2FFunctions%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns a string representation of the game type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="959590876%2FFunctions%2F-22065954" anchor-label="valueOf" id="959590876%2FFunctions%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="959590876%2FFunctions%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">GameType</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1092890600%2FFunctions%2F-22065954" anchor-label="values" id="1092890600%2FFunctions%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1092890600%2FFunctions%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">GameType</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

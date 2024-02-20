@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":sudoklify:dokkaHtmlPartial/main":[]}'
+sourceset_dependencies = '{":sudoklify-core:dokkaHtmlPartial/main":[],":sudoklify-seeds:dokkaHtmlPartial/main":[],":sudoklify-common:dokkaHtmlPartial/main":[],":sudoklify-ktx:dokkaHtmlPartial/main":[]}'
