@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/sudoklify/seed/</loc>
+         <lastmod>2024-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/sudoklify/sponsor/</loc>
          <lastmod>2024-02-20</lastmod>
          <changefreq>daily</changefreq>
