@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Blueprint</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>Querent</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":api:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="api::dev.teogor.querent.api.codegen/Blueprint///PointingToDeclaration//-1197683648">
+  <div class="breadcrumbs"><a href="../../index.html">api</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.querent.api.codegen</a><span class="delimiter">/</span><span class="current">Blueprint</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Blueprint</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">Blueprint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../-foundation-data/index.html">FoundationData</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Abstract base class for Querent blueprints.</p><p class="paragraph">A blueprint is a class that defines how to generate code for a specific purpose. Blueprints are used by Querent to generate code for a variety of tasks, such as generating build profiles, XML resources, and language schemas.</p><p class="paragraph">The <code class="lang-kotlin">Blueprint</code> class provides several methods that can be used to define the code generation process. These methods include:</p><ul><li><p class="paragraph"><code class="lang-kotlin">isEnabled()</code>: This method returns a boolean value that indicates whether the blueprint is enabled. If the blueprint is not enabled, its code generation methods will not be called.</p></li><li><p class="paragraph"><code class="lang-kotlin">packageNameSuffix</code>: This property specifies the package name suffix for the generated code. If the property is not set, the package name suffix will be empty.</p></li><li><p class="paragraph"><code class="lang-kotlin">onCreate()</code>: This method is called when Querent creates a new instance of the blueprint. The method is responsible for initializing the blueprint's properties and applying any necessary configuration.</p></li><li><p class="paragraph"><code class="lang-kotlin">apply()</code>: This method is called when Querent applies the blueprint. The method is responsible for performing the code generation process.</p></li><li><p class="paragraph"><code class="lang-kotlin">onVariants(variant: Variant)</code>: This method is called for each variant of the project. The method is responsible for generating code for the specified variant.</p></li></ul><p class="paragraph">To use the <code class="lang-kotlin">Blueprint</code> class, you should extend it and implement the <code class="lang-kotlin">apply()</code> and <code class="lang-kotlin">onVariants()</code> methods. The <code class="lang-kotlin">apply()</code> method should perform the code generation process, and the <code class="lang-kotlin">onVariants()</code> method should generate code for each variant of the project.</p><p class="paragraph">Example usage:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">class MyBlueprint(data: FoundationData) : Blueprint(data) {<br><br>  override fun isEnabled(): Boolean = true<br><br>  override fun packageNameSuffix(): String = "my"<br><br>  override fun apply() {<br>    // Generate code here<br>  }<br><br>  override fun onVariants(variant: Variant) {<br>    // Generate code for the specified variant here<br>  }<br>}<br><br>val myBlueprint = MyBlueprint(FoundationData(project = project, codeWriter = codeWriter))<br>myBlueprint.onCreate()<br>myBlueprint.apply()<br><br><br>This code will instantiate a new instance of the `MyBlueprint` class<br>and call its `onCreate()`, `apply()`, and `onVariants()` methods.<br>The `apply()` method will generate code for the project, and the `onVariants()`<br>method will generate code for each variant of the project.</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-985225114%2FConstructors%2F-1197683648" anchor-label="Blueprint" id="-985225114%2FConstructors%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-blueprint.html"><span><span>Blueprint</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-985225114%2FConstructors%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../-foundation-data/index.html">FoundationData</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-2128807605%2FProperties%2F-1197683648" anchor-label="applicationComponentsExtension" id="-2128807605%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="application-components-extension.html"><span>application</span><wbr><span>Components</span><wbr><span><span>Extension</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2128807605%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="application-components-extension.html">applicationComponentsExtension</a><span class="token operator">: </span><span data-unresolved-link="com.android.build.api.variant/ApplicationAndroidComponentsExtension///PointingToDeclaration/">ApplicationAndroidComponentsExtension</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the ApplicationAndroidComponentsExtension associated with the project, if it exists.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="474646084%2FProperties%2F-1197683648" anchor-label="dynamicFeatureComponentsExtension" id="474646084%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dynamic-feature-components-extension.html"><span>dynamic</span><wbr><span>Feature</span><wbr><span>Components</span><wbr><span><span>Extension</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="474646084%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="dynamic-feature-components-extension.html">dynamicFeatureComponentsExtension</a><span class="token operator">: </span><span data-unresolved-link="com.android.build.api.variant/DynamicFeatureAndroidComponentsExtension///PointingToDeclaration/">DynamicFeatureAndroidComponentsExtension</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the DynamicFeatureAndroidComponentsExtension associated with the project, if it exists.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-892837444%2FProperties%2F-1197683648" anchor-label="intermediates" id="-892837444%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="intermediates.html"><span><span>intermediates</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-892837444%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="intermediates.html">intermediates</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">Returns the intermediates directory for the blueprint.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-107861280%2FProperties%2F-1197683648" anchor-label="javaSources" id="-107861280%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="java-sources.html"><span>java</span><wbr><span><span>Sources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-107861280%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="java-sources.html">javaSources</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">The directory where the Java source code for the blueprint is generated.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-472032385%2FProperties%2F-1197683648" anchor-label="kotlinSources" id="-472032385%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="kotlin-sources.html"><span>kotlin</span><wbr><span><span>Sources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-472032385%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="kotlin-sources.html">kotlinSources</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">The directory where the Kotlin source code for the blueprint is generated.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-246554698%2FProperties%2F-1197683648" anchor-label="libraryComponentsExtension" id="-246554698%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="library-components-extension.html"><span>library</span><wbr><span>Components</span><wbr><span><span>Extension</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-246554698%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="library-components-extension.html">libraryComponentsExtension</a><span class="token operator">: </span><span data-unresolved-link="com.android.build.api.variant/LibraryAndroidComponentsExtension///PointingToDeclaration/">LibraryAndroidComponentsExtension</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the LibraryAndroidComponentsExtension associated with the project, if it exists.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1398560793%2FProperties%2F-1197683648" anchor-label="name" id="1398560793%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1398560793%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns the name of the blueprint.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="217148059%2FProperties%2F-1197683648" anchor-label="namespace" id="217148059%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="namespace.html"><span><span>namespace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="217148059%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="namespace.html">namespace</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The namespace for the generated code.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-730230139%2FProperties%2F-1197683648" anchor-label="packageName" id="-730230139%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="package-name.html"><span>package</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-730230139%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="package-name.html">packageName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">The package name for the generated code.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-699561420%2FProperties%2F-1197683648" anchor-label="packageNameSuffix" id="-699561420%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="package-name-suffix.html"><span>package</span><wbr><span>Name</span><wbr><span><span>Suffix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-699561420%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="package-name-suffix.html">packageNameSuffix</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Returns the package name suffix for the generated code, if it exists.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1792665821%2FProperties%2F-1197683648" anchor-label="project" id="1792665821%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="project.html"><span><span>project</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1792665821%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="project.html">project</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api/Project///PointingToDeclaration/">Project</span></div><div class="brief "><p class="paragraph">Accesses the project associated with the blueprint.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1042329775%2FProperties%2F-1197683648" anchor-label="resourcesSources" id="-1042329775%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resources-sources.html"><span>resources</span><wbr><span><span>Sources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1042329775%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="resources-sources.html">resourcesSources</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">The directory where the Android resource files for the blueprint are generated.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1278045964%2FProperties%2F-1197683648" anchor-label="resSources" id="1278045964%2FProperties%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="res-sources.html"><span>res</span><wbr><span><span>Sources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1278045964%2FProperties%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">lateinit </span><span class="token keyword">var </span><a href="res-sources.html">resSources</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">The directory where the Android resources for the blueprint are generated.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1194720360%2FFunctions%2F-1197683648" anchor-label="apply" id="1194720360%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="apply.html"><span><span>apply</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1194720360%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="apply.html"><span class="token function">apply</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Applies the blueprint to the project.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1039133398%2FFunctions%2F-1197683648" anchor-label="finalizeDsl" id="-1039133398%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="finalize-dsl.html"><span>finalize</span><wbr><span><span>Dsl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1039133398%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.android.build.api.dsl/CommonExtension///PointingToDeclaration/">CommonExtension</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="finalize-dsl.html"><span class="token function">finalizeDsl</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when the Gradle DSL for the ApplicationExtension, LibraryExtension, or DynamicFeatureAndroidComponentsExtension is finalized.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1536922433%2FFunctions%2F-1197683648" anchor-label="isEnabled" id="-1536922433%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-enabled.html"><span>is</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536922433%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-enabled.html"><span class="token function">isEnabled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether the blueprint is enabled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1280561182%2FFunctions%2F-1197683648" anchor-label="java" id="-1280561182%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="java.html"><span><span>java</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1280561182%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="java.html"><span class="token function">java</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">Generates a directory for Java source code for the specified variant.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2144480577%2FFunctions%2F-1197683648" anchor-label="kotlin" id="2144480577%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="kotlin.html"><span><span>kotlin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2144480577%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="kotlin.html"><span class="token function">kotlin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">Generates a directory for Kotlin source code for the specified variant.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="553907561%2FFunctions%2F-1197683648" anchor-label="onCreate" id="553907561%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-create.html"><span>on</span><wbr><span><span>Create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="553907561%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-create.html"><span class="token function">onCreate</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called when Querent creates a new instance of the blueprint.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="549923727%2FFunctions%2F-1197683648" anchor-label="onVariants" id="549923727%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-variants.html"><span>on</span><wbr><span><span>Variants</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="549923727%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="androidx.annotation/CallSuper///PointingToDeclaration/"><span class="token annotation builtin">CallSuper</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-variants.html"><span class="token function">onVariants</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variant<span class="token operator">: </span><span data-unresolved-link="com.android.build.api.variant/Variant///PointingToDeclaration/">Variant</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called for each variant of the project.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1521048818%2FFunctions%2F-1197683648" anchor-label="res" id="-1521048818%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="res.html"><span><span>res</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1521048818%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="res.html"><span class="token function">res</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">Generates a directory for Android resources for the specified variant.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="137264019%2FFunctions%2F-1197683648" anchor-label="resources" id="137264019%2FFunctions%2F-1197683648" data-filterable-set=":api:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":api:dokkaHtmlPartial/main" data-filterable-set=":api:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resources.html"><span><span>resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="137264019%2FFunctions%2F-1197683648"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":api:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="resources.html"><span class="token function">resources</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">variant<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.file/Directory///PointingToDeclaration/">Directory</span></div><div class="brief "><p class="paragraph">Generates a directory for Android resource files for the specified variant.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
