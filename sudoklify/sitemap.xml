@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/sudoklify/j-encoding-for-sudoku-cells/</loc>
+         <lastmod>2024-02-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/sudoklify/reference/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
