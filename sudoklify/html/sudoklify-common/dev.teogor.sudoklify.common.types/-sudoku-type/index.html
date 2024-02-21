@@ -1,0 +1,468 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SudokuType</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Sudoklify
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha04
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":sudoklify-common:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="sudoklify-common::dev.teogor.sudoklify.common.types/SudokuType///PointingToDeclaration//-22065954">
+  <div class="breadcrumbs"><a href="../../index.html">sudoklify-common</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.sudoklify.common.types</a><span class="delimiter">/</span><span class="current">SudokuType</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Sudoku</span><wbr><span><span>Type</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="index.html">SudokuType</a></div><p class="paragraph">Sealed class representing different Sudoku types with varying grid sizes.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-unspecified/index.html">Unspecified</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku4x4/index.html">Sudoku4x4</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku6x6/index.html">Sudoku6x6</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku8x8/index.html">Sudoku8x8</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku9x9/index.html">Sudoku9x9</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku10x10/index.html">Sudoku10x10</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku12x12/index.html">Sudoku12x12</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku15x15/index.html">Sudoku15x15</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku16x16/index.html">Sudoku16x16</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku25x25/index.html">Sudoku25x25</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku36x36/index.html">Sudoku36x36</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku49x49/index.html">Sudoku49x49</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku64x64/index.html">Sudoku64x64</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-sudoku81x81/index.html">Sudoku81x81</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1462826013%2FClasslikes%2F-22065954" anchor-label="GridSize" id="1462826013%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-grid-size/index.html"><span>Grid</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1462826013%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-grid-size/index.html">GridSize</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Data class representing the size of a Sudoku grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="414999581%2FClasslikes%2F-22065954" anchor-label="Sudoku10x10" id="414999581%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku10x10/index.html"><span><span>Sudoku10x10</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="414999581%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku10x10/index.html">Sudoku10x10</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 10x10 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1863242589%2FClasslikes%2F-22065954" anchor-label="Sudoku12x12" id="1863242589%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku12x12/index.html"><span><span>Sudoku12x12</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1863242589%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku12x12/index.html">Sudoku12x12</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 12x12 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-259360195%2FClasslikes%2F-22065954" anchor-label="Sudoku15x15" id="-259360195%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku15x15/index.html"><span><span>Sudoku15x15</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-259360195%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku15x15/index.html">Sudoku15x15</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 15x15 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="464761309%2FClasslikes%2F-22065954" anchor-label="Sudoku16x16" id="464761309%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku16x16/index.html"><span><span>Sudoku16x16</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464761309%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku16x16/index.html">Sudoku16x16</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 16x16 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="713569949%2FClasslikes%2F-22065954" anchor-label="Sudoku25x25" id="713569949%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku25x25/index.html"><span><span>Sudoku25x25</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="713569949%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku25x25/index.html">Sudoku25x25</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 25x25 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1884345699%2FClasslikes%2F-22065954" anchor-label="Sudoku36x36" id="-1884345699%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku36x36/index.html"><span><span>Sudoku36x36</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1884345699%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku36x36/index.html">Sudoku36x36</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 36x36 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1260948957%2FClasslikes%2F-22065954" anchor-label="Sudoku49x49" id="1260948957%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku49x49/index.html"><span><span>Sudoku49x49</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1260948957%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku49x49/index.html">Sudoku49x49</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 49x49 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="293281861%2FClasslikes%2F-22065954" anchor-label="Sudoku4x4" id="293281861%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku4x4/index.html"><span><span>Sudoku4x4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="293281861%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku4x4/index.html">Sudoku4x4</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 4x4 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-413798275%2FClasslikes%2F-22065954" anchor-label="Sudoku64x64" id="-413798275%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku64x64/index.html"><span><span>Sudoku64x64</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-413798275%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku64x64/index.html">Sudoku64x64</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 64x64 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-154151615%2FClasslikes%2F-22065954" anchor-label="Sudoku6x6" id="-154151615%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku6x6/index.html"><span><span>Sudoku6x6</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-154151615%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku6x6/index.html">Sudoku6x6</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 6x6 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-640302499%2FClasslikes%2F-22065954" anchor-label="Sudoku81x81" id="-640302499%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku81x81/index.html"><span><span>Sudoku81x81</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-640302499%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku81x81/index.html">Sudoku81x81</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 81x81 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-601585091%2FClasslikes%2F-22065954" anchor-label="Sudoku8x8" id="-601585091%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku8x8/index.html"><span><span>Sudoku8x8</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-601585091%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku8x8/index.html">Sudoku8x8</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 8x8 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-825301829%2FClasslikes%2F-22065954" anchor-label="Sudoku9x9" id="-825301829%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku9x9/index.html"><span><span>Sudoku9x9</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-825301829%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-sudoku9x9/index.html">Sudoku9x9</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Object representing a 9x9 Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1602147719%2FClasslikes%2F-22065954" anchor-label="Unspecified" id="1602147719%2FClasslikes%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unspecified/index.html"><span><span>Unspecified</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1602147719%2FClasslikes%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-unspecified/index.html">Unspecified</a> : <a href="index.html">SudokuType</a></div><div class="brief "><p class="paragraph">Companion object used to represent an unspecified Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1518651719%2FProperties%2F-22065954" anchor-label="boxHeight" id="-1518651719%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="box-height.html"><span>box</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1518651719%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="box-height.html">boxHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The height of a single box in the grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="683356692%2FProperties%2F-22065954" anchor-label="boxWidth" id="683356692%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="box-width.html"><span>box</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="683356692%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="box-width.html">boxWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The width of a single box in the grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="422542874%2FProperties%2F-22065954" anchor-label="cells" id="422542874%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cells.html"><span><span>cells</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="422542874%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="cells.html">cells</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of cells in the Sudoku (digits squared).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="436561609%2FProperties%2F-22065954" anchor-label="digits" id="436561609%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="digits.html"><span><span>digits</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436561609%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="digits.html">digits</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of digits used in the Sudoku (width * height).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2134214120%2FProperties%2F-22065954" anchor-label="gridSize" id="2134214120%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="grid-size.html"><span>grid</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2134214120%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="grid-size.html">gridSize</a><span class="token operator">: </span><a href="-grid-size/index.html">SudokuType.GridSize</a></div><div class="brief "><p class="paragraph">The size of the Sudoku grid (width and height).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="771759528%2FProperties%2F-22065954" anchor-label="height" id="771759528%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="height.html"><span><span>height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="771759528%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="height.html">height</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The height of the Sudoku grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1801738088%2FProperties%2F-22065954" anchor-label="isSquare" id="1801738088%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-square.html"><span>is</span><wbr><span><span>Square</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1801738088%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-square.html">isSquare</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether the grid size is square (width == height).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1594592956%2FProperties%2F-22065954" anchor-label="name" id="-1594592956%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1594592956%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">A human-readable name for the Sudoku type (e.g., "4x4").</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-74043067%2FProperties%2F-22065954" anchor-label="width" id="-74043067%2FProperties%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="width.html"><span><span>width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-74043067%2FProperties%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="width.html">width</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The width of the Sudoku grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-571121789%2FFunctions%2F-22065954" anchor-label="toString" id="-571121789%2FFunctions%2F-22065954" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-common:dokkaHtmlPartial/main" data-filterable-set=":sudoklify-common:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-571121789%2FFunctions%2F-22065954"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-common:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns a string representation of the Sudoku type.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
