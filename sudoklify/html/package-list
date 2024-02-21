@@ -2,6 +2,7 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 
 module:sudoklify-common
+dev.teogor.sudoklify.common
 dev.teogor.sudoklify.common.model
 dev.teogor.sudoklify.common.types
 module:sudoklify-core
