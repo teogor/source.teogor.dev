@@ -6,7 +6,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/teogor/querent/api-documentation/</loc>
+         <loc>https://github.com/teogor/querent/reference/</loc>
+         <lastmod>2024-02-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/querent/releases/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -17,6 +22,21 @@
     </url>
     <url>
          <loc>https://github.com/teogor/querent/sponsor/</loc>
+         <lastmod>2024-02-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/querent/releases/implementation/</loc>
+         <lastmod>2024-02-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/querent/releases/changelog/1.0.0-alpha01/</loc>
+         <lastmod>2024-02-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/querent/blog/</loc>
          <lastmod>2024-02-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
