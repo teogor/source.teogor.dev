@@ -10,7 +10,8 @@
     --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 14%, 0.07);
     --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 0.82);
     --md-code-bg-color: hsla(var(--md-hue), 15%, 18%, 1);
-    --md-code-hl-color--light: #4287ff26;
+    --md-code-hl-color: #2977ff;
+    --md-code-hl-color--light: #2977ff1a;
     --md-code-hl-number-color: #e6695b;
     --md-code-hl-special-color: #f06090;
     --md-code-hl-function-color: #c973d9;
