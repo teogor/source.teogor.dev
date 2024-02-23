@@ -6,6 +6,8 @@ dev.teogor.drifter.demo
 dev.teogor.drifter.demo.ui.theme
 dev.teogor.drifter.demo.unity
 dev.teogor.drifter.demo.unity.models
+module:drifter-common
+dev.teogor.drifter.common
 module:drifter-compose
 dev.teogor.drifter.compose
 dev.teogor.drifter.compose.components
