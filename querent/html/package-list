@@ -1,12 +1,6 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:api
-dev.teogor.querent.api
-dev.teogor.querent.api.codegen
-dev.teogor.querent.api.gradle
-dev.teogor.querent.api.models
-dev.teogor.querent.api.utils
 module:gradle-plugin
 dev.teogor.querent
 dev.teogor.querent.api.codegen.impl
@@ -14,3 +8,9 @@ dev.teogor.querent.api.impl
 dev.teogor.querent.structures
 dev.teogor.querent.tasks
 dev.teogor.querent.utils
+module:gradle-plugin-api
+dev.teogor.querent.api
+dev.teogor.querent.api.codegen
+dev.teogor.querent.api.gradle
+dev.teogor.querent.api.models
+dev.teogor.querent.api.utils
