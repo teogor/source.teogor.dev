@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/querent/releases/changelog/1.0.0-alpha02/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/querent/blog/</loc>
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
