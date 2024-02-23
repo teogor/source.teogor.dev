@@ -1,493 +1,159 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-      charset="UTF-8"
-    />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>dev.teogor.drifter.wallpaper</title>
-    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg" />
-    <script>
-      var pathToRoot = "../../";
-    </script>
-    <script>
-      document.documentElement.classList.replace("no-js", "js");
-    </script>
-    <script>
-      const storage = localStorage.getItem("dokka-dark-mode");
-      if (storage == null) {
-        const osDarkSchemePreferred =
-          window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches;
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-      } else {
-        const savedDarkMode = JSON.parse(storage);
-        if (savedDarkMode === true) {
-          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-      }
+    }
     </script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../scripts/sourceset_dependencies.js"
-      async
-    ></script>
-    <link href="../../styles/style.css" rel="Stylesheet" />
-    <link href="../../styles/main.css" rel="Stylesheet" />
-    <link href="../../styles/prism.css" rel="Stylesheet" />
-    <link href="../../styles/logo-styles.css" rel="Stylesheet" />
-    <link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet" />
-    <script
-      type="text/javascript"
-      src="../../scripts/clipboard.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../scripts/navigation-loader.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../scripts/platform-content-handler.js"
-      async
-    ></script>
-    <script type="text/javascript" src="../../scripts/main.js" defer></script>
-    <script type="text/javascript" src="../../scripts/prism.js" async></script>
-    <script
-      type="text/javascript"
-      src="../../scripts/symbol-parameters-wrapper_deferred.js"
-      defer
-    ></script>
-  </head>
-  <body>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
     <div class="root">
-      <nav class="navigation" id="navigation-wrapper">
-        <div class="navigation--inner">
-          <div class="navigation-title">
-            <button class="menu-toggle" id="menu-toggle" type="button">
-              toggle menu
-            </button>
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
             <div class="library-name">
-              <a class="library-name--link" href="../../index.html">
-                Drifter
-              </a>
+<a class="library-name--link" href="../../index.html">
+                            Drifter
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha01
             </div>
-            <div class="library-version">1.0.0-alpha01</div>
-          </div>
-          <div class="filter-section" id="filter-section">
-            <button
-              class="platform-tag platform-selector jvm-like"
-              data-active=""
-              data-filter=":drifter-wallpaper:dokkaHtmlPartial/release"
-            >
-              androidJvm
-            </button>
-          </div>
         </div>
-        <div class="navigation-controls">
-          <button
-            class="navigation-controls--btn navigation-controls--theme"
-            id="theme-toggle-button"
-            type="button"
-          >
-            switch theme
-          </button>
-          <div
-            class="navigation-controls--btn navigation-controls--search"
-            id="searchBar"
-            role="button"
-          >
-            search in API
-          </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":drifter-wallpaper:dokkaHtmlPartial/release">androidJvm</button>
         </div>
-      </nav>
-      <div id="container">
-        <div class="sidebar" id="leftColumn">
-          <div class="sidebar--inner" id="sideMenu"></div>
-        </div>
-        <div id="main">
-          <div
-            class="main-content"
-            data-page-type="package"
-            id="content"
-            pageids="drifter-wallpaper::dev.teogor.drifter.wallpaper////PointingToDeclaration//-1719655622"
-          >
-            <div class="breadcrumbs">
-              <a href="../index.html">drifter-wallpaper</a
-              ><span class="delimiter">/</span
-              ><span class="current">dev.teogor.drifter.wallpaper</span>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
             </div>
-            <div class="cover">
-              <h1 class="cover">
-                <span><span>Package-level</span></span>
-                <span><span>declarations</span></span>
-              </h1>
-            </div>
-            <div class="tabbedcontent">
-              <div class="tabs-section" tabs-section="tabs-section">
-                <button
-                  class="section-tab"
-                  data-active=""
-                  data-togglable="TYPE"
-                >
-                  Types
-                </button>
-              </div>
-              <div class="tabs-section-body">
-                <div data-togglable="TYPE">
-                  <h2 class="">Types</h2>
-                  <div class="table">
-                    <a
-                      data-name="-861711607%2FClasslikes%2F-1719655622"
-                      anchor-label="ILiveWallpaperEventsListener"
-                      id="-861711607%2FClasslikes%2F-1719655622"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-i-live-wallpaper-events-listener/index.html"
-                                ><span>ILive</span><wbr /><span>Wallpaper</span
-                                ><wbr /><span>Events</span><wbr /><span
-                                  ><span>Listener</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-861711607%2FClasslikes%2F-1719655622"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">interface </span
-                                  ><a
-                                    href="-i-live-wallpaper-events-listener/index.html"
-                                    >ILiveWallpaperEventsListener</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Describes all events that are sent from Java
-                                    side to Unity.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="644917162%2FClasslikes%2F-1719655622"
-                      anchor-label="LiveWallpaperUnityFacade"
-                      id="644917162%2FClasslikes%2F-1719655622"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-live-wallpaper-unity-facade/index.html"
-                                ><span>Live</span><wbr /><span>Wallpaper</span
-                                ><wbr /><span>Unity</span><wbr /><span
-                                  ><span>Facade</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="644917162%2FClasslikes%2F-1719655622"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">class </span
-                                  ><a
-                                    href="-live-wallpaper-unity-facade/index.html"
-                                    >LiveWallpaperUnityFacade</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Central class for communicating with Unity
-                                    C# side. All interactions to and from C#
-                                    side are done here.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1288910515%2FClasslikes%2F-1719655622"
-                      anchor-label="LiveWallpaperUtility"
-                      id="-1288910515%2FClasslikes%2F-1719655622"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-live-wallpaper-utility/index.html"
-                                ><span>Live</span><wbr /><span>Wallpaper</span
-                                ><wbr /><span><span>Utility</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1288910515%2FClasslikes%2F-1719655622"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">object </span
-                                  ><a href="-live-wallpaper-utility/index.html"
-                                    >LiveWallpaperUtility</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Various useful live wallpaper related
-                                    methods.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="411868547%2FClasslikes%2F-1719655622"
-                      anchor-label="UnityEventsProxy"
-                      id="411868547%2FClasslikes%2F-1719655622"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-unity-events-proxy/index.html"
-                                ><span>Unity</span><wbr /><span>Events</span
-                                ><wbr /><span><span>Proxy</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="411868547%2FClasslikes%2F-1719655622"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">class </span
-                                  ><a href="-unity-events-proxy/index.html"
-                                    >UnityEventsProxy</a
-                                  >
-                                  :
-                                  <a
-                                    href="-i-live-wallpaper-events-listener/index.html"
-                                    >ILiveWallpaperEventsListener</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Notifies about Live Wallpaper events.
-                                    Compares the event data with previous event
-                                    data and only sends the event if data has
-                                    changed.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1089684201%2FClasslikes%2F-1719655622"
-                      anchor-label="UnityWallpaperService"
-                      id="-1089684201%2FClasslikes%2F-1719655622"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-unity-wallpaper-service/index.html"
-                                ><span>Unity</span><wbr /><span>Wallpaper</span
-                                ><wbr /><span><span>Service</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1089684201%2FClasslikes%2F-1719655622"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">class </span
-                                  ><a href="-unity-wallpaper-service/index.html"
-                                    >UnityWallpaperService</a
-                                  >
-                                  :
-                                  <a
-                                    href="https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.html"
-                                    >WallpaperService</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Service representing the live wallpaper with
-                                    Unity backend.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="drifter-wallpaper::dev.teogor.drifter.wallpaper////PointingToDeclaration//-1719655622">
+  <div class="breadcrumbs"><a href="../index.html">drifter-wallpaper</a><span class="delimiter">/</span><span class="current">dev.teogor.drifter.wallpaper</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-861711607%2FClasslikes%2F-1719655622" anchor-label="ILiveWallpaperEventsListener" id="-861711607%2FClasslikes%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-live-wallpaper-events-listener/index.html"><span>ILive</span><wbr><span>Wallpaper</span><wbr><span>Events</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-861711607%2FClasslikes%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-i-live-wallpaper-events-listener/index.html">ILiveWallpaperEventsListener</a></div><div class="brief "><p class="paragraph">Describes all events that are sent from Java side to Unity.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer">
-            <span class="go-to-top-icon"
-              ><a href="#content" id="go-to-top-link"></a></span
-            ><span>© 2023 Copyright</span
-            ><span class="pull-right"
-              ><span>Generated by </span
-              ><a href="https://github.com/Kotlin/dokka"
-                ><span>dokka</span><span class="padded-icon"></span></a
-            ></span>
+<a data-name="644917162%2FClasslikes%2F-1719655622" anchor-label="LiveWallpaperUnityFacade" id="644917162%2FClasslikes%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-live-wallpaper-unity-facade/index.html"><span>Live</span><wbr><span>Wallpaper</span><wbr><span>Unity</span><wbr><span><span>Facade</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="644917162%2FClasslikes%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-live-wallpaper-unity-facade/index.html">LiveWallpaperUnityFacade</a></div><div class="brief "><p class="paragraph">Central class for communicating with Unity C# side. All interactions to and from C# side are done here.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1288910515%2FClasslikes%2F-1719655622" anchor-label="LiveWallpaperUtility" id="-1288910515%2FClasslikes%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-live-wallpaper-utility/index.html"><span>Live</span><wbr><span>Wallpaper</span><wbr><span><span>Utility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1288910515%2FClasslikes%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-live-wallpaper-utility/index.html">LiveWallpaperUtility</a></div><div class="brief "><p class="paragraph">Various useful live wallpaper related methods.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="411868547%2FClasslikes%2F-1719655622" anchor-label="UnityEventsProxy" id="411868547%2FClasslikes%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unity-events-proxy/index.html"><span>Unity</span><wbr><span>Events</span><wbr><span><span>Proxy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="411868547%2FClasslikes%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unity-events-proxy/index.html">UnityEventsProxy</a> : <a href="-i-live-wallpaper-events-listener/index.html">ILiveWallpaperEventsListener</a></div><div class="brief "><p class="paragraph">Notifies about Live Wallpaper events. Compares the event data with previous event data and only sends the event if data has changed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1089684201%2FClasslikes%2F-1719655622" anchor-label="UnityWallpaperService" id="-1089684201%2FClasslikes%2F-1719655622" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-wallpaper:dokkaHtmlPartial/release" data-filterable-set=":drifter-wallpaper:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unity-wallpaper-service/index.html"><span>Unity</span><wbr><span>Wallpaper</span><wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1089684201%2FClasslikes%2F-1719655622"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unity-wallpaper-service/index.html">UnityWallpaperService</a> : <a href="https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.html">WallpaperService</a></div><div class="brief "><p class="paragraph">Service representing the live wallpaper with Unity backend.</p></div></div></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+

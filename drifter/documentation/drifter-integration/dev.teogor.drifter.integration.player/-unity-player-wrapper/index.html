@@ -1,1064 +1,277 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-      charset="UTF-8"
-    />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>UnityPlayerWrapper</title>
-    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
-    <script>
-      var pathToRoot = "../../../";
-    </script>
-    <script>
-      document.documentElement.classList.replace("no-js", "js");
-    </script>
-    <script>
-      const storage = localStorage.getItem("dokka-dark-mode");
-      if (storage == null) {
-        const osDarkSchemePreferred =
-          window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches;
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-      } else {
-        const savedDarkMode = JSON.parse(storage);
-        if (savedDarkMode === true) {
-          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-      }
+    }
     </script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/sourceset_dependencies.js"
-      async
-    ></script>
-    <link href="../../../styles/style.css" rel="Stylesheet" />
-    <link href="../../../styles/main.css" rel="Stylesheet" />
-    <link href="../../../styles/prism.css" rel="Stylesheet" />
-    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
-    <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet" />
-    <script
-      type="text/javascript"
-      src="../../../scripts/clipboard.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/navigation-loader.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/platform-content-handler.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/main.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/prism.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
-      defer
-    ></script>
-  </head>
-  <body>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
     <div class="root">
-      <nav class="navigation" id="navigation-wrapper">
-        <div class="navigation--inner">
-          <div class="navigation-title">
-            <button class="menu-toggle" id="menu-toggle" type="button">
-              toggle menu
-            </button>
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
             <div class="library-name">
-              <a class="library-name--link" href="../../../index.html">
-                Drifter
-              </a>
+<a class="library-name--link" href="../../../index.html">
+                            Drifter
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha01
             </div>
-            <div class="library-version">1.0.0-alpha01</div>
-          </div>
-          <div class="filter-section" id="filter-section">
-            <button
-              class="platform-tag platform-selector jvm-like"
-              data-active=""
-              data-filter=":drifter-integration:dokkaHtmlPartial/release"
-            >
-              androidJvm
-            </button>
-          </div>
         </div>
-        <div class="navigation-controls">
-          <button
-            class="navigation-controls--btn navigation-controls--theme"
-            id="theme-toggle-button"
-            type="button"
-          >
-            switch theme
-          </button>
-          <div
-            class="navigation-controls--btn navigation-controls--search"
-            id="searchBar"
-            role="button"
-          >
-            search in API
-          </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":drifter-integration:dokkaHtmlPartial/release">androidJvm</button>
         </div>
-      </nav>
-      <div id="container">
-        <div class="sidebar" id="leftColumn">
-          <div class="sidebar--inner" id="sideMenu"></div>
-        </div>
-        <div id="main">
-          <div
-            class="main-content"
-            data-page-type="classlike"
-            id="content"
-            pageids="drifter-integration::dev.teogor.drifter.integration.player/UnityPlayerWrapper///PointingToDeclaration//1630270504"
-          >
-            <div class="breadcrumbs">
-              <a href="../../index.html">drifter-integration</a
-              ><span class="delimiter">/</span
-              ><a href="../index.html">dev.teogor.drifter.integration.player</a
-              ><span class="delimiter">/</span
-              ><span class="current">UnityPlayerWrapper</span>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
             </div>
-            <div class="cover">
-              <h1 class="cover">
-                <span>Unity</span><wbr /><span>Player</span><wbr /><span
-                  ><span>Wrapper</span></span
-                >
-              </h1>
-              <div
-                class="platform-hinted"
-                data-platform-hinted="data-platform-hinted"
-              >
-                <div
-                  class="content sourceset-dependent-content"
-                  data-active=""
-                  data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                >
-                  <div class="symbol monospace">
-                    <span class="token keyword">class </span
-                    ><a href="index.html">UnityPlayerWrapper</a
-                    ><span class="token punctuation">(</span
-                    ><span class="parameters"
-                      ><span class="parameter"
-                        >contextWrapper<span class="token operator">: </span
-                        ><a
-                          href="https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html"
-                          >ContextWrapper</a
-                        ></span
-                      ></span
-                    ><span class="token punctuation">)</span>
-                  </div>
-                  <p class="paragraph">
-                    Provides safe and convenient access to
-                    <code class="lang-kotlin">UnityPlayer</code>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="tabbedcontent">
-              <div class="tabs-section" tabs-section="tabs-section">
-                <button
-                  class="section-tab"
-                  data-active=""
-                  data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION"
-                >
-                  Members
-                </button>
-              </div>
-              <div class="tabs-section-body">
-                <div data-togglable="CONSTRUCTOR">
-                  <h2 class="">Constructors</h2>
-                  <div class="table">
-                    <a
-                      data-name="764752201%2FConstructors%2F1630270504"
-                      anchor-label="UnityPlayerWrapper"
-                      id="764752201%2FConstructors%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-togglable="CONSTRUCTOR"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-unity-player-wrapper.html"
-                                ><span>Unity</span><wbr /><span>Player</span
-                                ><wbr /><span><span>Wrapper</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="764752201%2FConstructors%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">constructor</span
-                                  ><span class="token punctuation">(</span
-                                  ><span class="parameters"
-                                    ><span class="parameter"
-                                      >contextWrapper<span
-                                        class="token operator"
-                                        >: </span
-                                      ><a
-                                        href="https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html"
-                                        >ContextWrapper</a
-                                      ></span
-                                    ></span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div data-togglable="TYPE">
-                  <h2 class="">Types</h2>
-                  <div class="table">
-                    <a
-                      data-name="-356180893%2FClasslikes%2F1630270504"
-                      anchor-label="Companion"
-                      id="-356180893%2FClasslikes%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-companion/index.html"
-                                ><span><span>Companion</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-356180893%2FClasslikes%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">object </span
-                                  ><a href="-companion/index.html">Companion</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div data-togglable="PROPERTY">
-                  <h2 class="">Properties</h2>
-                  <div class="table">
-                    <a
-                      data-name="890559967%2FProperties%2F1630270504"
-                      anchor-label="applicationContext"
-                      id="890559967%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="application-context.html"
-                                ><span>application</span><wbr /><span
-                                  ><span>Context</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="890559967%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">val </span
-                                  ><a href="application-context.html"
-                                    >applicationContext</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://developer.android.com/reference/kotlin/android/content/Context.html"
-                                    >Context</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Returns the Application
-                                    <code class="lang-kotlin">Context</code>.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1933208218%2FProperties%2F1630270504"
-                      anchor-label="unityPlayer"
-                      id="-1933208218%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="unity-player.html"
-                                ><span>unity</span><wbr /><span
-                                  ><span>Player</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1933208218%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">val </span
-                                  ><a href="unity-player.html">unityPlayer</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="../../../drifter-core/com.unity3d.player/-unity-player/index.html"
-                                    >UnityPlayer</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div data-togglable="FUNCTION">
-                  <h2 class="">Functions</h2>
-                  <div class="table">
-                    <a
-                      data-name="653923400%2FFunctions%2F1630270504"
-                      anchor-label="handleSurfaceDestroyed"
-                      id="653923400%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="handle-surface-destroyed.html"
-                                ><span>handle</span><wbr /><span>Surface</span
-                                ><wbr /><span><span>Destroyed</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="653923400%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="handle-surface-destroyed.html"
-                                    ><span class="token function"
-                                      >handleSurfaceDestroyed</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="parameters"
-                                    ><span class="parameter"
-                                      >surfaceHolder<span class="token operator"
-                                        >: </span
-                                      ><a
-                                        href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html"
-                                        >SurfaceHolder</a
-                                      ><span class="token operator"
-                                        >?</span
-                                      ></span
-                                    ></span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Handles the destruction of
-                                    <code class="lang-kotlin"
-                                      >UnityWallpaperEngine</code
-                                    >-owned
-                                    <code class="lang-kotlin"
-                                      >SurfaceHolder</code
-                                    >.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1534697924%2FFunctions%2F1630270504"
-                      anchor-label="injectConfigurationChange"
-                      id="-1534697924%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="inject-configuration-change.html"
-                                ><span>inject</span><wbr /><span
-                                  >Configuration</span
-                                ><wbr /><span><span>Change</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1534697924%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="inject-configuration-change.html"
-                                    ><span class="token function"
-                                      >injectConfigurationChange</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="parameters"
-                                    ><span class="parameter"
-                                      >configuration<span class="token operator"
-                                        >: </span
-                                      ><a
-                                        href="https://developer.android.com/reference/kotlin/android/content/res/Configuration.html"
-                                        >Configuration</a
-                                      ><span class="token operator"
-                                        >?</span
-                                      ></span
-                                    ></span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Forwards configuration changes to Unity.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1122099864%2FFunctions%2F1630270504"
-                      anchor-label="injectInputEvent"
-                      id="1122099864%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="inject-input-event.html"
-                                ><span>inject</span><wbr /><span>Input</span
-                                ><wbr /><span><span>Event</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1122099864%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="inject-input-event.html"
-                                    ><span class="token function"
-                                      >injectInputEvent</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="parameters"
-                                    ><span class="parameter"
-                                      >inputEvent<span class="token operator"
-                                        >: </span
-                                      ><a
-                                        href="https://developer.android.com/reference/kotlin/android/view/InputEvent.html"
-                                        >InputEvent</a
-                                      ><span class="token operator"
-                                        >?</span
-                                      ></span
-                                    ></span
-                                  ><span class="token punctuation">)</span
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"
-                                    >Boolean</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Forwards touch events to Unity.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-899139899%2FFunctions%2F1630270504"
-                      anchor-label="pausePlayer"
-                      id="-899139899%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="pause-player.html"
-                                ><span>pause</span><wbr /><span
-                                  ><span>Player</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-899139899%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="pause-player.html"
-                                    ><span class="token function"
-                                      >pausePlayer</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Pauses the
-                                    <code class="lang-kotlin">UnityPlayer</code
-                                    >.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-747509714%2FFunctions%2F1630270504"
-                      anchor-label="quitPlayer"
-                      id="-747509714%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="quit-player.html"
-                                ><span>quit</span><wbr /><span
-                                  ><span>Player</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-747509714%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="quit-player.html"
-                                    ><span class="token function"
-                                      >quitPlayer</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Shuts down the
-                                    <code class="lang-kotlin">UnityPlayer</code
-                                    >. Note: this will kill the application
-                                    process entirely.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1667033680%2FFunctions%2F1630270504"
-                      anchor-label="resumePlayer"
-                      id="1667033680%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="resume-player.html"
-                                ><span>resume</span><wbr /><span
-                                  ><span>Player</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1667033680%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="resume-player.html"
-                                    ><span class="token function"
-                                      >resumePlayer</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Resumes the
-                                    <code class="lang-kotlin">UnityPlayer</code>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="220864394%2FFunctions%2F1630270504"
-                      anchor-label="setContext"
-                      id="220864394%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="set-context.html"
-                                ><span>set</span><wbr /><span
-                                  ><span>Context</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="220864394%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="set-context.html"
-                                    ><span class="token function"
-                                      >setContext</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="parameters"
-                                    ><span class="parameter"
-                                      >contextWrapper<span
-                                        class="token operator"
-                                        >: </span
-                                      ><a
-                                        href="https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html"
-                                        >ContextWrapper</a
-                                      ><span class="token operator"
-                                        >?</span
-                                      ></span
-                                    ></span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Sets internal
-                                    <code class="lang-kotlin">UnityPlayer</code>
-                                    reference to
-                                    <code class="lang-kotlin"
-                                      >ContextWrapper</code
-                                    >, used for soft input and some other stuff.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1473865630%2FFunctions%2F1630270504"
-                      anchor-label="setPlayerSurface"
-                      id="1473865630%2FFunctions%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="set-player-surface.html"
-                                ><span>set</span><wbr /><span>Player</span
-                                ><wbr /><span><span>Surface</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1473865630%2FFunctions%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword"></span
-                                  ><span class="token keyword">fun </span
-                                  ><a href="set-player-surface.html"
-                                    ><span class="token function"
-                                      >setPlayerSurface</span
-                                    ></a
-                                  ><span class="token punctuation">(</span
-                                  ><span class="parameters"
-                                    ><span class="parameter"
-                                      >surfaceHolder<span class="token operator"
-                                        >: </span
-                                      ><a
-                                        href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html"
-                                        >SurfaceHolder</a
-                                      ><span class="token operator"
-                                        >?</span
-                                      ></span
-                                    ></span
-                                  ><span class="token punctuation">)</span>
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Sets the primary rendering surface of
-                                    <code class="lang-kotlin">UnityPlayer</code
-                                    >.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="drifter-integration::dev.teogor.drifter.integration.player/UnityPlayerWrapper///PointingToDeclaration//1630270504">
+  <div class="breadcrumbs"><a href="../../index.html">drifter-integration</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.drifter.integration.player</a><span class="delimiter">/</span><span class="current">UnityPlayerWrapper</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Unity</span><wbr><span>Player</span><wbr><span><span>Wrapper</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">UnityPlayerWrapper</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contextWrapper<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html">ContextWrapper</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Provides safe and convenient access to <code class="lang-kotlin">UnityPlayer</code>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="764752201%2FConstructors%2F1630270504" anchor-label="UnityPlayerWrapper" id="764752201%2FConstructors%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unity-player-wrapper.html"><span>Unity</span><wbr><span>Player</span><wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="764752201%2FConstructors%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contextWrapper<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html">ContextWrapper</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer">
-            <span class="go-to-top-icon"
-              ><a href="#content" id="go-to-top-link"></a></span
-            ><span>© 2023 Copyright</span
-            ><span class="pull-right"
-              ><span>Generated by </span
-              ><a href="https://github.com/Kotlin/dokka"
-                ><span>dokka</span><span class="padded-icon"></span></a
-            ></span>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-356180893%2FClasslikes%2F1630270504" anchor-label="Companion" id="-356180893%2FClasslikes%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-356180893%2FClasslikes%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="890559967%2FProperties%2F1630270504" anchor-label="applicationContext" id="890559967%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="application-context.html"><span>application</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="890559967%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="application-context.html">applicationContext</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></div><div class="brief "><p class="paragraph">Returns the Application <code class="lang-kotlin">Context</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1933208218%2FProperties%2F1630270504" anchor-label="unityPlayer" id="-1933208218%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unity-player.html"><span>unity</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1933208218%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="unity-player.html">unityPlayer</a><span class="token operator">: </span><a href="../../../drifter-core/com.unity3d.player/-unity-player/index.html">UnityPlayer</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="653923400%2FFunctions%2F1630270504" anchor-label="handleSurfaceDestroyed" id="653923400%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handle-surface-destroyed.html"><span>handle</span><wbr><span>Surface</span><wbr><span><span>Destroyed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="653923400%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="handle-surface-destroyed.html"><span class="token function">handleSurfaceDestroyed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceHolder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Handles the destruction of <code class="lang-kotlin">UnityWallpaperEngine</code>-owned <code class="lang-kotlin">SurfaceHolder</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1534697924%2FFunctions%2F1630270504" anchor-label="injectConfigurationChange" id="-1534697924%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inject-configuration-change.html"><span>inject</span><wbr><span>Configuration</span><wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1534697924%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="inject-configuration-change.html"><span class="token function">injectConfigurationChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">configuration<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/res/Configuration.html">Configuration</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Forwards configuration changes to Unity.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1122099864%2FFunctions%2F1630270504" anchor-label="injectInputEvent" id="1122099864%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inject-input-event.html"><span>inject</span><wbr><span>Input</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1122099864%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="inject-input-event.html"><span class="token function">injectInputEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inputEvent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/InputEvent.html">InputEvent</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Forwards touch events to Unity.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-899139899%2FFunctions%2F1630270504" anchor-label="pausePlayer" id="-899139899%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pause-player.html"><span>pause</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-899139899%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="pause-player.html"><span class="token function">pausePlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pauses the <code class="lang-kotlin">UnityPlayer</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-747509714%2FFunctions%2F1630270504" anchor-label="quitPlayer" id="-747509714%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="quit-player.html"><span>quit</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-747509714%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="quit-player.html"><span class="token function">quitPlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Shuts down the <code class="lang-kotlin">UnityPlayer</code>. Note: this will kill the application process entirely.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1667033680%2FFunctions%2F1630270504" anchor-label="resumePlayer" id="1667033680%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resume-player.html"><span>resume</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1667033680%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="resume-player.html"><span class="token function">resumePlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Resumes the <code class="lang-kotlin">UnityPlayer</code></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="220864394%2FFunctions%2F1630270504" anchor-label="setContext" id="220864394%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-context.html"><span>set</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="220864394%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-context.html"><span class="token function">setContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contextWrapper<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/ContextWrapper.html">ContextWrapper</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets internal <code class="lang-kotlin">UnityPlayer</code> reference to <code class="lang-kotlin">ContextWrapper</code>, used for soft input and some other stuff.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1473865630%2FFunctions%2F1630270504" anchor-label="setPlayerSurface" id="1473865630%2FFunctions%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-player-surface.html"><span>set</span><wbr><span>Player</span><wbr><span><span>Surface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1473865630%2FFunctions%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-player-surface.html"><span class="token function">setPlayerSurface</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceHolder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html">SurfaceHolder</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the primary rendering surface of <code class="lang-kotlin">UnityPlayer</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+

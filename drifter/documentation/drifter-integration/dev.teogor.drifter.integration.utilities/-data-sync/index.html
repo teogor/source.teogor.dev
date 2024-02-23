@@ -1,1811 +1,475 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-      charset="UTF-8"
-    />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>DataSync</title>
-    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg" />
-    <script>
-      var pathToRoot = "../../../";
-    </script>
-    <script>
-      document.documentElement.classList.replace("no-js", "js");
-    </script>
-    <script>
-      const storage = localStorage.getItem("dokka-dark-mode");
-      if (storage == null) {
-        const osDarkSchemePreferred =
-          window.matchMedia &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches;
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-      } else {
-        const savedDarkMode = JSON.parse(storage);
-        if (savedDarkMode === true) {
-          document.getElementsByTagName("html")[0].classList.add("theme-dark");
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-      }
+    }
     </script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/sourceset_dependencies.js"
-      async
-    ></script>
-    <link href="../../../styles/style.css" rel="Stylesheet" />
-    <link href="../../../styles/main.css" rel="Stylesheet" />
-    <link href="../../../styles/prism.css" rel="Stylesheet" />
-    <link href="../../../styles/logo-styles.css" rel="Stylesheet" />
-    <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet" />
-    <script
-      type="text/javascript"
-      src="../../../scripts/clipboard.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/navigation-loader.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/platform-content-handler.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/main.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/prism.js"
-      async
-    ></script>
-    <script
-      type="text/javascript"
-      src="../../../scripts/symbol-parameters-wrapper_deferred.js"
-      defer
-    ></script>
-  </head>
-  <body>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
     <div class="root">
-      <nav class="navigation" id="navigation-wrapper">
-        <div class="navigation--inner">
-          <div class="navigation-title">
-            <button class="menu-toggle" id="menu-toggle" type="button">
-              toggle menu
-            </button>
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
             <div class="library-name">
-              <a class="library-name--link" href="../../../index.html">
-                Drifter
-              </a>
+<a class="library-name--link" href="../../../index.html">
+                            Drifter
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha01
             </div>
-            <div class="library-version">1.0.0-alpha01</div>
-          </div>
-          <div class="filter-section" id="filter-section">
-            <button
-              class="platform-tag platform-selector jvm-like"
-              data-active=""
-              data-filter=":drifter-integration:dokkaHtmlPartial/release"
-            >
-              androidJvm
-            </button>
-          </div>
         </div>
-        <div class="navigation-controls">
-          <button
-            class="navigation-controls--btn navigation-controls--theme"
-            id="theme-toggle-button"
-            type="button"
-          >
-            switch theme
-          </button>
-          <div
-            class="navigation-controls--btn navigation-controls--search"
-            id="searchBar"
-            role="button"
-          >
-            search in API
-          </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":drifter-integration:dokkaHtmlPartial/release">androidJvm</button>
         </div>
-      </nav>
-      <div id="container">
-        <div class="sidebar" id="leftColumn">
-          <div class="sidebar--inner" id="sideMenu"></div>
-        </div>
-        <div id="main">
-          <div
-            class="main-content"
-            data-page-type="classlike"
-            id="content"
-            pageids="drifter-integration::dev.teogor.drifter.integration.utilities/DataSync///PointingToDeclaration//1630270504"
-          >
-            <div class="breadcrumbs">
-              <a href="../../index.html">drifter-integration</a
-              ><span class="delimiter">/</span
-              ><a href="../index.html"
-                >dev.teogor.drifter.integration.utilities</a
-              ><span class="delimiter">/</span
-              ><span class="current">DataSync</span>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
             </div>
-            <div class="cover">
-              <h1 class="cover">
-                <span>Data</span><wbr /><span><span>Sync</span></span>
-              </h1>
-              <div
-                class="platform-hinted"
-                data-platform-hinted="data-platform-hinted"
-              >
-                <div
-                  class="content sourceset-dependent-content"
-                  data-active=""
-                  data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                >
-                  <div class="symbol monospace">
-                    <span class="token keyword">object </span
-                    ><a href="index.html">DataSync</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tabbedcontent">
-              <div class="tabs-section" tabs-section="tabs-section">
-                <button
-                  class="section-tab"
-                  data-active=""
-                  data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION"
-                >
-                  Members
-                </button>
-              </div>
-              <div class="tabs-section-body">
-                <div data-togglable="PROPERTY">
-                  <h2 class="">Properties</h2>
-                  <div class="table">
-                    <a
-                      data-name="1195239986%2FProperties%2F1630270504"
-                      anchor-label="COLOUR_CHANGED"
-                      id="1195239986%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-c-o-l-o-u-r_-c-h-a-n-g-e-d.html"
-                                ><span><span>COLOUR_CHANGED</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1195239986%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-c-o-l-o-u-r_-c-h-a-n-g-e-d.html"
-                                    >COLOUR_CHANGED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-27572532%2FProperties%2F1630270504"
-                      anchor-label="CYCLE_CHANGED"
-                      id="-27572532%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-c-y-c-l-e_-c-h-a-n-g-e-d.html"
-                                ><span><span>CYCLE_CHANGED</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-27572532%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-c-y-c-l-e_-c-h-a-n-g-e-d.html"
-                                    >CYCLE_CHANGED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1287182455%2FProperties%2F1630270504"
-                      anchor-label="DATA_SYNC_EMPTY"
-                      id="-1287182455%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-d-a-t-a_-s-y-n-c_-e-m-p-t-y.html"
-                                ><span><span>DATA_SYNC_EMPTY</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1287182455%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-d-a-t-a_-s-y-n-c_-e-m-p-t-y.html"
-                                    >DATA_SYNC_EMPTY</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-866383086%2FProperties%2F1630270504"
-                      anchor-label="DEBUG_ENABLED"
-                      id="-866383086%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-d-e-b-u-g_-e-n-a-b-l-e-d.html"
-                                ><span><span>DEBUG_ENABLED</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-866383086%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-d-e-b-u-g_-e-n-a-b-l-e-d.html"
-                                    >DEBUG_ENABLED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">
-                                    Fields from PlayerPrefs
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1643192636%2FProperties%2F1630270504"
-                      anchor-label="EDITOR_ENABLED"
-                      id="-1643192636%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-e-d-i-t-o-r_-e-n-a-b-l-e-d.html"
-                                ><span><span>EDITOR_ENABLED</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1643192636%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-e-d-i-t-o-r_-e-n-a-b-l-e-d.html"
-                                    >EDITOR_ENABLED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1442357781%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_PREFS_DARK"
-                      id="-1442357781%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-d-a-r-k.html"
-                                ><span
-                                  ><span>NAVIGATION_BAR_PREFS_DARK</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1442357781%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-d-a-r-k.html"
-                                    >NAVIGATION_BAR_PREFS_DARK</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1397250136%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_PREFS_ENABLED"
-                      id="1397250136%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html"
-                                ><span
-                                  ><span
-                                    >NAVIGATION_BAR_PREFS_ENABLED</span
-                                  ></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1397250136%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html"
-                                    >NAVIGATION_BAR_PREFS_ENABLED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="912273498%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_PREFS_HEIGHT"
-                      id="912273498%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html"
-                                ><span
-                                  ><span
-                                    >NAVIGATION_BAR_PREFS_HEIGHT</span
-                                  ></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="912273498%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html"
-                                    >NAVIGATION_BAR_PREFS_HEIGHT</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1469250866%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_PREFS_OPACITY"
-                      id="-1469250866%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html"
-                                ><span
-                                  ><span
-                                    >NAVIGATION_BAR_PREFS_OPACITY</span
-                                  ></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1469250866%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html"
-                                    >NAVIGATION_BAR_PREFS_OPACITY</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-84845275%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_SCRIPT"
-                      id="-84845275%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-c-r-i-p-t.html"
-                                ><span
-                                  ><span>NAVIGATION_BAR_SCRIPT</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-84845275%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-c-r-i-p-t.html"
-                                    >NAVIGATION_BAR_SCRIPT</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="2077354205%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_SET_DARK"
-                      id="2077354205%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-d-a-r-k.html"
-                                ><span
-                                  ><span>NAVIGATION_BAR_SET_DARK</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="2077354205%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-d-a-r-k.html"
-                                    >NAVIGATION_BAR_SET_DARK</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-194539482%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_SET_ENABLED"
-                      id="-194539482%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html"
-                                ><span
-                                  ><span>NAVIGATION_BAR_SET_ENABLED</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-194539482%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html"
-                                    >NAVIGATION_BAR_SET_ENABLED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1078737204%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_SET_HEIGHT"
-                      id="-1078737204%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-h-e-i-g-h-t.html"
-                                ><span
-                                  ><span>NAVIGATION_BAR_SET_HEIGHT</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1078737204%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-h-e-i-g-h-t.html"
-                                    >NAVIGATION_BAR_SET_HEIGHT</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1233926812%2FProperties%2F1630270504"
-                      anchor-label="NAVIGATION_BAR_SET_OPACITY"
-                      id="1233926812%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html"
-                                ><span
-                                  ><span>NAVIGATION_BAR_SET_OPACITY</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1233926812%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html"
-                                    >NAVIGATION_BAR_SET_OPACITY</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="179798187%2FProperties%2F1630270504"
-                      anchor-label="ON_CLICK"
-                      id="179798187%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-o-n_-c-l-i-c-k.html"
-                                ><span><span>ON_CLICK</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="179798187%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-o-n_-c-l-i-c-k.html">ON_CLICK</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1431568342%2FProperties%2F1630270504"
-                      anchor-label="RESET_EDITOR"
-                      id="1431568342%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-r-e-s-e-t_-e-d-i-t-o-r.html"
-                                ><span><span>RESET_EDITOR</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1431568342%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-r-e-s-e-t_-e-d-i-t-o-r.html"
-                                    >RESET_EDITOR</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="554691273%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_PREFS_DARK"
-                      id="554691273%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-d-a-r-k.html"
-                                ><span
-                                  ><span>STATUS_BAR_PREFS_DARK</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="554691273%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-d-a-r-k.html"
-                                    >STATUS_BAR_PREFS_DARK</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1598633658%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_PREFS_ENABLED"
-                      id="1598633658%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html"
-                                ><span
-                                  ><span>STATUS_BAR_PREFS_ENABLED</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1598633658%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html"
-                                    >STATUS_BAR_PREFS_ENABLED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">TODO beta</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="226033080%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_PREFS_HEIGHT"
-                      id="226033080%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html"
-                                ><span
-                                  ><span>STATUS_BAR_PREFS_HEIGHT</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="226033080%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html"
-                                    >STATUS_BAR_PREFS_HEIGHT</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1267867344%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_PREFS_OPACITY"
-                      id="-1267867344%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html"
-                                ><span
-                                  ><span>STATUS_BAR_PREFS_OPACITY</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1267867344%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html"
-                                    >STATUS_BAR_PREFS_OPACITY</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="311363843%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_SCRIPT"
-                      id="311363843%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-s-t-a-t-u-s_-b-a-r_-s-c-r-i-p-t.html"
-                                ><span><span>STATUS_BAR_SCRIPT</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="311363843%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-s-c-r-i-p-t.html"
-                                    >STATUS_BAR_SCRIPT</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                                <div class="brief">
-                                  <p class="paragraph">Methods</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="582227259%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_SET_DARK"
-                      id="582227259%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-d-a-r-k.html"
-                                ><span
-                                  ><span>STATUS_BAR_SET_DARK</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="582227259%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-d-a-r-k.html"
-                                    >STATUS_BAR_SET_DARK</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1584439048%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_SET_ENABLED"
-                      id="1584439048%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html"
-                                ><span
-                                  ><span>STATUS_BAR_SET_ENABLED</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1584439048%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html"
-                                    >STATUS_BAR_SET_ENABLED</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="918311850%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_SET_HEIGHT"
-                      id="918311850%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-h-e-i-g-h-t.html"
-                                ><span
-                                  ><span>STATUS_BAR_SET_HEIGHT</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="918311850%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-h-e-i-g-h-t.html"
-                                    >STATUS_BAR_SET_HEIGHT</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="-1282061954%2FProperties%2F1630270504"
-                      anchor-label="STATUS_BAR_SET_OPACITY"
-                      id="-1282061954%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a
-                                href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html"
-                                ><span
-                                  ><span>STATUS_BAR_SET_OPACITY</span></span
-                                ></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="-1282061954%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a
-                                    href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html"
-                                    >STATUS_BAR_SET_OPACITY</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <a
-                      data-name="1327645727%2FProperties%2F1630270504"
-                      anchor-label="WATER_COLOUR"
-                      id="1327645727%2FProperties%2F1630270504"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    ></a>
-                    <div
-                      class="table-row"
-                      data-filterable-current=":drifter-integration:dokkaHtmlPartial/release"
-                      data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"
-                    >
-                      <div class="main-subrow keyValue">
-                        <div class="">
-                          <span class="inline-flex">
-                            <div>
-                              <a href="-w-a-t-e-r_-c-o-l-o-u-r.html"
-                                ><span><span>WATER_COLOUR</span></span></a
-                              >
-                            </div>
-                            <span class="anchor-wrapper"
-                              ><span
-                                class="anchor-icon"
-                                pointing-to="1327645727%2FProperties%2F1630270504"
-                              ></span>
-                              <div class="copy-popup-wrapper">
-                                <span class="copy-popup-icon"></span
-                                ><span>Link copied to clipboard</span>
-                              </div>
-                            </span></span
-                          >
-                        </div>
-                        <div>
-                          <div class="title">
-                            <div
-                              class="platform-hinted"
-                              data-platform-hinted="data-platform-hinted"
-                            >
-                              <div
-                                class="content sourceset-dependent-content"
-                                data-active=""
-                                data-togglable=":drifter-integration:dokkaHtmlPartial/release"
-                              >
-                                <div class="symbol monospace">
-                                  <span class="token keyword">const </span
-                                  ><span class="token keyword">val </span
-                                  ><a href="-w-a-t-e-r_-c-o-l-o-u-r.html"
-                                    >WATER_COLOUR</a
-                                  ><span class="token operator">: </span
-                                  ><a
-                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"
-                                    >String</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="drifter-integration::dev.teogor.drifter.integration.utilities/DataSync///PointingToDeclaration//1630270504">
+  <div class="breadcrumbs"><a href="../../index.html">drifter-integration</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.drifter.integration.utilities</a><span class="delimiter">/</span><span class="current">DataSync</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Data</span><wbr><span><span>Sync</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">DataSync</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1195239986%2FProperties%2F1630270504" anchor-label="COLOUR_CHANGED" id="1195239986%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-l-o-u-r_-c-h-a-n-g-e-d.html"><span><span>COLOUR_CHANGED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1195239986%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-c-o-l-o-u-r_-c-h-a-n-g-e-d.html">COLOUR_CHANGED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer">
-            <span class="go-to-top-icon"
-              ><a href="#content" id="go-to-top-link"></a></span
-            ><span>© 2023 Copyright</span
-            ><span class="pull-right"
-              ><span>Generated by </span
-              ><a href="https://github.com/Kotlin/dokka"
-                ><span>dokka</span><span class="padded-icon"></span></a
-            ></span>
+<a data-name="-27572532%2FProperties%2F1630270504" anchor-label="CYCLE_CHANGED" id="-27572532%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-y-c-l-e_-c-h-a-n-g-e-d.html"><span><span>CYCLE_CHANGED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-27572532%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-c-y-c-l-e_-c-h-a-n-g-e-d.html">CYCLE_CHANGED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1287182455%2FProperties%2F1630270504" anchor-label="DATA_SYNC_EMPTY" id="-1287182455%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-a-t-a_-s-y-n-c_-e-m-p-t-y.html"><span><span>DATA_SYNC_EMPTY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1287182455%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-a-t-a_-s-y-n-c_-e-m-p-t-y.html">DATA_SYNC_EMPTY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-866383086%2FProperties%2F1630270504" anchor-label="DEBUG_ENABLED" id="-866383086%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-b-u-g_-e-n-a-b-l-e-d.html"><span><span>DEBUG_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-866383086%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-d-e-b-u-g_-e-n-a-b-l-e-d.html">DEBUG_ENABLED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Fields from PlayerPrefs</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1643192636%2FProperties%2F1630270504" anchor-label="EDITOR_ENABLED" id="-1643192636%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-d-i-t-o-r_-e-n-a-b-l-e-d.html"><span><span>EDITOR_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1643192636%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-e-d-i-t-o-r_-e-n-a-b-l-e-d.html">EDITOR_ENABLED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1442357781%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_PREFS_DARK" id="-1442357781%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-d-a-r-k.html"><span><span>NAVIGATION_BAR_PREFS_DARK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1442357781%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-d-a-r-k.html">NAVIGATION_BAR_PREFS_DARK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1397250136%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_PREFS_ENABLED" id="1397250136%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html"><span><span>NAVIGATION_BAR_PREFS_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1397250136%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html">NAVIGATION_BAR_PREFS_ENABLED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="912273498%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_PREFS_HEIGHT" id="912273498%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html"><span><span>NAVIGATION_BAR_PREFS_HEIGHT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="912273498%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html">NAVIGATION_BAR_PREFS_HEIGHT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1469250866%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_PREFS_OPACITY" id="-1469250866%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html"><span><span>NAVIGATION_BAR_PREFS_OPACITY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1469250866%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html">NAVIGATION_BAR_PREFS_OPACITY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-84845275%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_SCRIPT" id="-84845275%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-c-r-i-p-t.html"><span><span>NAVIGATION_BAR_SCRIPT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-84845275%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-c-r-i-p-t.html">NAVIGATION_BAR_SCRIPT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2077354205%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_SET_DARK" id="2077354205%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-d-a-r-k.html"><span><span>NAVIGATION_BAR_SET_DARK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2077354205%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-d-a-r-k.html">NAVIGATION_BAR_SET_DARK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-194539482%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_SET_ENABLED" id="-194539482%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html"><span><span>NAVIGATION_BAR_SET_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-194539482%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html">NAVIGATION_BAR_SET_ENABLED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1078737204%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_SET_HEIGHT" id="-1078737204%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-h-e-i-g-h-t.html"><span><span>NAVIGATION_BAR_SET_HEIGHT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1078737204%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-h-e-i-g-h-t.html">NAVIGATION_BAR_SET_HEIGHT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1233926812%2FProperties%2F1630270504" anchor-label="NAVIGATION_BAR_SET_OPACITY" id="1233926812%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html"><span><span>NAVIGATION_BAR_SET_OPACITY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1233926812%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-n-a-v-i-g-a-t-i-o-n_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html">NAVIGATION_BAR_SET_OPACITY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="179798187%2FProperties%2F1630270504" anchor-label="ON_CLICK" id="179798187%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-n_-c-l-i-c-k.html"><span><span>ON_CLICK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="179798187%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-o-n_-c-l-i-c-k.html">ON_CLICK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1431568342%2FProperties%2F1630270504" anchor-label="RESET_EDITOR" id="1431568342%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-s-e-t_-e-d-i-t-o-r.html"><span><span>RESET_EDITOR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1431568342%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-r-e-s-e-t_-e-d-i-t-o-r.html">RESET_EDITOR</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="554691273%2FProperties%2F1630270504" anchor-label="STATUS_BAR_PREFS_DARK" id="554691273%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-d-a-r-k.html"><span><span>STATUS_BAR_PREFS_DARK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554691273%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-d-a-r-k.html">STATUS_BAR_PREFS_DARK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1598633658%2FProperties%2F1630270504" anchor-label="STATUS_BAR_PREFS_ENABLED" id="1598633658%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html"><span><span>STATUS_BAR_PREFS_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1598633658%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-e-n-a-b-l-e-d.html">STATUS_BAR_PREFS_ENABLED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">TODO beta</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="226033080%2FProperties%2F1630270504" anchor-label="STATUS_BAR_PREFS_HEIGHT" id="226033080%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html"><span><span>STATUS_BAR_PREFS_HEIGHT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="226033080%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-h-e-i-g-h-t.html">STATUS_BAR_PREFS_HEIGHT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1267867344%2FProperties%2F1630270504" anchor-label="STATUS_BAR_PREFS_OPACITY" id="-1267867344%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html"><span><span>STATUS_BAR_PREFS_OPACITY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1267867344%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-p-r-e-f-s_-o-p-a-c-i-t-y.html">STATUS_BAR_PREFS_OPACITY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="311363843%2FProperties%2F1630270504" anchor-label="STATUS_BAR_SCRIPT" id="311363843%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-s-c-r-i-p-t.html"><span><span>STATUS_BAR_SCRIPT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="311363843%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-s-c-r-i-p-t.html">STATUS_BAR_SCRIPT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Methods</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="582227259%2FProperties%2F1630270504" anchor-label="STATUS_BAR_SET_DARK" id="582227259%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-d-a-r-k.html"><span><span>STATUS_BAR_SET_DARK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="582227259%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-d-a-r-k.html">STATUS_BAR_SET_DARK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1584439048%2FProperties%2F1630270504" anchor-label="STATUS_BAR_SET_ENABLED" id="1584439048%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html"><span><span>STATUS_BAR_SET_ENABLED</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1584439048%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-e-n-a-b-l-e-d.html">STATUS_BAR_SET_ENABLED</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="918311850%2FProperties%2F1630270504" anchor-label="STATUS_BAR_SET_HEIGHT" id="918311850%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-h-e-i-g-h-t.html"><span><span>STATUS_BAR_SET_HEIGHT</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="918311850%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-h-e-i-g-h-t.html">STATUS_BAR_SET_HEIGHT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1282061954%2FProperties%2F1630270504" anchor-label="STATUS_BAR_SET_OPACITY" id="-1282061954%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html"><span><span>STATUS_BAR_SET_OPACITY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1282061954%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-s-t-a-t-u-s_-b-a-r_-s-e-t_-o-p-a-c-i-t-y.html">STATUS_BAR_SET_OPACITY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1327645727%2FProperties%2F1630270504" anchor-label="WATER_COLOUR" id="1327645727%2FProperties%2F1630270504" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":drifter-integration:dokkaHtmlPartial/release" data-filterable-set=":drifter-integration:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-w-a-t-e-r_-c-o-l-o-u-r.html"><span><span>WATER_COLOUR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1327645727%2FProperties%2F1630270504"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":drifter-integration:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-w-a-t-e-r_-c-o-l-o-u-r.html">WATER_COLOUR</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+
