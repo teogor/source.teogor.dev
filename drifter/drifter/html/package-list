@@ -1,11 +1,13 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:app
-dev.teogor.drifter.demo
-dev.teogor.drifter.demo.ui.theme
-dev.teogor.drifter.demo.unity
-dev.teogor.drifter.demo.unity.models
+module:codegen
+dev.teogor.drifter.codegen
+dev.teogor.drifter.codegen.commons
+dev.teogor.drifter.codegen.facades
+dev.teogor.drifter.codegen.model
+dev.teogor.drifter.codegen.servicelocator
+dev.teogor.drifter.codegen.writers
 module:drifter-common
 dev.teogor.drifter.common
 module:drifter-compose
@@ -31,3 +33,10 @@ dev.teogor.drifter.plugin.models
 module:drifter-wallpaper
 dev.teogor.drifter.wallpaper
 dev.teogor.drifter.wallpaper.activities
+module:ksp
+dev.teogor.drifter.ksp
+dev.teogor.drifter.ksp.codegen
+dev.teogor.drifter.ksp.commons
+dev.teogor.drifter.ksp.processors
+module:runtime
+dev.teogor.drifter
