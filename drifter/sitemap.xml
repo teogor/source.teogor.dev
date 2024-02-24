@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/drifter/unity-engine-jetpack-compose/</loc>
+         <lastmod>2024-02-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/drifter/releases/implementation/</loc>
          <lastmod>2024-02-24</lastmod>
          <changefreq>daily</changefreq>

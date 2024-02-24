@@ -13,12 +13,6 @@ dev.teogor.drifter.common
 module:drifter-compose
 dev.teogor.drifter.compose
 dev.teogor.drifter.compose.components
-module:drifter-core
-com.unity3d.player
-com.unity3d.player.callbacks
-com.unity3d.player.components
-com.unity3d.player.utils
-com.unity3d.player.utils.models
 module:drifter-integration
 dev.teogor.drifter.integration.activities
 dev.teogor.drifter.integration.common
@@ -40,3 +34,12 @@ dev.teogor.drifter.ksp.commons
 dev.teogor.drifter.ksp.processors
 module:runtime
 dev.teogor.drifter
+module:common
+dev.teogor.drifter.unity.common
+module:v2022-3-7f1
+com.unity3d.player
+com.unity3d.player.callbacks
+com.unity3d.player.components
+com.unity3d.player.utils
+com.unity3d.player.utils.models
+dev.teogor.drifter.unity
