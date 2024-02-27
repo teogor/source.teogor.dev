@@ -2,42 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/teogor/drifter/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/drifter-plugin/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/drifter/reference/</loc>
+         <lastmod>2024-02-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/drifter/releases/</loc>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/security/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/sponsor/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/unity-engine-jetpack-compose/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/releases/implementation/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/releases/changelog/1.0.0-alpha01/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/drifter/releases/changelog/1.0.0-alpha02/</loc>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/blog/</loc>
-         <lastmod>2024-02-24</lastmod>
+         <lastmod>2024-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
