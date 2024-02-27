@@ -7,10 +7,14 @@ dev.teogor.winds.api.docs
 dev.teogor.winds.api.model
 dev.teogor.winds.api.provider
 dev.teogor.winds.api.util
+dev.teogor.winds.gradle
 dev.teogor.winds.gradle.tasks
+dev.teogor.winds.ktx
 module:common
 dev.teogor.winds.common
 dev.teogor.winds.common.dependencies
+dev.teogor.winds.common.ktx
+dev.teogor.winds.common.maven
 dev.teogor.winds.common.utils
 module:gradle-plugin
 dev.teogor.winds.api.docs.impl
@@ -18,5 +22,8 @@ dev.teogor.winds.api.docs.impl.factory
 dev.teogor.winds.api.impl
 dev.teogor.winds.codegen
 dev.teogor.winds.gradle
+dev.teogor.winds.gradle.docs
+dev.teogor.winds.gradle.docs.factory
+dev.teogor.winds.gradle.tasks
 dev.teogor.winds.gradle.tasks.impl
 dev.teogor.winds.gradle.utils
