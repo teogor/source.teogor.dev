@@ -66,6 +66,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/winds/releases/changelog/1.0.0-beta04/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/winds/blog/</loc>
          <lastmod>2024-03-04</lastmod>
          <changefreq>daily</changefreq>
