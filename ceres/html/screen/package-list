@@ -21,6 +21,7 @@ dev.teogor.ceres.screen.ui.onboarding
 dev.teogor.ceres.screen.ui.onboarding.model
 dev.teogor.ceres.screen.ui.onboarding.screens
 dev.teogor.ceres.screen.ui.privacy
+dev.teogor.ceres.screen.ui.res
 dev.teogor.ceres.screen.ui.settings
 dev.teogor.ceres.screen.ui.userprefs
 dev.teogor.ceres.screen.ui.utils
