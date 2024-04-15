@@ -1,12 +1,12 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:analytics
-dev.teogor.ceres.core.analytics
-dev.teogor.ceres.core.analytics.composables
 module:common
 dev.teogor.ceres.core.common
 dev.teogor.ceres.core.common.utils
+module:core-analytics
+dev.teogor.ceres.core.analytics
+dev.teogor.ceres.core.analytics.composables
 module:foundation
 dev.teogor.ceres.core.foundation
 dev.teogor.ceres.core.foundation.compositions

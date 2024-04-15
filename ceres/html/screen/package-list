@@ -6,11 +6,11 @@ dev.teogor.ceres.screen.builder
 dev.teogor.ceres.screen.builder.compose
 dev.teogor.ceres.screen.builder.model
 dev.teogor.ceres.screen.builder.utilities
-module:core
+module:screen-core
 dev.teogor.ceres.screen.core
 dev.teogor.ceres.screen.core.layout
 dev.teogor.ceres.screen.core.scope
-module:ui
+module:screen-ui
 dev.teogor.ceres.screen.ui.about
 dev.teogor.ceres.screen.ui.about.libraries
 dev.teogor.ceres.screen.ui.about.libraries.util

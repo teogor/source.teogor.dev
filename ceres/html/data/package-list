@@ -1,7 +1,7 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:compose
+module:data-compose
 dev.teogor.ceres.data.compose
 module:datastore
 dev.teogor.ceres.data.datastore.common
