@@ -21,6 +21,8 @@ dev.teogor.ceres.ui.foundation.lib.tools
 dev.teogor.ceres.ui.foundation.lib.tools.di
 module:icons
 dev.teogor.ceres.ui.icons
+dev.teogor.ceres.ui.icons.automirrored.filled
+dev.teogor.ceres.ui.icons.filled
 module:spectrum
 dev.teogor.ceres.ui.spectrum.blend
 dev.teogor.ceres.ui.spectrum.hct
