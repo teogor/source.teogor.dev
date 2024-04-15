@@ -17,7 +17,5 @@ dev.teogor.ceres.core.foundation.ui.platform
 dev.teogor.ceres.core.foundation.utils
 module:register
 dev.teogor.ceres.core.register
-module:runtime
-dev.teogor.ceres.core.runtime
 module:startup
 dev.teogor.ceres.core.startup
