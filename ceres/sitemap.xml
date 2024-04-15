@@ -26,7 +26,102 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/teogor/ceres/backup/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/bom/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/bom/bom-mapping/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/bom/implementation/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/core/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/data/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/firebase/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/framework/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/monetisation/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/navigation/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/backup/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/core/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/data/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/firebase/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/framework/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/teogor/ceres/releases/implementation/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/monetisation/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/navigation/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/screen/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/releases/ui/</loc>
          <lastmod>2024-04-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -47,6 +142,16 @@
     </url>
     <url>
          <loc>https://github.com/teogor/ceres/releases/changelog/1.0.0-alpha04/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/screen/</loc>
+         <lastmod>2024-04-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/ceres/ui/</loc>
          <lastmod>2024-04-15</lastmod>
          <changefreq>daily</changefreq>
     </url>

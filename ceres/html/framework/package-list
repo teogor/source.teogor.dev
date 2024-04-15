@@ -1,7 +1,7 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:core
+module:framework-core
 dev.teogor.ceres.framework.core
 dev.teogor.ceres.framework.core.app
 dev.teogor.ceres.framework.core.menu
