@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SudokuPuzzle</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Sudoklify
+                    </a>            </div>
+            <div class="library-version">1.0.0-beta03
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":sudoklify-core:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="sudoklify-core::dev.teogor.sudoklify.puzzle/SudokuPuzzle///PointingToDeclaration//-2064484491">
+  <div class="breadcrumbs"><a href="../../index.html">sudoklify-core</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.sudoklify.puzzle</a><span class="delimiter">/</span><span class="current">SudokuPuzzle</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Sudoku</span><wbr><span><span>Puzzle</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SudokuPuzzle</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>difficulty<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-difficulty/index.html">Difficulty</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-dimension/index.html">Dimension</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>seed<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-seed/index.html">Seed</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>givens<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-givens/index.html">SudokuPuzzle.Givens</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>solution<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>hints<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-hint/index.html">SudokuPuzzle.Hint</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span></div><p class="paragraph">Represents a Sudoku puzzle, including its difficulty, type, seed, given cells (givens), solution, and optional hints.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="208074593%2FConstructors%2F-2064484491" anchor-label="SudokuPuzzle" id="208074593%2FConstructors%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku-puzzle.html"><span>Sudoku</span><wbr><span><span>Puzzle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="208074593%2FConstructors%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">difficulty<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-difficulty/index.html">Difficulty</a><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-dimension/index.html">Dimension</a><span class="token punctuation">, </span></span><span class="parameter ">seed<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-seed/index.html">Seed</a><span class="token punctuation">, </span></span><span class="parameter ">givens<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-givens/index.html">SudokuPuzzle.Givens</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">solution<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">hints<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-hint/index.html">SudokuPuzzle.Hint</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1470891126%2FClasslikes%2F-2064484491" anchor-label="Givens" id="-1470891126%2FClasslikes%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-givens/index.html"><span><span>Givens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1470891126%2FClasslikes%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-givens/index.html">Givens</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>col<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents a fixed cell in the Sudoku puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1844545927%2FClasslikes%2F-2064484491" anchor-label="Hint" id="-1844545927%2FClasslikes%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hint/index.html"><span><span>Hint</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1844545927%2FClasslikes%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-hint/index.html">Hint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>col<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="-hint-type/index.html">SudokuPuzzle.HintType</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents a hint for solving the Sudoku puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-701650849%2FClasslikes%2F-2064484491" anchor-label="HintType" id="-701650849%2FClasslikes%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hint-type/index.html"><span>Hint</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-701650849%2FClasslikes%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-hint-type/index.html">HintType</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-hint-type/index.html">SudokuPuzzle.HintType</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Enumerates the types of hints that can be provided to help solve the Sudoku puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="975056528%2FProperties%2F-2064484491" anchor-label="difficulty" id="975056528%2FProperties%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="difficulty.html"><span><span>difficulty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="975056528%2FProperties%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="difficulty.html">difficulty</a><span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-difficulty/index.html">Difficulty</a></div><div class="brief "><p class="paragraph">The difficulty level of the Sudoku puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-41250539%2FProperties%2F-2064484491" anchor-label="givens" id="-41250539%2FProperties%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="givens.html"><span><span>givens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-41250539%2FProperties%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="givens.html">givens</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-givens/index.html">SudokuPuzzle.Givens</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">A list of given cells (fixed values) in the puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="89530243%2FProperties%2F-2064484491" anchor-label="hints" id="89530243%2FProperties%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hints.html"><span><span>hints</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="89530243%2FProperties%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="hints.html">hints</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-hint/index.html">SudokuPuzzle.Hint</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Optional hints for solving the puzzle, represented as a list of <a href="-hint/index.html">Hint</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-832509158%2FProperties%2F-2064484491" anchor-label="seed" id="-832509158%2FProperties%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="seed.html"><span><span>seed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-832509158%2FProperties%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="seed.html">seed</a><span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-seed/index.html">Seed</a></div><div class="brief "><p class="paragraph">The seed value used to generate the puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1655889426%2FProperties%2F-2064484491" anchor-label="solution" id="1655889426%2FProperties%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="solution.html"><span><span>solution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1655889426%2FProperties%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="solution.html">solution</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The solution grid of the puzzle as a list of lists of integers.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1079668337%2FProperties%2F-2064484491" anchor-label="type" id="1079668337%2FProperties%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1079668337%2FProperties%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-dimension/index.html">Dimension</a></div><div class="brief "><p class="paragraph">The type of the Sudoku puzzle, defining its grid size.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1453910789%2FFunctions%2F-2064484491" anchor-label="generateGridWithGivens" id="-1453910789%2FFunctions%2F-2064484491" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":sudoklify-core:dokkaHtmlPartial/commonMain" data-filterable-set=":sudoklify-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../generate-grid-with-givens.html"><span>generate</span><wbr><span>Grid</span><wbr><span>With</span><wbr><span><span>Givens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1453910789%2FFunctions%2F-2064484491"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sudoklify-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">SudokuPuzzle</a><span class="token punctuation">.</span><a href="../generate-grid-with-givens.html"><span class="token function">generateGridWithGivens</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Generates a Sudoku grid with the given cells filled in based on the puzzle configuration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
