@@ -21,6 +21,7 @@ dev.teogor.drifter.core
 module:gradle-plugin
 dev.teogor.drifter.plugin
 dev.teogor.drifter.plugin.models
+dev.teogor.drifter.plugin.unity
 dev.teogor.drifter.plugin.utils.error
 module:integration
 dev.teogor.drifter.integration.activities
