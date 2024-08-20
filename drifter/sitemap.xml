@@ -6,7 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/teogor/drifter/drifter-plugin/</loc>
+         <loc>https://github.com/teogor/drifter/plugin-usage-guide/</loc>
          <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -27,6 +27,11 @@
     </url>
     <url>
          <loc>https://github.com/teogor/drifter/sponsor/</loc>
+         <lastmod>2024-08-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/drifter/unity-compatibility/</loc>
          <lastmod>2024-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
