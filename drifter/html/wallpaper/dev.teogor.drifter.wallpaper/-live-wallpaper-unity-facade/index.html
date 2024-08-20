@@ -62,7 +62,7 @@
   <div class="breadcrumbs"><a href="../../index.html">wallpaper</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.drifter.wallpaper</a><span class="delimiter">/</span><span class="current">LiveWallpaperUnityFacade</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Live</span><wbr><span>Wallpaper</span><wbr><span>Unity</span><wbr><span><span>Facade</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">LiveWallpaperUnityFacade</a></div><p class="paragraph">Central class for communicating with Unity C# side. All interactions to and from C# side are done here.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">LiveWallpaperUnityFacade</a></div><p class="paragraph">Central class for interacting with Unity from the wallpaper service.</p><p class="paragraph">This class provides access to various functionalities required for communication with the Unity C# side of the application, including managing preferences and interacting with the wallpaper engine.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -94,7 +94,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-preference-editor-facade/index.html">PreferenceEditorFacade</a></div><div class="brief "><p class="paragraph">Provides safe access to <code class="lang-kotlin">SharedPreferences</code> read/write operations.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-preference-editor-facade/index.html">PreferenceEditorFacade</a></div><div class="brief "><p class="paragraph">Provides safe access to shared preferences read/write operations.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-wallpaper-engine-facade/index.html">WallpaperEngineFacade</a></div><div class="brief "><p class="paragraph">Provides safe access to current <code class="lang-kotlin">WallpaperService.Engine</code> methods.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-wallpaper-engine-facade/index.html">WallpaperEngineFacade</a></div><div class="brief "><p class="paragraph">Provides safe access to current <a href="https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine.html">WallpaperService.Engine</a> methods.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="active-wallpaper-engine.html">activeWallpaperEngine</a><span class="token operator">: </span><a href="../-unity-wallpaper-service/-unity-wallpaper-engine/index.html">UnityWallpaperService.UnityWallpaperEngine</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Currently active <code class="lang-kotlin">UnityWallpaperService.UnityWallpaperEngine</code>, or null if none is active.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="active-wallpaper-engine.html">activeWallpaperEngine</a><span class="token operator">: </span><a href="../-unity-wallpaper-service/-unity-wallpaper-engine/index.html">UnityWallpaperService.UnityWallpaperEngine</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The currently active wallpaper engine, or <code class="lang-kotlin">null</code> if no engine is active.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="multi-tap-detector.html">multiTapDetector</a><span class="token operator">: </span><a href="../../../integration/dev.teogor.drifter.integration.utilities/-multi-tap-detector/index.html">MultiTapDetector</a></div><div class="brief "><p class="paragraph">Note: Called from C# code.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="multi-tap-detector.html">multiTapDetector</a><span class="token operator">: </span><a href="../../../integration/dev.teogor.drifter.integration.utilities/-multi-tap-detector/index.html">MultiTapDetector</a></div><div class="brief "><p class="paragraph">Detects multi-tap gestures within the wallpaper area.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="preferences-editor-facade.html">preferencesEditorFacade</a><span class="token operator">: </span><a href="-preference-editor-facade/index.html">LiveWallpaperUnityFacade.PreferenceEditorFacade</a></div><div class="brief "><p class="paragraph">Note: Called from C# code.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="preferences-editor-facade.html">preferencesEditorFacade</a><span class="token operator">: </span><a href="-preference-editor-facade/index.html">LiveWallpaperUnityFacade.PreferenceEditorFacade</a></div><div class="brief "><p class="paragraph">Provides access to shared preferences for editing and retrieval.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="wallpaper-engine-facade.html">wallpaperEngineFacade</a><span class="token operator">: </span><a href="-wallpaper-engine-facade/index.html">LiveWallpaperUnityFacade.WallpaperEngineFacade</a></div><div class="brief "><p class="paragraph">Note: Called from C# code.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="wallpaper-engine-facade.html">wallpaperEngineFacade</a><span class="token operator">: </span><a href="-wallpaper-engine-facade/index.html">LiveWallpaperUnityFacade.WallpaperEngineFacade</a></div><div class="brief "><p class="paragraph">Provides access to the current wallpaper engine state.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-unity-player-activity-context.html"><span class="token function">updateUnityPlayerActivityContext</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates the current Context of the <code class="lang-kotlin">LiveWallpaperCompatibleUnityPlayerActivity</code> to allow using soft input. Note: Called from C# code.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":wallpaper:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-unity-player-activity-context.html"><span class="token function">updateUnityPlayerActivityContext</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates the context of <a href="../../dev.teogor.drifter.wallpaper.activities/-live-wallpaper-compatible-unity-player-activity/index.html">LiveWallpaperCompatibleUnityPlayerActivity</a> to allow using soft input.</p></div></div></div>
                 </div>
               </div>
             </div>
