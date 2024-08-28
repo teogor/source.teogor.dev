@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>XenoglotLocale</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Xenoglot
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha01
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":xenoglot-locale:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="xenoglot-locale::dev.teogor.xenoglot.locale/XenoglotLocale///PointingToDeclaration//-1287455242">
+  <div class="breadcrumbs"><a href="../../index.html">xenoglot-locale</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.xenoglot.locale</a><span class="delimiter">/</span><span class="current">XenoglotLocale</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Xenoglot</span><wbr><span><span>Locale</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">XenoglotLocale</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>language<span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-language/index.html">Language</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>country<span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-country/index.html">Country</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Represents a locale with a specific language and optional country.</p><p class="paragraph">This class provides methods to retrieve locale-specific information such as display names and language tags. It also allows setting and getting default locales for different categories.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>language</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The <a href="../../../xenoglot-core/dev.teogor.xenoglot/-language/index.html">Language</a> associated with this locale.</p></div></div></div></div><div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>country</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The optional <a href="../../../xenoglot-core/dev.teogor.xenoglot/-country/index.html">Country</a> associated with this locale.</p></div></div></div></div></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../xenoglot-core/dev.teogor.xenoglot/-language/index.html"><span><span>Language</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../../xenoglot-core/dev.teogor.xenoglot/-country/index.html"><span><span>Country</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-119713979%2FConstructors%2F-1287455242" anchor-label="XenoglotLocale" id="-119713979%2FConstructors%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-xenoglot-locale.html"><span>Xenoglot</span><wbr><span><span>Locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-119713979%2FConstructors%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">language<span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-language/index.html">Language</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Constructs a <a href="index.html">XenoglotLocale</a> with a language and no country.</p></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">language<span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-language/index.html">Language</a><span class="token punctuation">, </span></span><span class="parameter ">country<span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-country/index.html">Country</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="925745241%2FClasslikes%2F-1287455242" anchor-label="Companion" id="925745241%2FClasslikes%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="925745241%2FClasslikes%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1092943228%2FProperties%2F-1287455242" anchor-label="country" id="1092943228%2FProperties%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="country.html"><span><span>country</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1092943228%2FProperties%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="country.html">country</a><span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-country/index.html">Country</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1383433872%2FProperties%2F-1287455242" anchor-label="language" id="-1383433872%2FProperties%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="language.html"><span><span>language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1383433872%2FProperties%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="language.html">language</a><span class="token operator">: </span><a href="../../../xenoglot-core/dev.teogor.xenoglot/-language/index.html">Language</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1607062201%2FFunctions%2F-1287455242" anchor-label="equals" id="1607062201%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1607062201%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Compares this locale to another object for equality.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2078958469%2FFunctions%2F-1287455242" anchor-label="getDisplayCountry" id="2078958469%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-display-country.html"><span>get</span><wbr><span>Display</span><wbr><span><span>Country</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2078958469%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-display-country.html"><span class="token function">getDisplayCountry</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Retrieves the display name of the country in the default display locale.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-display-country.html"><span class="token function">getDisplayCountry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inLocale<span class="token operator">: </span><a href="index.html">XenoglotLocale</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Retrieves the display name of the country in the specified locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1634321213%2FFunctions%2F-1287455242" anchor-label="getDisplayLanguage" id="1634321213%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-display-language.html"><span>get</span><wbr><span>Display</span><wbr><span><span>Language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634321213%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-display-language.html"><span class="token function">getDisplayLanguage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the display name of the language in the default display locale.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-display-language.html"><span class="token function">getDisplayLanguage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inLocale<span class="token operator">: </span><a href="index.html">XenoglotLocale</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the display name of the language in the specified locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="785306717%2FFunctions%2F-1287455242" anchor-label="getDisplayName" id="785306717%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-display-name.html"><span>get</span><wbr><span>Display</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="785306717%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-display-name.html"><span class="token function">getDisplayName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the display name of the locale in the default display locale.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-display-name.html"><span class="token function">getDisplayName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inLocale<span class="token operator">: </span><a href="index.html">XenoglotLocale</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Retrieves the display name of the locale in the specified locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1924877811%2FFunctions%2F-1287455242" anchor-label="hashCode" id="-1924877811%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1924877811%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns a hash code for the locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-162876725%2FFunctions%2F-1287455242" anchor-label="toLanguageTag" id="-162876725%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-language-tag.html"><span>to</span><wbr><span>Language</span><wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-162876725%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="to-language-tag.html"><span class="token function">toLanguageTag</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns a well-formed IETF BCP 47 language tag representing the locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2103043876%2FFunctions%2F-1287455242" anchor-label="toString" id="-2103043876%2FFunctions%2F-1287455242" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":xenoglot-locale:dokkaHtmlPartial/commonMain" data-filterable-set=":xenoglot-locale:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2103043876%2FFunctions%2F-1287455242"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":xenoglot-locale:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Returns a string representation of the locale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

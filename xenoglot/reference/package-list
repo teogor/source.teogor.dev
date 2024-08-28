@@ -1,7 +1,11 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
-module:android
-dev.teogor.xenoglot.android
-module:core
+module:xenoglot-atlas
+dev.teogor.xenoglot.atlas
+module:xenoglot-atlas-extended
+dev.teogor.xenoglot.atlas.extended
+module:xenoglot-core
 dev.teogor.xenoglot
+module:xenoglot-locale
+dev.teogor.xenoglot.locale
