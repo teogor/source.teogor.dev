@@ -9,3 +9,5 @@ module:xenoglot-core
 dev.teogor.xenoglot
 module:xenoglot-locale
 dev.teogor.xenoglot.locale
+module:xenoglot-pluralization
+dev.teogor.xenoglot.pluralization
