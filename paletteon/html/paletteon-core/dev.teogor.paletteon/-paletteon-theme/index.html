@@ -1,0 +1,277 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PaletteonTheme</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Paletteon
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha01
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":paletteon-core:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="paletteon-core::dev.teogor.paletteon/PaletteonTheme///PointingToDeclaration//123488865">
+  <div class="breadcrumbs"><a href="../../index.html">paletteon-core</a><span class="delimiter">/</span><a href="../index.html">dev.teogor.paletteon</a><span class="delimiter">/</span><span class="current">PaletteonTheme</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Paletteon</span><wbr><span><span>Theme</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">PaletteonTheme</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>seedColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color.Blue<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>useDarkTheme<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>withAmoled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>style<span class="token operator">: </span><a href="../-palette-style/index.html">PaletteStyle</a><span class="token operator"> = </span>PaletteStyle.TonalSpot<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>contrast<span class="token operator">: </span><a href="../-contrast/index.html">Contrast</a><span class="token operator"> = </span>Contrast.Default<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isExtendedFidelity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>modifyColorScheme<span class="token operator">: </span><a href="index.html">PaletteonTheme</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">Data class representing the theme configuration for Paletteon.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-507917758%2FConstructors%2F123488865" anchor-label="PaletteonTheme" id="-507917758%2FConstructors%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paletteon-theme.html"><span>Paletteon</span><wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-507917758%2FConstructors%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">seedColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color.Blue<span class="token punctuation">, </span></span><span class="parameter ">useDarkTheme<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">withAmoled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">style<span class="token operator">: </span><a href="../-palette-style/index.html">PaletteStyle</a><span class="token operator"> = </span>PaletteStyle.TonalSpot<span class="token punctuation">, </span></span><span class="parameter ">contrast<span class="token operator">: </span><a href="../-contrast/index.html">Contrast</a><span class="token operator"> = </span>Contrast.Default<span class="token punctuation">, </span></span><span class="parameter ">isExtendedFidelity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">modifyColorScheme<span class="token operator">: </span><a href="index.html">PaletteonTheme</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1497272631%2FClasslikes%2F123488865" anchor-label="Builder" id="1497272631%2FClasslikes%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1497272631%2FClasslikes%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-builder/index.html">Builder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>seedColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>useDarkTheme<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>withAmoled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>style<span class="token operator">: </span><a href="../-palette-style/index.html">PaletteStyle</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>contrast<span class="token operator">: </span><a href="../-contrast/index.html">Contrast</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>isExtendedFidelity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>modifyColorScheme<span class="token operator">: </span><a href="index.html">PaletteonTheme</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Data class representing a builder for configuring a <a href="index.html">PaletteonTheme</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="864625318%2FClasslikes%2F123488865" anchor-label="Companion" id="864625318%2FClasslikes%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="864625318%2FClasslikes%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1277097225%2FProperties%2F123488865" anchor-label="colorScheme" id="-1277097225%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="color-scheme.html"><span>color</span><wbr><span><span>Scheme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1277097225%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="color-scheme.html">colorScheme</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a></div><div class="brief "><p class="paragraph">Computes the color scheme based on the current theme settings.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1722723609%2FProperties%2F123488865" anchor-label="contrast" id="1722723609%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contrast.html"><span><span>contrast</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1722723609%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="contrast.html">contrast</a><span class="token operator">: </span><a href="../-contrast/index.html">Contrast</a></div><div class="brief "><p class="paragraph">The contrast setting for the theme. Defaults to <a href="../-contrast/-default/index.html">Contrast.Default</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="185453458%2FProperties%2F123488865" anchor-label="isExtendedFidelity" id="185453458%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-extended-fidelity.html"><span>is</span><wbr><span>Extended</span><wbr><span><span>Fidelity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="185453458%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="is-extended-fidelity.html">isExtendedFidelity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Indicates whether extended fidelity is enabled. Defaults to <code class="lang-kotlin">false</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-291552943%2FProperties%2F123488865" anchor-label="modifyColorScheme" id="-291552943%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modify-color-scheme.html"><span>modify</span><wbr><span>Color</span><wbr><span><span>Scheme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-291552943%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="modify-color-scheme.html">modifyColorScheme</a><span class="token operator">: </span><a href="index.html">PaletteonTheme</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme.html">ColorScheme</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="139945517%2FProperties%2F123488865" anchor-label="seedColor" id="139945517%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="seed-color.html"><span>seed</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="139945517%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="seed-color.html">seedColor</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div><div class="brief "><p class="paragraph">The primary color used for the theme. Defaults to <a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.Companion.html#blue">Color.Blue</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1128632882%2FProperties%2F123488865" anchor-label="style" id="-1128632882%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="style.html"><span><span>style</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1128632882%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="style.html">style</a><span class="token operator">: </span><a href="../-palette-style/index.html">PaletteStyle</a></div><div class="brief "><p class="paragraph">The style to be applied to the theme. Defaults to <a href="../-palette-style/-tonal-spot/index.html">PaletteStyle.TonalSpot</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1501785553%2FProperties%2F123488865" anchor-label="useDarkTheme" id="-1501785553%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="use-dark-theme.html"><span>use</span><wbr><span>Dark</span><wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1501785553%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="use-dark-theme.html">useDarkTheme</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Indicates whether the dark theme should be used. Defaults to <code class="lang-kotlin">false</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-374370227%2FProperties%2F123488865" anchor-label="withAmoled" id="-374370227%2FProperties%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-amoled.html"><span>with</span><wbr><span><span>Amoled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-374370227%2FProperties%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="with-amoled.html">withAmoled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div><div class="brief "><p class="paragraph">Indicates whether AMOLED mode should be enabled. Defaults to <code class="lang-kotlin">false</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1649318110%2FFunctions%2F123488865" anchor-label="getColor" id="-1649318110%2FFunctions%2F123488865" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":paletteon-core:dokkaHtmlPartial/commonMain" data-filterable-set=":paletteon-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-color.html"><span>get</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1649318110%2FFunctions%2F123488865"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paletteon-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-color.html"><span class="token function">getColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">colorRole<span class="token operator">: </span><a href="../../../material-color-utilities/dev.teogor.paletteon.dynamiccolor/-material-dynamic-colors/index.html">MaterialDynamicColors</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../../material-color-utilities/dev.teogor.paletteon.dynamiccolor/-dynamic-color/index.html">DynamicColor</a><span class="token operator"> = </span>{ primary() }</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
