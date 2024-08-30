@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:dev.teogor.crosslens//main/#/PointingToDeclaration/composeApp/dev.teogor.crosslens/[wasm-js]main.html
+module:composeApp
+dev.teogor.crosslens
+dev.teogor.crosslens.demo
+module:crosslens-core
+dev.teogor.crosslens.core
+dev.teogor.crosslens.core.startup

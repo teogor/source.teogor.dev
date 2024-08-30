@@ -1,0 +1,26 @@
+[
+  {
+    "module": "dev.teogor.crosslens:crosslens",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0,
+      "flag": "Alpha",
+      "versionQualifier": 1
+    },
+    "date": 1725015875,
+    "dependencies": [
+      {
+        "module": "dev.teogor.crosslens:crosslens-core",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 1
+        },
+        "date": 1725015875
+      }
+    ]
+  }
+]
