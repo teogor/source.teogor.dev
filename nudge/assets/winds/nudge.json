@@ -1,0 +1,26 @@
+[
+  {
+    "module": "dev.teogor.nudge:nudge",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0,
+      "flag": "Alpha",
+      "versionQualifier": 1
+    },
+    "date": 1725218693,
+    "dependencies": [
+      {
+        "module": "dev.teogor.nudge:nudge-core",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 1
+        },
+        "date": 1725218693
+      }
+    ]
+  }
+]
