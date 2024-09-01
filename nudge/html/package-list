@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:dev.teogor.nudge.demo//main/#/PointingToDeclaration/composeApp/dev.teogor.nudge.demo/[wasm-js]main.html
+module:core
+dev.teogor.nudge
+dev.teogor.nudge.common
+dev.teogor.nudge.coroutines
+dev.teogor.nudge.icons.filled
+dev.teogor.nudge.icons.outlined
+dev.teogor.nudge.setup
+dev.teogor.nudge.ui
+module:composeApp
+dev.teogor.nudge.demo
