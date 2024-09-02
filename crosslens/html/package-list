@@ -8,6 +8,7 @@ module:crosslens-compose
 dev.teogor.crosslens.compose.lifecycle
 module:crosslens-core
 dev.teogor.crosslens.core
+dev.teogor.crosslens.core.concurrent
 dev.teogor.crosslens.core.startup
 module:crosslens-ui
 dev.teogor.crosslens.ui
