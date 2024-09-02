@@ -22,5 +22,51 @@
         "date": 1725015875
       }
     ]
+  },
+  {
+    "module": "dev.teogor.crosslens:crosslens",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0,
+      "flag": "Alpha",
+      "versionQualifier": 2
+    },
+    "date": 1725276594,
+    "dependencies": [
+      {
+        "module": "dev.teogor.crosslens:crosslens-compose",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1725276594
+      },
+      {
+        "module": "dev.teogor.crosslens:crosslens-core",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1725276594
+      },
+      {
+        "module": "dev.teogor.crosslens:crosslens-ui",
+        "version": {
+          "major": 1,
+          "minor": 0,
+          "patch": 0,
+          "flag": "Alpha",
+          "versionQualifier": 2
+        },
+        "date": 1725276594
+      }
+    ]
   }
 ]
