@@ -7,3 +7,5 @@ dev.teogor.crosslens.demo
 module:crosslens-core
 dev.teogor.crosslens.core
 dev.teogor.crosslens.core.startup
+module:crosslens-ui
+dev.teogor.crosslens.ui
