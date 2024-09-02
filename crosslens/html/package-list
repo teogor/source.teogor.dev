@@ -4,6 +4,8 @@ $dokka.location:dev.teogor.crosslens//main/#/PointingToDeclaration/composeApp/d
 module:composeApp
 dev.teogor.crosslens
 dev.teogor.crosslens.demo
+module:crosslens-compose
+dev.teogor.crosslens.compose.lifecycle
 module:crosslens-core
 dev.teogor.crosslens.core
 dev.teogor.crosslens.core.startup
