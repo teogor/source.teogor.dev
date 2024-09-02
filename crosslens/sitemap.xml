@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/teogor/crosslens/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-09-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/teogor/crosslens/security/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-09-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/teogor/crosslens/sponsor/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-09-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/teogor/crosslens/ui-overview/</loc>
+         <lastmod>2024-09-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/teogor/crosslens/releases/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-09-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/teogor/crosslens/blog/</loc>
-         <lastmod>2024-08-30</lastmod>
+         <lastmod>2024-09-02</lastmod>
     </url>
 </urlset>
