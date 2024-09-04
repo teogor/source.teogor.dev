@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>dev.teogor.sudoklify.multiplatform</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Sudoklify
+                    </a>            </div>
+            <div class="library-version">1.0.0-beta04
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":demo:composeApp:dokkaHtmlPartial/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":demo:composeApp:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":demo:composeApp:dokkaHtmlPartial/desktopMain">desktop</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":demo:composeApp:dokkaHtmlPartial/iosMain">ios</button>
+                <button class="platform-tag platform-selector wasm-like" data-active="" data-filter=":demo:composeApp:dokkaHtmlPartial/wasmJsMain">wasmJs</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="composeApp::dev.teogor.sudoklify.multiplatform////PointingToDeclaration//-42941836">
+  <div class="breadcrumbs"><a href="../index.html">composeApp</a><span class="delimiter">/</span><span class="current">dev.teogor.sudoklify.multiplatform</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1171260157%2FClasslikes%2F456353279" anchor-label="Cell" id="-1171260157%2FClasslikes%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cell/index.html"><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1171260157%2FClasslikes%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-cell/index.html">Cell</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isGiven<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isError<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>solution<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>col<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents a cell in a Sudoku puzzle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1922734626%2FClasslikes%2F456353279" anchor-label="GameState" id="-1922734626%2FClasslikes%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-game-state/index.html"><span>Game</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1922734626%2FClasslikes%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-game-state/index.html">GameState</a></div><div class="brief "><p class="paragraph">Represents the various states of the Sudoku game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-430735043%2FClasslikes%2F-251346949" anchor-label="MainActivity" id="-430735043%2FClasslikes%2F-251346949" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/androidMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-main-activity/index.html"><span>Main</span><wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-430735043%2FClasslikes%2F-251346949"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/androidMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":demo:composeApp:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-main-activity/index.html">MainActivity</a> : <a href="https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html">ComponentActivity</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1226052565%2FClasslikes%2F456353279" anchor-label="SudokuGameState" id="1226052565%2FClasslikes%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku-game-state/index.html"><span>Sudoku</span><wbr><span>Game</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1226052565%2FClasslikes%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-sudoku-game-state/index.html">SudokuGameState</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>grid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-cell/index.html">Cell</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedCell<span class="token operator">: </span><a href="-cell/-position/index.html">Cell.Position</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mistakes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-cell/-position/index.html">Cell.Position</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isSolved<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents the current state of the Sudoku game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-78660158%2FClasslikes%2F456353279" anchor-label="SudokuGameViewModel" id="-78660158%2FClasslikes%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku-game-view-model/index.html"><span>Sudoku</span><wbr><span>Game</span><wbr><span>View</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-78660158%2FClasslikes%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-sudoku-game-view-model/index.html">SudokuGameViewModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">savedStateHandle<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/SavedStateHandle.html">SavedStateHandle</a></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/ViewModel.html">ViewModel</a></div><div class="brief "><p class="paragraph">ViewModel responsible for managing the state of the Sudoku game.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2025101009%2FFunctions%2F456353279" anchor-label="App" id="-2025101009%2FFunctions%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-app.html"><span><span>App</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2025101009%2FFunctions%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.compose.ui.tooling.preview/Preview///PointingToDeclaration/"><span class="token annotation builtin">Preview</span></span></div></div><span class="token keyword">fun </span><a href="-app.html"><span class="token function">App</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sudokuGameViewModel<span class="token operator">: </span><a href="-sudoku-game-view-model/index.html">SudokuGameViewModel</a><span class="token operator"> = </span>viewModel {
+    SudokuGameViewModel(SavedStateHandle())
+  }</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Main entry point of the Sudoku game UI.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1324775738%2FFunctions%2F-251346949" anchor-label="AppAndroidPreview" id="-1324775738%2FFunctions%2F-251346949" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/androidMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-app-android-preview.html"><span>App</span><wbr><span>Android</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1324775738%2FFunctions%2F-251346949"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/androidMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":demo:composeApp:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-app-android-preview.html"><span class="token function">AppAndroidPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-440678719%2FFunctions%2F1452786555" anchor-label="main" id="-440678719%2FFunctions%2F1452786555" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/desktopMain,:demo:composeApp:dokkaHtmlPartial/wasmJsMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/desktopMain,:demo:composeApp:dokkaHtmlPartial/wasmJsMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/desktopMain,:demo:composeApp:dokkaHtmlPartial/wasmJsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../demo/composeApp/dev.teogor.sudoklify.multiplatform/[wasm-js]main.html"><span><span>main</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-440678719%2FFunctions%2F1452786555"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/desktopMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/desktopMain" data-active="" data-toggle=":demo:composeApp:dokkaHtmlPartial/desktopMain">desktop</button><button class="platform-bookmark" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/wasmJsMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/wasmJsMain" data-toggle=":demo:composeApp:dokkaHtmlPartial/wasmJsMain">wasmJs</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/desktopMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="[desktop]main.html"><span class="token function">main</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div><div class="content sourceset-dependent-content" data-togglable=":demo:composeApp:dokkaHtmlPartial/wasmJsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="[wasm-js]main.html"><span class="token function">main</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2054228352%2FFunctions%2F-1797886041" anchor-label="MainViewController" id="-2054228352%2FFunctions%2F-1797886041" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/iosMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-main-view-controller.html"><span>Main</span><wbr><span>View</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2054228352%2FFunctions%2F-1797886041"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/iosMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":demo:composeApp:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-main-view-controller.html"><span class="token function">MainViewController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2017266977%2FFunctions%2F456353279" anchor-label="SudokuBoard" id="2017266977%2FFunctions%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku-board.html"><span>Sudoku</span><wbr><span><span>Board</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2017266977%2FFunctions%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-sudoku-board.html"><span class="token function">SudokuBoard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dimension<span class="token operator">: </span><a href="../../../sudoklify-common/dev.teogor.sudoklify.components/-dimension/index.html">Dimension</a><span class="token punctuation">, </span></span><span class="parameter ">grid<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-cell/index.html">Cell</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">selectedCell<span class="token operator">: </span><a href="-cell/-position/index.html">Cell.Position</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">onCellSelected<span class="token operator">: </span><span class="token punctuation">(</span>row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span>col<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">onCellValueUpdated<span class="token operator">: </span><span class="token punctuation">(</span>row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span>col<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span>newValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays the Sudoku board based on the provided grid and dimension.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-520886085%2FFunctions%2F456353279" anchor-label="SudokuCell" id="-520886085%2FFunctions%2F456353279" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":demo:composeApp:dokkaHtmlPartial/commonMain" data-filterable-set=":demo:composeApp:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sudoku-cell.html"><span>Sudoku</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-520886085%2FFunctions%2F456353279"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":demo:composeApp:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-sudoku-cell.html"><span class="token function">SudokuCell</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cell<span class="token operator">: </span><a href="-cell/index.html">Cell</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents an individual cell in the Sudoku grid.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
