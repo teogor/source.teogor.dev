@@ -1,6 +1,6 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-
+$dokka.location:dev.teogor.sudoklify.multiplatform//main/#/PointingToDeclaration/composeApp/dev.teogor.sudoklify.multiplatform/[wasm-js]main.html
 module:sudoklify-common
 dev.teogor.sudoklify
 dev.teogor.sudoklify.components
@@ -18,3 +18,5 @@ module:sudoklify-solver
 dev.teogor.sudoklify.solver
 module:sudoklify-tokenizer
 dev.teogor.sudoklify.tokenizer
+module:composeApp
+dev.teogor.sudoklify.multiplatform
